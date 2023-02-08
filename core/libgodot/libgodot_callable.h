@@ -1,5 +1,5 @@
 /**************************************************************************/
-/*  godot_main_macos.mm                                                   */
+/*  libgodot_callable.h                                                   */
 /**************************************************************************/
 /*                         This file is part of:                          */
 /*                             GODOT ENGINE                               */
@@ -28,72 +28,31 @@
 /* SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.                 */
 /**************************************************************************/
 
-#include "main/main.h"
+#ifndef LIBGODOT_CALLABLE_H
+#define LIBGODOT_CALLABLE_H
 
-#include "os_macos.h"
+#ifdef LIBRARY_ENABLED
+#include "core/templates/vector.h"
+#include "core/variant/callable.h"
+#include "core/variant/variant.h"
 
-#include <string.h>
-#include <unistd.h>
+class LibGodotCallable : public CallableCustom {
+    void* customObject;
 
-#if defined(SANITIZERS_ENABLED)
-#include <sys/resource.h>
+	static bool _equal_func(const CallableCustom *p_a, const CallableCustom *p_b);
+	static bool _less_func(const CallableCustom *p_a, const CallableCustom *p_b);
+
+public:
+	uint32_t hash() const override;
+	String get_as_text() const override;
+	CompareEqualFunc get_compare_equal_func() const override;
+	CompareLessFunc get_compare_less_func() const override;
+	ObjectID get_object() const override;
+    void call(const Variant **p_arguments, int p_argcount, Variant &r_return_value, Callable::CallError &r_call_error) const override;
+
+    LibGodotCallable(void* target);
+    ~LibGodotCallable();
+};
 #endif
 
-int main(int argc, char **argv) {
-#if defined(VULKAN_ENABLED)
-	// MoltenVK - enable full component swizzling support.
-	setenv("MVK_CONFIG_FULL_IMAGE_VIEW_SWIZZLE", "1", 1);
-#endif
-
-#if defined(SANITIZERS_ENABLED)
-	// Note: Set stack size to be at least 30 MB (vs 8 MB default) to avoid overflow, address sanitizer can increase stack usage up to 3 times.
-	struct rlimit stack_lim = { 0x1E00000, 0x1E00000 };
-	setrlimit(RLIMIT_STACK, &stack_lim);
-#endif
-
-	int first_arg = 1;
-	const char *dbg_arg = "-NSDocumentRevisionsDebugMode";
-	printf("arguments\n");
-	for (int i = 0; i < argc; i++) {
-		if (strcmp(dbg_arg, argv[i]) == 0) {
-			first_arg = i + 2;
-		}
-		printf("%i: %s\n", i, argv[i]);
-	}
-
-#ifdef DEBUG_ENABLED
-	// Lets report the path we made current after all that.
-	char cwd[4096];
-	getcwd(cwd, 4096);
-	printf("Current path: %s\n", cwd);
-#endif
-
-	OS_MacOS os;
-	Error err;
-
-	// We must override main when testing is enabled.
-	TEST_MAIN_OVERRIDE
-
-	err = Main::setup(argv[0], argc - first_arg, &argv[first_arg]);
-
-	if (err == ERR_HELP) { // Returned by --help and --version, so success.
-		return 0;
-	} else if (err != OK) {
-		return 255;
-	}
-
-	if (Main::start()) {
-		os.run(); // It is actually the OS that decides how to run.
-	}
-
-	Main::cleanup();
-
-	return os.get_exit_code();
-}
-
-#if defined(LIBRARY_ENABLED)
-#include "core/libgodot/libgodot.h"
-extern "C" LIBGODOT_API int godot_main(int argc, char *argv[]) {
-	return main(argc, argv);
-}
-#endif
+#endif // LIBGODOT_CALLABLE_H

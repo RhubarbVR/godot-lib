@@ -101,6 +101,10 @@
 #endif
 #endif
 
+#ifdef LIBRARY_ENABLED
+#include "core/libgodot/libgodot.h"
+#endif
+
 #include "modules/modules_enabled.gen.h" // For mono.
 
 /* Static members */
@@ -1366,11 +1370,17 @@ Error Main::setup(const char *execpath, int argc, char *argv[], bool p_second_ph
 #ifdef TOOLS_ENABLED
 		editor = false;
 #else
-		const String error_msg = "Error: Couldn't load project data at path \"" + project_path + "\". Is the .pck file missing?\nIf you've renamed the executable, the associated .pck file should also be renamed to match the executable's name (without the extension).\n";
-		OS::get_singleton()->print("%s", error_msg.utf8().get_data());
-		OS::get_singleton()->alert(error_msg);
+#ifdef LIBRARY_ENABLED
+		if (!libgodot_is_scene_loadable()) {
+#endif
+			const String error_msg = "Error: Couldn't load project data at path \"" + project_path + "\". Is the .pck file missing?\nIf you've renamed the executable, the associated .pck file should also be renamed to match the executable's name (without the extension).\n";
+			OS::get_singleton()->print("%s", error_msg.utf8().get_data());
+			OS::get_singleton()->alert(error_msg);
 
-		goto error;
+			goto error;
+#ifdef LIBRARY_ENABLED
+		}
+#endif
 #endif
 	}
 
@@ -1381,6 +1391,10 @@ Error Main::setup(const char *execpath, int argc, char *argv[], bool p_second_ph
 	register_core_extensions(); // core extensions must be registered after globals setup and before display
 
 	ResourceUID::get_singleton()->load_from_cache(); // load UUIDs from cache.
+
+#ifdef LIBRARY_ENABLED
+	libgodot_project_settings_load(ProjectSettings::get_singleton());
+#endif
 
 	if (ProjectSettings::get_singleton()->has_custom_feature("dedicated_server")) {
 		audio_driver = NULL_AUDIO_DRIVER;
@@ -1441,10 +1455,16 @@ Error Main::setup(const char *execpath, int argc, char *argv[], bool p_second_ph
 #ifdef TOOLS_ENABLED
 		if (!editor && !project_manager) {
 #endif
-			const String error_msg = "Error: Can't run project: no main scene defined in the project.\n";
-			OS::get_singleton()->print("%s", error_msg.utf8().get_data());
-			OS::get_singleton()->alert(error_msg);
-			goto error;
+#ifdef LIBRARY_ENABLED
+			if (!libgodot_is_scene_loadable()) {
+#endif
+				const String error_msg = "Error: Can't run project: no main scene defined in the project.\n";
+				OS::get_singleton()->print("%s", error_msg.utf8().get_data());
+				OS::get_singleton()->alert(error_msg);
+				goto error;
+#ifdef LIBRARY_ENABLED
+			}
+#endif
 #ifdef TOOLS_ENABLED
 		}
 #endif
@@ -2756,6 +2776,11 @@ bool Main::start() {
 				}
 				Engine::get_singleton()->startup_benchmark_end_measure(); // load autoloads
 			}
+#ifdef LIBRARY_ENABLED
+			else {
+				libgodot_scene_load((void *)sml);
+			}
+#endif
 		}
 
 #ifdef TOOLS_ENABLED
