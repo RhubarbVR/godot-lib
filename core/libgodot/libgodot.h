@@ -1,5 +1,5 @@
 /**************************************************************************/
-/*  godot_ios.mm                                                          */
+/*  libgodot.h                                                            */
 /**************************************************************************/
 /*                         This file is part of:                          */
 /*                             GODOT ENGINE                               */
@@ -28,107 +28,40 @@
 /* SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.                 */
 /**************************************************************************/
 
-#include "core/string/ustring.h"
-#include "main/main.h"
-#include "os_ios.h"
-
-#include <stdio.h>
-#include <string.h>
-#include <unistd.h>
-
-static OS_IOS *os = nullptr;
-
-int add_path(int p_argc, char **p_args) {
-	NSString *str = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"godot_path"];
-	if (!str) {
-		return p_argc;
-	}
-
-	p_args[p_argc++] = (char *)"--path";
-	p_args[p_argc++] = (char *)[str cStringUsingEncoding:NSUTF8StringEncoding];
-	p_args[p_argc] = nullptr;
-
-	return p_argc;
-}
-
-int add_cmdline(int p_argc, char **p_args) {
-	NSArray *arr = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"godot_cmdline"];
-	if (!arr) {
-		return p_argc;
-	}
-
-	for (NSUInteger i = 0; i < [arr count]; i++) {
-		NSString *str = [arr objectAtIndex:i];
-		if (!str) {
-			continue;
-		}
-		p_args[p_argc++] = (char *)[str cStringUsingEncoding:NSUTF8StringEncoding];
-	}
-
-	p_args[p_argc] = nullptr;
-
-	return p_argc;
-}
+#ifndef LIBGODOT_H
+#define LIBGODOT_H
 
 #if defined(LIBRARY_ENABLED)
-#include "core/libgodot/libgodot.h"
-extern "C" LIBGODOT_API int godot_main(int argc, char *argv[]) {
-	ios_main(argc, argv);
+
+#if defined(WINDOWS_ENABLED) | defined(UWP_ENABLED)
+#define LIBGODOT_API __declspec(dllexport)
+#elif defined(ANDROID_ENABLED)
+#include <jni.h>
+#define LIBGODOT_API JNIEXPORT
+#else
+#define LIBGODOT_API
+#endif
+
+#include "core/extension/gdextension_interface.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+void libgodot_init_resource();
+
+void libgodot_scene_load(void *scene);
+
+bool libgodot_is_scene_loadable();
+
+LIBGODOT_API void libgodot_bind(GDExtensionBool (*initialization_bind)(const GDExtensionInterface *, GDExtensionClassLibraryPtr, GDExtensionInitialization *), void (*scene_function_bind)(void *));
+
+LIBGODOT_API int godot_main(int argc, char *argv[]);
+
+#ifdef __cplusplus
 }
 #endif
 
-int ios_main(int argc, char **argv) {
-	size_t len = strlen(argv[0]);
+#endif
 
-	while (len--) {
-		if (argv[0][len] == '/') {
-			break;
-		}
-	}
-
-	if (len >= 0) {
-		char path[512];
-		memcpy(path, argv[0], len > sizeof(path) ? sizeof(path) : len);
-		path[len] = 0;
-		printf("Path: %s\n", path);
-		chdir(path);
-	}
-
-	printf("godot_ios %s\n", argv[0]);
-	char cwd[512];
-	getcwd(cwd, sizeof(cwd));
-	printf("cwd %s\n", cwd);
-	os = new OS_IOS();
-
-	// We must override main when testing is enabled
-	TEST_MAIN_OVERRIDE
-
-	char *fargv[64];
-	for (int i = 0; i < argc; i++) {
-		fargv[i] = argv[i];
-	}
-	fargv[argc] = nullptr;
-	argc = add_path(argc, fargv);
-	argc = add_cmdline(argc, fargv);
-
-	printf("os created\n");
-
-	Error err = Main::setup(fargv[0], argc - 1, &fargv[1], false);
-	printf("setup %i\n", err);
-
-	if (err == ERR_HELP) { // Returned by --help and --version, so success.
-		return 0;
-	} else if (err != OK) {
-		return 255;
-	}
-
-	os->initialize_modules();
-
-	return 0;
-}
-
-void ios_finish() {
-	printf("ios_finish\n");
-	Main::cleanup();
-	delete os;
-}
+#endif // LIBGODOT_H

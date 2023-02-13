@@ -39,6 +39,13 @@
 #include <sys/resource.h>
 #endif
 
+#if defined(LIBRARY_ENABLED)
+#include "core/libgodot/libgodot.h"
+extern "C" LIBGODOT_API int godot_main(int argc, char *argv[]) {
+	main(argc, argv);
+}
+#endif
+
 int main(int argc, char **argv) {
 #if defined(VULKAN_ENABLED)
 	// MoltenVK - enable full component swizzling support.
