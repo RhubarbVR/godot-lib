@@ -986,10 +986,12 @@ static GDExtensionMethodBindPtr gdextension_classdb_get_method_bind(GDExtensionC
 	const StringName methodname = *reinterpret_cast<const StringName *>(p_methodname);
 	MethodBind *mb = ClassDB::get_method(classname, methodname);
 	ERR_FAIL_COND_V(!mb, nullptr);
+	#ifndef LIBRARY_ENABLED
 	if (mb->get_hash() != p_hash) {
 		ERR_PRINT("Hash mismatch for method '" + classname + "." + methodname + "'.");
 		return nullptr;
 	}
+	#endif
 	return (GDExtensionMethodBindPtr)mb;
 }
 
