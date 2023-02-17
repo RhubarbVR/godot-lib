@@ -667,7 +667,7 @@
 			Main window initial position.
 			[code]0[/code] - "Absolute", [member display/window/size/initial_position] is used to set window position.
 			[code]1[/code] - "Primary Screen Center".
-			[code]2[/code] - "Other Screen Center", [member display/window/size/initial_screen] is used to set window position.
+			[code]2[/code] - "Other Screen Center", [member display/window/size/initial_screen] is used to set the screen.
 		</member>
 		<member name="display/window/size/initial_screen" type="int" setter="" getter="" default="0">
 			Main window initial screen, this settings is used only if [member display/window/size/initial_position_type] is set to "Other Screen Center" ([code]2[/code]).
@@ -1146,9 +1146,6 @@
 		</member>
 		<member name="input_devices/pointing/emulate_touch_from_mouse" type="bool" setter="" getter="" default="false">
 			If [code]true[/code], sends touch input events when clicking or dragging the mouse.
-		</member>
-		<member name="input_devices/pointing/ios/touch_delay" type="float" setter="" getter="" default="0.15">
-			Default delay for touch events. This only affects iOS devices.
 		</member>
 		<member name="internationalization/locale/fallback" type="String" setter="" getter="" default="&quot;en&quot;">
 			The locale to fall back to if a translation isn't available in a given language. If left empty, [code]en[/code] (English) will be used.
@@ -2337,11 +2334,11 @@
 		<member name="rendering/textures/lossless_compression/force_png" type="bool" setter="" getter="" default="false">
 			If [code]true[/code], the texture importer will import lossless textures using the PNG format. Otherwise, it will default to using WebP.
 		</member>
-		<member name="rendering/textures/vram_compression/import_etc2_astc" type="bool" setter="" getter="" default="false">
+		<member name="rendering/textures/vram_compression/import_etc2_astc" type="bool" setter="" getter="">
 			If [code]true[/code], the texture importer will import VRAM-compressed textures using the Ericsson Texture Compression 2 algorithm for lower quality textures and normalmaps and Adaptable Scalable Texture Compression algorithm for high quality textures (in 4x4 block size).
 			[b]Note:[/b] Changing this setting does [i]not[/i] impact textures that were already imported before. To make this setting apply to textures that were already imported, exit the editor, remove the [code].godot/imported/[/code] folder located inside the project folder then restart the editor (see [member application/config/use_hidden_project_data_directory]).
 		</member>
-		<member name="rendering/textures/vram_compression/import_s3tc_bptc" type="bool" setter="" getter="" default="true">
+		<member name="rendering/textures/vram_compression/import_s3tc_bptc" type="bool" setter="" getter="">
 			If [code]true[/code], the texture importer will import VRAM-compressed textures using the S3 Texture Compression algorithm (DXT1-5) for lower quality textures and the the BPTC algorithm (BC6H and BC7) for high quality textures. This algorithm is only supported on PC desktop platforms and consoles.
 			[b]Note:[/b] Changing this setting does [i]not[/i] impact textures that were already imported before. To make this setting apply to textures that were already imported, exit the editor, remove the [code].godot/imported/[/code] folder located inside the project folder then restart the editor (see [member application/config/use_hidden_project_data_directory]).
 		</member>
