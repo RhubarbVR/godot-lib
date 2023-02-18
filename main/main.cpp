@@ -110,6 +110,10 @@
 #include "core/libgodot/libgodot.h"
 #endif
 
+#ifdef LIBRARY_ENABLED
+#include "core/libgodot/libgodot.h"
+#endif
+
 #include "modules/modules_enabled.gen.h" // For mono.
 
 /* Static members */
