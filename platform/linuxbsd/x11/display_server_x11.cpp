@@ -2057,6 +2057,22 @@ void DisplayServerX11::_validate_mode_on_map(WindowID p_window) {
 	} else if (wd.minimized && !_window_minimize_check(p_window)) {
 		_set_wm_minimized(p_window, true);
 	}
+
+	if (wd.on_top) {
+		Atom wm_state = XInternAtom(x11_display, "_NET_WM_STATE", False);
+		Atom wm_above = XInternAtom(x11_display, "_NET_WM_STATE_ABOVE", False);
+
+		XClientMessageEvent xev;
+		memset(&xev, 0, sizeof(xev));
+		xev.type = ClientMessage;
+		xev.window = wd.x11_window;
+		xev.message_type = wm_state;
+		xev.format = 32;
+		xev.data.l[0] = _NET_WM_STATE_ADD;
+		xev.data.l[1] = wm_above;
+		xev.data.l[3] = 1;
+		XSendEvent(x11_display, DefaultRootWindow(x11_display), False, SubstructureRedirectMask | SubstructureNotifyMask, (XEvent *)&xev);
+	}
 }
 
 bool DisplayServerX11::window_is_maximize_allowed(WindowID p_window) const {
@@ -2598,6 +2614,8 @@ DisplayServerX11::CursorShape DisplayServerX11::cursor_get_shape() const {
 
 void DisplayServerX11::cursor_set_custom_image(const Ref<Resource> &p_cursor, CursorShape p_shape, const Vector2 &p_hotspot) {
 	_THREAD_SAFE_METHOD_
+
+	ERR_FAIL_INDEX(p_shape, CURSOR_MAX);
 
 	if (p_cursor.is_valid()) {
 		HashMap<CursorShape, Vector<Variant>>::Iterator cursor_c = cursors_cache.find(p_shape);
