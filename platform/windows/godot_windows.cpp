@@ -233,7 +233,9 @@ int main(int argc, char **argv) {
 
 HINSTANCE godot_hinstance = nullptr;
 
+#if !defined(LIBRARY_ENABLED)
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
 	godot_hinstance = hInstance;
 	return main(0, nullptr);
 }
+#endif
