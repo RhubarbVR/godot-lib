@@ -265,6 +265,7 @@ if env_base["library_type"] == "static_library":
 elif env_base["library_type"] == "shared_library":
     env_base.Append(CPPDEFINES=["LIBRARY_ENABLED"])
     env_base.Append(CCFLAGS=["-fPIC"])
+    env_base.Append(STATIC_AND_SHARED_OBJECTS_ARE_THE_SAME=True)
 else:
     env_base.__class__.add_program = methods.add_program
 
