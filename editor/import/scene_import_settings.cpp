@@ -64,6 +64,11 @@ class SceneImportSettingsData : public Object {
 
 			current[p_name] = p_value;
 
+			// SceneImportSettings must decide if a new collider should be generated or not
+			if (category == ResourceImporterScene::INTERNAL_IMPORT_CATEGORY_MESH_3D_NODE) {
+				SceneImportSettings::get_singleton()->request_generate_collider();
+			}
+
 			if (SceneImportSettings::get_singleton()->is_editing_animation()) {
 				if (category == ResourceImporterScene::INTERNAL_IMPORT_CATEGORY_MAX) {
 					if (ResourceImporterScene::get_animation_singleton()->get_option_visibility(path, p_name, current)) {
@@ -137,24 +142,23 @@ void SceneImportSettings::_fill_material(Tree *p_tree, const Ref<Material> &p_ma
 	String import_id;
 	bool has_import_id = false;
 
-	bool created = false;
-	if (!material_set.has(p_material)) {
-		material_set.insert(p_material);
-		created = true;
-	}
-
 	if (p_material->has_meta("import_id")) {
 		import_id = p_material->get_meta("import_id");
 		has_import_id = true;
 	} else if (!p_material->get_name().is_empty()) {
 		import_id = p_material->get_name();
 		has_import_id = true;
+	} else if (unnamed_material_name_map.has(p_material)) {
+		import_id = unnamed_material_name_map[p_material];
 	} else {
-		import_id = "@MATERIAL:" + itos(material_set.size() - 1);
+		import_id = "@MATERIAL:" + itos(material_map.size());
+		unnamed_material_name_map[p_material] = import_id;
 	}
 
+	bool created = false;
 	if (!material_map.has(import_id)) {
 		MaterialData md;
+		created = true;
 		md.has_import_id = has_import_id;
 		md.material = p_material;
 
@@ -164,6 +168,7 @@ void SceneImportSettings::_fill_material(Tree *p_tree, const Ref<Material> &p_ma
 	}
 
 	MaterialData &material_data = material_map[import_id];
+	ERR_FAIL_COND(p_material != material_data.material);
 
 	Ref<Texture2D> icon = get_theme_icon(SNAME("StandardMaterial3D"), SNAME("EditorIcons"));
 
@@ -420,9 +425,9 @@ void SceneImportSettings::_update_view_gizmos() {
 		return;
 	}
 	for (const KeyValue<String, NodeData> &e : node_map) {
-		bool generate_collider = false;
+		bool show_collider_view = false;
 		if (e.value.settings.has(SNAME("generate/physics"))) {
-			generate_collider = e.value.settings[SNAME("generate/physics")];
+			show_collider_view = e.value.settings[SNAME("generate/physics")];
 		}
 
 		MeshInstance3D *mesh_node = Object::cast_to<MeshInstance3D>(e.value.node);
@@ -436,7 +441,7 @@ void SceneImportSettings::_update_view_gizmos() {
 		CRASH_COND_MSG(descendants.is_empty(), "This is unreachable, since the collider view is always created even when the collision is not used! If this is triggered there is a bug on the function `_fill_scene`.");
 
 		MeshInstance3D *collider_view = static_cast<MeshInstance3D *>(descendants[0].operator Object *());
-		collider_view->set_visible(generate_collider);
+		collider_view->set_visible(show_collider_view);
 		if (generate_collider) {
 			// This collider_view doesn't have a mesh so we need to generate a new one.
 
@@ -466,6 +471,8 @@ void SceneImportSettings::_update_view_gizmos() {
 			collider_view->set_transform(transform);
 		}
 	}
+
+	generate_collider = false;
 }
 
 void SceneImportSettings::_update_camera() {
@@ -530,6 +537,10 @@ void SceneImportSettings::_load_default_subresource_settings(HashMap<StringName,
 	}
 }
 
+void SceneImportSettings::request_generate_collider() {
+	generate_collider = true;
+}
+
 void SceneImportSettings::update_view() {
 	update_view_timer->start();
 }
@@ -553,10 +564,10 @@ void SceneImportSettings::open_settings(const String &p_path, bool p_for_animati
 
 	base_path = p_path;
 
-	material_set.clear();
 	mesh_set.clear();
 	animation_map.clear();
 	material_map.clear();
+	unnamed_material_name_map.clear();
 	mesh_map.clear();
 	node_map.clear();
 	defaults.clear();

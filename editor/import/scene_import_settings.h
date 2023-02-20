@@ -107,6 +107,7 @@ class SceneImportSettings : public ConfirmationDialog {
 		HashMap<StringName, Variant> settings;
 	};
 	HashMap<String, MaterialData> material_map;
+	HashMap<Ref<Material>, String> unnamed_material_name_map;
 
 	struct MeshData {
 		bool has_import_id;
@@ -141,7 +142,6 @@ class SceneImportSettings : public ConfirmationDialog {
 	void _fill_scene(Node *p_node, TreeItem *p_parent_item);
 
 	HashSet<Ref<Mesh>> mesh_set;
-	HashSet<Ref<Material>> material_set;
 
 	String selected_type;
 	String selected_id;
@@ -191,6 +191,7 @@ class SceneImportSettings : public ConfirmationDialog {
 	void _load_default_subresource_settings(HashMap<StringName, Variant> &settings, const String &p_type, const String &p_import_id, ResourceImporterScene::InternalImportCategory p_category);
 
 	bool editing_animation = false;
+	bool generate_collider = false;
 
 	Timer *update_view_timer = nullptr;
 
@@ -199,6 +200,7 @@ protected:
 
 public:
 	bool is_editing_animation() const { return editing_animation; }
+	void request_generate_collider();
 	void update_view();
 	void open_settings(const String &p_path, bool p_for_animation = false);
 	static SceneImportSettings *get_singleton();

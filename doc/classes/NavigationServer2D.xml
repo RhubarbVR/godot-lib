@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <class name="NavigationServer2D" inherits="Object" is_experimental="true" version="4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../class.xsd">
 	<brief_description>
-		Server interface for low-level 2D navigation access
+		Server interface for low-level 2D navigation access.
 	</brief_description>
 	<description>
 		NavigationServer2D is the server responsible for all 2D navigation. It handles several objects, namely maps, regions and agents.
@@ -124,6 +124,12 @@
 			<param index="0" name="rid" type="RID" />
 			<description>
 				Destroys the given RID.
+			</description>
+		</method>
+		<method name="get_debug_enabled" qualifiers="const">
+			<return type="bool" />
+			<description>
+				Returns [code]true[/code] when the NavigationServer has debug enabled.
 			</description>
 		</method>
 		<method name="get_maps" qualifiers="const">
@@ -518,6 +524,13 @@
 			<param index="1" name="travel_cost" type="float" />
 			<description>
 				Sets the [param travel_cost] for this [param region].
+			</description>
+		</method>
+		<method name="set_debug_enabled">
+			<return type="void" />
+			<param index="0" name="enabled" type="bool" />
+			<description>
+				If [code]true[/code] enables debug mode on the NavigationServer.
 			</description>
 		</method>
 	</methods>

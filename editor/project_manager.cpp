@@ -510,6 +510,8 @@ private:
 					ProjectSettings::CustomMap initial_settings;
 
 					// Be sure to change this code if/when renderers are changed.
+					// Default values are "forward_plus" for the main setting, "mobile" for the mobile override,
+					// and "gl_compatibility" for the web override.
 					String renderer_type = renderer_button_group->get_pressed_button()->get_meta(SNAME("rendering_method"));
 					initial_settings["rendering/renderer/rendering_method"] = renderer_type;
 
@@ -522,6 +524,8 @@ private:
 						project_features.push_back("Mobile");
 					} else if (renderer_type == "gl_compatibility") {
 						project_features.push_back("GL Compatibility");
+						// Also change the default rendering method for the mobile override.
+						initial_settings["rendering/renderer/rendering_method.mobile"] = "gl_compatibility";
 					} else {
 						WARN_PRINT("Unknown renderer type. Please report this as a bug on GitHub.");
 					}
@@ -961,8 +965,8 @@ public:
 		default_files_container->add_child(l);
 		vcs_metadata_selection = memnew(OptionButton);
 		vcs_metadata_selection->set_custom_minimum_size(Size2(100, 20));
-		vcs_metadata_selection->add_item("None", (int)EditorVCSInterface::VCSMetadata::NONE);
-		vcs_metadata_selection->add_item("Git", (int)EditorVCSInterface::VCSMetadata::GIT);
+		vcs_metadata_selection->add_item(TTR("None"), (int)EditorVCSInterface::VCSMetadata::NONE);
+		vcs_metadata_selection->add_item(TTR("Git"), (int)EditorVCSInterface::VCSMetadata::GIT);
 		vcs_metadata_selection->select((int)EditorVCSInterface::VCSMetadata::GIT);
 		default_files_container->add_child(vcs_metadata_selection);
 		Control *spacer = memnew(Control);
@@ -1354,6 +1358,8 @@ void ProjectList::load_projects() {
 	for (int i = 0; i < _projects.size(); ++i) {
 		create_project_item_control(i);
 	}
+
+	sort_projects();
 
 	set_v_scroll(0);
 
@@ -2007,16 +2013,25 @@ void ProjectManager::_notification(int p_what) {
 }
 
 Ref<Texture2D> ProjectManager::_file_dialog_get_icon(const String &p_path) {
-	return singleton->icon_type_cache["ObjectHR"];
+	if (p_path.get_extension().to_lower() == "godot") {
+		return singleton->icon_type_cache["GodotMonochrome"];
+	}
+
+	return singleton->icon_type_cache["Object"];
+}
+
+Ref<Texture2D> ProjectManager::_file_dialog_get_thumbnail(const String &p_path) {
+	if (p_path.get_extension().to_lower() == "godot") {
+		return singleton->icon_type_cache["GodotFile"];
+	}
+
+	return Ref<Texture2D>();
 }
 
 void ProjectManager::_build_icon_type_cache(Ref<Theme> p_theme) {
 	List<StringName> tl;
 	p_theme->get_icon_list(SNAME("EditorIcons"), &tl);
 	for (List<StringName>::Element *E = tl.front(); E; E = E->next()) {
-		if (!ClassDB::class_exists(E->get())) {
-			continue;
-		}
 		icon_type_cache[E->get()] = p_theme->get_icon(E->get(), SNAME("EditorIcons"));
 	}
 }
@@ -2645,6 +2660,7 @@ ProjectManager::ProjectManager() {
 				break;
 		}
 		EditorFileDialog::get_icon_func = &ProjectManager::_file_dialog_get_icon;
+		EditorFileDialog::get_thumbnail_func = &ProjectManager::_file_dialog_get_thumbnail;
 	}
 
 	// TRANSLATORS: This refers to the application where users manage their Godot projects.

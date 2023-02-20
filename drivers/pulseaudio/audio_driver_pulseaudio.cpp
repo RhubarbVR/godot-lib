@@ -37,7 +37,11 @@
 #include "core/version.h"
 
 #ifdef ALSAMIDI_ENABLED
+#ifdef SOWRAP_ENABLED
 #include "drivers/alsa/asound-so_wrap.h"
+#else
+#include <alsa/asoundlib.h>
+#endif
 #endif
 
 void AudioDriverPulseAudio::pa_state_cb(pa_context *c, void *userdata) {
@@ -272,6 +276,7 @@ Error AudioDriverPulseAudio::init_output_device() {
 }
 
 Error AudioDriverPulseAudio::init() {
+#ifdef SOWRAP_ENABLED
 #ifdef DEBUG_ENABLED
 	int dylibloader_verbose = 1;
 #else
@@ -284,7 +289,7 @@ Error AudioDriverPulseAudio::init() {
 	if (initialize_pulse(dylibloader_verbose)) {
 		return ERR_CANT_OPEN;
 	}
-
+#endif
 	active.clear();
 	exit_thread.clear();
 
@@ -631,9 +636,9 @@ String AudioDriverPulseAudio::get_output_device() {
 	return output_device_name;
 }
 
-void AudioDriverPulseAudio::set_output_device(String output_device) {
+void AudioDriverPulseAudio::set_output_device(const String &p_name) {
 	lock();
-	new_output_device = output_device;
+	new_output_device = p_name;
 	unlock();
 }
 
@@ -761,12 +766,6 @@ Error AudioDriverPulseAudio::input_stop() {
 	return OK;
 }
 
-void AudioDriverPulseAudio::set_input_device(const String &p_name) {
-	lock();
-	new_input_device = p_name;
-	unlock();
-}
-
 void AudioDriverPulseAudio::pa_sourcelist_cb(pa_context *c, const pa_source_info *l, int eol, void *userdata) {
 	AudioDriverPulseAudio *ad = static_cast<AudioDriverPulseAudio *>(userdata);
 
@@ -819,6 +818,12 @@ String AudioDriverPulseAudio::get_input_device() {
 	unlock();
 
 	return name;
+}
+
+void AudioDriverPulseAudio::set_input_device(const String &p_name) {
+	lock();
+	new_input_device = p_name;
+	unlock();
 }
 
 AudioDriverPulseAudio::AudioDriverPulseAudio() {

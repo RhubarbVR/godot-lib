@@ -253,12 +253,12 @@ public:
 	virtual void process(real_t delta_time) = 0;
 
 	/// Returns a customized navigation path using a query parameters object
-	void query_path(const Ref<NavigationPathQueryParameters3D> &p_query_parameters, Ref<NavigationPathQueryResult3D> p_query_result) const;
+	virtual void query_path(const Ref<NavigationPathQueryParameters3D> &p_query_parameters, Ref<NavigationPathQueryResult3D> p_query_result) const;
 
 	virtual NavigationUtilities::PathQueryResult _query_path(const NavigationUtilities::PathQueryParameters &p_parameters) const = 0;
 
 	NavigationServer3D();
-	virtual ~NavigationServer3D();
+	~NavigationServer3D() override;
 
 	enum ProcessInfo {
 		INFO_ACTIVE_MAPS,
@@ -274,9 +274,13 @@ public:
 
 	virtual int get_process_info(ProcessInfo p_info) const = 0;
 
-#ifdef DEBUG_ENABLED
+	void set_debug_enabled(bool p_enabled);
+	bool get_debug_enabled() const;
+
 private:
 	bool debug_enabled = false;
+
+#ifdef DEBUG_ENABLED
 	bool debug_dirty = true;
 	void _emit_navigation_debug_changed_signal();
 
@@ -313,9 +317,6 @@ private:
 	Ref<StandardMaterial3D> debug_navigation_agent_path_point_material;
 
 public:
-	void set_debug_enabled(bool p_enabled);
-	bool get_debug_enabled() const;
-
 	void set_debug_navigation_edge_connection_color(const Color &p_color);
 	Color get_debug_navigation_edge_connection_color() const;
 

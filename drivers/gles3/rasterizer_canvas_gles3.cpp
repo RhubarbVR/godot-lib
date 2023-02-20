@@ -566,6 +566,7 @@ void RasterizerCanvasGLES3::_render_items(RID p_to_render_target, int p_item_cou
 
 	uint32_t index = 0;
 	Item *current_clip = nullptr;
+	GLES3::CanvasShaderData *shader_data_cache = nullptr;
 
 	// Record Batches.
 	// First item always forms its own batch.
@@ -602,7 +603,6 @@ void RasterizerCanvasGLES3::_render_items(RID p_to_render_target, int p_item_cou
 			}
 		}
 
-		GLES3::CanvasShaderData *shader_data_cache = nullptr;
 		if (material != state.canvas_instance_batches[state.current_batch_index].material) {
 			_new_batch(batch_broken);
 
@@ -1951,11 +1951,12 @@ void RasterizerCanvasGLES3::occluder_polygon_set_shape(RID p_occluder, const Vec
 			glBufferData(GL_ELEMENT_ARRAY_BUFFER, 3 * lc * sizeof(uint16_t), indices.ptr(), GL_STATIC_DRAW);
 			glBindVertexArray(0);
 		} else {
-			glBindVertexArray(oc->vertex_array);
 			glBindBuffer(GL_ARRAY_BUFFER, oc->vertex_buffer);
 			glBufferData(GL_ARRAY_BUFFER, lc * 6 * sizeof(float), geometry.ptr(), GL_STATIC_DRAW);
 			glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, oc->index_buffer);
 			glBufferData(GL_ELEMENT_ARRAY_BUFFER, 3 * lc * sizeof(uint16_t), indices.ptr(), GL_STATIC_DRAW);
+			glBindBuffer(GL_ARRAY_BUFFER, 0);
+			glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 		}
 	}
 
@@ -2259,6 +2260,7 @@ void RasterizerCanvasGLES3::reset_canvas() {
 	glDisable(GL_DEPTH_TEST);
 	glDisable(GL_SCISSOR_TEST);
 	glEnable(GL_BLEND);
+	glBlendEquation(GL_FUNC_ADD);
 	glBlendFuncSeparate(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA, GL_ZERO, GL_ONE);
 
 	glActiveTexture(GL_TEXTURE0 + GLES3::Config::get_singleton()->max_texture_image_units - 2);

@@ -36,7 +36,8 @@ jobs:
             cache-name: linux-editor-double-sanitizers
             target: editor
             tests: true
-            sconsflags: dev_build=yes precision=double use_asan=yes use_ubsan=yes linker=gold
+            # Debug symbols disabled as they're huge on this build and we hit the 14 GB limit for runners.
+            sconsflags: dev_build=yes debug_symbols=no precision=double use_asan=yes use_ubsan=yes linker=gold
             proj-test: true
             # Can be turned off for PRs that intentionally break compat with godot-cpp,
             # until both the upstream PR and the matching godot-cpp changes are merged.
@@ -78,8 +79,8 @@ jobs:
       - name: Linux dependencies for tests
         if: ${{ matrix.proj-test }}
         run: |
+          sudo rm -f /etc/apt/sources.list.d/microsoft-prod.list
           sudo add-apt-repository ppa:kisak/kisak-mesa
-          sudo apt-get update
           sudo apt-get install -qq mesa-vulkan-drivers
 
       - name: Setup Godot build cache
