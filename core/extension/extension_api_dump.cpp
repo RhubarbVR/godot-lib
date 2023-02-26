@@ -862,10 +862,13 @@ Dictionary GDExtensionAPIDump::generate_extension_api() {
 
 						methods.push_back(d2);
 
-					} else if (F.name.begins_with("_")) {
+					}
+					#ifndef LIBRARY_ENABLED
+					else if (F.name.begins_with("_")) {
 						//hidden method, ignore
-
-					} else {
+					}
+					#endif
+					else {
 						Dictionary d2;
 						d2["name"] = String(method_name);
 

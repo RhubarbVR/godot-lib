@@ -29,7 +29,6 @@
 /**************************************************************************/
 
 #include "navigation_server_3d.h"
-
 #include "core/config/project_settings.h"
 
 NavigationServer3D *NavigationServer3D::singleton = nullptr;
@@ -116,7 +115,9 @@ void NavigationServer3D::_bind_methods() {
 	ClassDB::bind_method(D_METHOD("free_rid", "rid"), &NavigationServer3D::free);
 
 	ClassDB::bind_method(D_METHOD("set_active", "active"), &NavigationServer3D::set_active);
-	ClassDB::bind_method(D_METHOD("process", "delta_time"), &NavigationServer3D::process);
+
+	ClassDB::bind_method(D_METHOD("set_debug_enabled", "enabled"), &NavigationServer3D::set_debug_enabled);
+	ClassDB::bind_method(D_METHOD("get_debug_enabled"), &NavigationServer3D::get_debug_enabled);
 
 	ADD_SIGNAL(MethodInfo("map_changed", PropertyInfo(Variant::RID, "map")));
 
@@ -186,15 +187,22 @@ NavigationServer3D::~NavigationServer3D() {
 	singleton = nullptr;
 }
 
-NavigationServer3DCallback NavigationServer3DManager::create_callback = nullptr;
+void NavigationServer3D::set_debug_enabled(bool p_enabled) {
+#ifdef DEBUG_ENABLED
+	if (debug_enabled != p_enabled) {
+		debug_dirty = true;
+	}
 
-void NavigationServer3DManager::set_default_server(NavigationServer3DCallback p_callback) {
-	create_callback = p_callback;
+	debug_enabled = p_enabled;
+
+	if (debug_dirty) {
+		call_deferred("_emit_navigation_debug_changed_signal");
+	}
+#endif // DEBUG_ENABLED
 }
 
-NavigationServer3D *NavigationServer3DManager::new_default_server() {
-	ERR_FAIL_COND_V(create_callback == nullptr, nullptr);
-	return create_callback();
+bool NavigationServer3D::get_debug_enabled() const {
+	return debug_enabled;
 }
 
 #ifdef DEBUG_ENABLED
@@ -546,22 +554,6 @@ bool NavigationServer3D::get_debug_navigation_enable_link_connections_xray() con
 	return debug_navigation_enable_link_connections_xray;
 }
 
-void NavigationServer3D::set_debug_enabled(bool p_enabled) {
-	if (debug_enabled != p_enabled) {
-		debug_dirty = true;
-	}
-
-	debug_enabled = p_enabled;
-
-	if (debug_dirty) {
-		call_deferred("_emit_navigation_debug_changed_signal");
-	}
-}
-
-bool NavigationServer3D::get_debug_enabled() const {
-	return debug_enabled;
-}
-
 void NavigationServer3D::set_debug_navigation_enable_agent_paths(const bool p_value) {
 	if (debug_navigation_enable_agent_paths != p_value) {
 		debug_dirty = true;
@@ -594,8 +586,6 @@ bool NavigationServer3D::get_debug_navigation_enable_agent_paths_xray() const {
 
 #endif // DEBUG_ENABLED
 
-///////////////////////////////////////////////////////
-
 void NavigationServer3D::query_path(const Ref<NavigationPathQueryParameters3D> &p_query_parameters, Ref<NavigationPathQueryResult3D> p_query_result) const {
 	ERR_FAIL_COND(!p_query_parameters.is_valid());
 	ERR_FAIL_COND(!p_query_result.is_valid());
@@ -606,4 +596,20 @@ void NavigationServer3D::query_path(const Ref<NavigationPathQueryParameters3D> &
 	p_query_result->set_path_types(_query_result.path_types);
 	p_query_result->set_path_rids(_query_result.path_rids);
 	p_query_result->set_path_owner_ids(_query_result.path_owner_ids);
+}
+
+///////////////////////////////////////////////////////
+
+NavigationServer3DCallback NavigationServer3DManager::create_callback = nullptr;
+
+void NavigationServer3DManager::set_default_server(NavigationServer3DCallback p_callback) {
+	create_callback = p_callback;
+}
+
+NavigationServer3D *NavigationServer3DManager::new_default_server() {
+	if (create_callback == nullptr) {
+		return nullptr;
+	}
+
+	return create_callback();
 }

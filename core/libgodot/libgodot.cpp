@@ -40,6 +40,7 @@ void* (*lib_godot_get_object)(void *);
 void (*lib_godot_disposes)(void *);
 void (*lib_godot_call)(const void *, int , void *, void*);
 
+
 #ifdef __cplusplus
 extern "C" {
 #endif

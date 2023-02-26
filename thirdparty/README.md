@@ -70,6 +70,11 @@ Files extracted from upstream source:
 
 - all .cpp, .h, and .txt files except the folders MakeTables and etc2packer.
 
+Changes related to BC6H packing and unpacking made upstream in
+https://github.com/elasota/cvtt/commit/2e4b6b2747aec11f4cc6dd09ef43fa8ce769f6e2
+have been removed as they caused massive quality regressions. Apply the patches
+in the `patches/` folder when syncing on newer upstream commits.
+
 
 ## doctest
 
@@ -346,7 +351,7 @@ Files extracted from upstream source:
 ## libwebp
 
 - Upstream: https://chromium.googlesource.com/webm/libwebp/
-- Version: 1.2.4 (0d1f12546bd803099a60c070517a552483f3790e, 2022)
+- Version: 1.3.0 (b557776962a3dcc985d83bd4ed94e1e2e50d0fa2, 2022)
 - License: BSD-3-Clause
 
 Files extracted from upstream source:

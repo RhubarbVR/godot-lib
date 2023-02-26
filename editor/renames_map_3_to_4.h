@@ -1,5 +1,5 @@
 /**************************************************************************/
-/*  godot_view_gesture_recognizer.h                                       */
+/*  renames_map_3_to_4.h                                                  */
 /**************************************************************************/
 /*                         This file is part of:                          */
 /*                             GODOT ENGINE                               */
@@ -28,19 +28,27 @@
 /* SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.                 */
 /**************************************************************************/
 
-// GLViewGestureRecognizer allows iOS gestures to work correctly by
-// emulating UIScrollView's UIScrollViewDelayedTouchesBeganGestureRecognizer.
-// It catches all gestures incoming to UIView and delays them for 150ms
-// (the same value used by UIScrollViewDelayedTouchesBeganGestureRecognizer)
-// If touch cancellation or end message is fired it fires delayed
-// begin touch immediately as well as last touch signal
+#ifndef RENAMES_MAP_3_TO_4_H
+#define RENAMES_MAP_3_TO_4_H
 
-#import <UIKit/UIKit.h>
+#ifndef DISABLE_DEPRECATED
 
-@interface GodotViewGestureRecognizer : UIGestureRecognizer
+struct RenamesMap3To4 {
+	static const char *enum_renames[][2];
+	static const char *gdscript_function_renames[][2];
+	static const char *csharp_function_renames[][2];
+	static const char *gdscript_properties_renames[][2];
+	static const char *csharp_properties_renames[][2];
+	static const char *gdscript_signals_renames[][2];
+	static const char *csharp_signals_renames[][2];
+	static const char *project_settings_renames[][2];
+	static const char *input_map_renames[][2];
+	static const char *builtin_types_renames[][2];
+	static const char *shaders_renames[][2];
+	static const char *class_renames[][2];
+	static const char *color_renames[][2];
+};
 
-@property(nonatomic, readonly, assign) NSTimeInterval delayTimeInterval;
+#endif // DISABLE_DEPRECATED
 
-- (instancetype)init;
-
-@end
+#endif // RENAMES_MAP_3_TO_4_H

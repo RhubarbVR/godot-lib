@@ -1522,6 +1522,8 @@ void AnimationTimelineEdit::set_animation(const Ref<Animation> &p_animation, boo
 	animation = p_animation;
 	read_only = p_read_only;
 
+	length->set_read_only(read_only);
+
 	if (animation.is_valid()) {
 		len_hb->show();
 		if (read_only) {
@@ -2003,7 +2005,6 @@ void AnimationTrackEdit::_notification(int p_what) {
 							draw_texture(down_icon, Vector2(ofs, int(get_size().height - down_icon->get_height()) / 2));
 							update_mode_rect.size.x += down_icon->get_width();
 						} else if (animation->track_get_type(track) == Animation::TYPE_BEZIER) {
-							Ref<Texture2D> bezier_icon = get_theme_icon(SNAME("EditBezier"), SNAME("EditorIcons"));
 							update_mode_rect.size.x += down_icon->get_width();
 							update_mode_rect = Rect2();
 						} else {
@@ -2228,7 +2229,7 @@ void AnimationTrackEdit::draw_key(int p_index, float p_pixels_sec, int p_x, bool
 			if (i > 0) {
 				text += ", ";
 			}
-			text += String(args[i]);
+			text += args[i].get_construct_string();
 		}
 		text += ")";
 
@@ -2540,7 +2541,7 @@ String AnimationTrackEdit::get_tooltip(const Point2 &p_pos) const {
 						if (i > 0) {
 							text += ", ";
 						}
-						text += String(args[i]);
+						text += args[i].get_construct_string();
 					}
 					text += ")\n";
 
@@ -3311,25 +3312,15 @@ void AnimationTrackEditor::set_animation(const Ref<Animation> &p_anim, bool p_re
 		snap->set_disabled(false);
 		snap_mode->set_disabled(false);
 
-		bezier_edit_icon->set_disabled(true);
-
 		imported_anim_warning->hide();
-		bool import_warning_done = false;
-		bool bezier_done = false;
 		for (int i = 0; i < animation->get_track_count(); i++) {
 			if (animation->track_is_imported(i)) {
 				imported_anim_warning->show();
-				import_warning_done = true;
-			}
-			if (animation->track_get_type(i) == Animation::TrackType::TYPE_BEZIER) {
-				bezier_edit_icon->set_disabled(false);
-				bezier_done = true;
-			}
-			if (import_warning_done && bezier_done) {
 				break;
 			}
 		}
 
+		_check_bezier_exist();
 	} else {
 		hscroll->hide();
 		edit->set_disabled(true);
@@ -3339,6 +3330,24 @@ void AnimationTrackEditor::set_animation(const Ref<Animation> &p_anim, bool p_re
 		step->set_read_only(true);
 		snap->set_disabled(true);
 		snap_mode->set_disabled(true);
+		bezier_edit_icon->set_disabled(true);
+	}
+}
+
+void AnimationTrackEditor::_check_bezier_exist() {
+	bool is_exist = false;
+	for (int i = 0; i < animation->get_track_count(); i++) {
+		if (animation->track_get_type(i) == Animation::TrackType::TYPE_BEZIER) {
+			is_exist = true;
+			break;
+		}
+	}
+	if (is_exist) {
+		bezier_edit_icon->set_disabled(false);
+	} else {
+		if (bezier_edit->is_visible()) {
+			_cancel_bezier_edit();
+		}
 		bezier_edit_icon->set_disabled(true);
 	}
 }
@@ -4292,6 +4301,8 @@ void AnimationTrackEditor::_update_tracks() {
 		memdelete(track_vbox->get_child(0));
 	}
 
+	timeline->set_track_edit(nullptr);
+
 	track_edits.clear();
 	groups.clear();
 
@@ -4489,6 +4500,8 @@ void AnimationTrackEditor::_animation_changed() {
 	if (animation_changing_awaiting_update) {
 		return; // All will be updated, don't bother with anything.
 	}
+
+	_check_bezier_exist();
 
 	if (key_edit) {
 		if (key_edit->setting) {
@@ -4710,7 +4723,6 @@ void AnimationTrackEditor::_new_track_node_selected(NodePath p_path) {
 			adding_track_path = path_to;
 			prop_selector->set_type_filter(filter);
 			prop_selector->select_property_from_instance(node);
-			bezier_edit_icon->set_disabled(false);
 		} break;
 		case Animation::TYPE_AUDIO: {
 			if (!node->is_class("AudioStreamPlayer") && !node->is_class("AudioStreamPlayer2D") && !node->is_class("AudioStreamPlayer3D")) {
@@ -6611,7 +6623,7 @@ AnimationTrackEditor::AnimationTrackEditor() {
 
 	optimize_dialog = memnew(ConfirmationDialog);
 	add_child(optimize_dialog);
-	optimize_dialog->set_title(TTR("Anim. Optimizer"));
+	optimize_dialog->set_title(TTR("Animation Optimizer"));
 	VBoxContainer *optimize_vb = memnew(VBoxContainer);
 	optimize_dialog->add_child(optimize_vb);
 
@@ -6620,19 +6632,19 @@ AnimationTrackEditor::AnimationTrackEditor() {
 	optimize_velocity_error->set_min(0.001);
 	optimize_velocity_error->set_step(0.001);
 	optimize_velocity_error->set_value(0.01);
-	optimize_vb->add_margin_child(TTR("Max. Velocity Error:"), optimize_velocity_error);
+	optimize_vb->add_margin_child(TTR("Max Velocity Error:"), optimize_velocity_error);
 	optimize_angular_error = memnew(SpinBox);
 	optimize_angular_error->set_max(1.0);
 	optimize_angular_error->set_min(0.001);
 	optimize_angular_error->set_step(0.001);
 	optimize_angular_error->set_value(0.01);
-	optimize_vb->add_margin_child(TTR("Max. Angular Error:"), optimize_angular_error);
+	optimize_vb->add_margin_child(TTR("Max Angular Error:"), optimize_angular_error);
 	optimize_precision_error = memnew(SpinBox);
 	optimize_precision_error->set_max(6);
 	optimize_precision_error->set_min(1);
 	optimize_precision_error->set_step(1);
 	optimize_precision_error->set_value(3);
-	optimize_vb->add_margin_child(TTR("Max. Precision Error:"), optimize_precision_error);
+	optimize_vb->add_margin_child(TTR("Max Precision Error:"), optimize_precision_error);
 
 	optimize_dialog->set_ok_button_text(TTR("Optimize"));
 	optimize_dialog->connect("confirmed", callable_mp(this, &AnimationTrackEditor::_edit_menu_pressed).bind(EDIT_OPTIMIZE_ANIMATION_CONFIRM));
@@ -6723,7 +6735,7 @@ AnimationTrackEditor::AnimationTrackEditor() {
 
 	//
 	bake_dialog = memnew(ConfirmationDialog);
-	bake_dialog->set_title(TTR("Anim. Baker"));
+	bake_dialog->set_title(TTR("Animation Baker"));
 	bake_dialog->connect("confirmed", callable_mp(this, &AnimationTrackEditor::_edit_menu_pressed).bind(EDIT_BAKE_ANIMATION_CONFIRM));
 	add_child(bake_dialog);
 	GridContainer *bake_grid = memnew(GridContainer);

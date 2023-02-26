@@ -34,7 +34,7 @@
 # Ahmed Shahwan <dev.ahmed.shahwan@gmail.com>, 2019.
 # hshw <shw@tutanota.com>, 2020.
 # Youssef Harmal <the.coder.crab@gmail.com>, 2020.
-# Nabeel20 <nabeelandnizam@gmail.com>, 2020, 2021, 2022.
+# Nabeel20 <nabeelandnizam@gmail.com>, 2020, 2021, 2022, 2023.
 # merouche djallal <kbordora@gmail.com>, 2020.
 # Airbus5717 <Abdussamadf350@gmail.com>, 2020.
 # tamsamani mohamed <tamsmoha@gmail.com>, 2020.
@@ -71,13 +71,14 @@
 # أحمد النور <ahmed2699@gmail.com>, 2022.
 # Commander Gordon <gordoncommander@gmail.com>, 2022.
 # Abdulrahman <abdelrahman.ramadan686@gmail.com>, 2022.
+# "Ali F. Abbas" <alifuadabbas@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine editor interface\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-12-21 07:01+0000\n"
-"Last-Translator: Abdulrahman <abdelrahman.ramadan686@gmail.com>\n"
+"PO-Revision-Date: 2023-02-18 04:10+0000\n"
+"Last-Translator: \"Ali F. Abbas\" <alifuadabbas@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/godot-engine/"
 "godot/ar/>\n"
 "Language: ar\n"
@@ -86,13 +87,186 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 4.15.1-dev\n"
+"X-Generator: Weblate 4.16-dev\n"
+
+msgid "Unset"
+msgstr "غير محدد"
 
 msgid "Physical"
 msgstr "فيزيائي"
 
+msgid "Left Mouse Button"
+msgstr "زر الفأرة الأيسر"
+
+msgid "Right Mouse Button"
+msgstr "زر الفأرة الأيمن"
+
+msgid "Middle Mouse Button"
+msgstr "عجلة الفأرة (الزر الأوسط)"
+
+msgid "Mouse Wheel Up"
+msgstr "تحريك عجلة الفأرة للأعلى"
+
+msgid "Mouse Wheel Down"
+msgstr "تحريك عجلة الفأرة للأسفل"
+
+msgid "Mouse Wheel Left"
+msgstr "زر العجلة يساراً"
+
+msgid "Mouse Wheel Right"
+msgstr "زر العجلة يميناً"
+
+msgid "Mouse Thumb Button 1"
+msgstr "زر الفأرة الأول الخاص بالإبهام"
+
+msgid "Mouse Thumb Button 2"
+msgstr "زر الفأرة الثاني الخاص بالإبهام"
+
 msgid "Button"
 msgstr "زر"
+
+msgid "Double Click"
+msgstr "نقرة مضاعفة"
+
+msgid "Mouse motion at position (%s) with velocity (%s)"
+msgstr "حركة الفأرة بالموضع (%s) بالسرعة (%s)"
+
+msgid "Left Stick X-Axis, Joystick 0 X-Axis"
+msgstr "المحور الأفقي لعصا التحكم اليسرى، محور التحكمJoystick الأفقي 0"
+
+msgid "Left Stick Y-Axis, Joystick 0 Y-Axis"
+msgstr "المحور العمودي لعصا التحكم اليسرى، محور التحكم Joystick العمودي 0"
+
+msgid "Right Stick X-Axis, Joystick 1 X-Axis"
+msgstr "المحور الأفقي لعصا التحكم اليمنى، محور التحكم Joystick الأفقي 1"
+
+msgid "Right Stick Y-Axis, Joystick 1 Y-Axis"
+msgstr "المحور العمودي لعصا التحكم اليمنى، محور التحكم Joystickالعمودي 1"
+
+msgid "Joystick 2 X-Axis, Left Trigger, Sony L2, Xbox LT"
+msgstr ""
+"المحور الأفقي لمركز التحكم Joystick الثاني، المُطلق الأيسر، Sony L2، Xbox LT"
+
+msgid "Joystick 2 Y-Axis, Right Trigger, Sony R2, Xbox RT"
+msgstr "عصا التحكم 2 المحور Y, الزر الأيمن, زر R2 على Sony, زر RT على Xbox"
+
+msgid "Joystick 3 X-Axis"
+msgstr "المحور X لعصا التحكم 3"
+
+msgid "Joystick 3 Y-Axis"
+msgstr "المحور Y لعصا التحكم 3"
+
+msgid "Joystick 4 X-Axis"
+msgstr "المحور X لعصا التحكم 4"
+
+msgid "Joystick 4 Y-Axis"
+msgstr "المحور Y لعصا التحكم 4"
+
+msgid "Unknown Joypad Axis"
+msgstr "محور ذراع تحكم غير معروف"
+
+msgid "Joypad Motion on Axis %d (%s) with Value %.2f"
+msgstr "حركةذراع التحكم على المحور d% (s%) مع قيمة 2f.%"
+
+msgid "Bottom Action, Sony Cross, Xbox A, Nintendo B"
+msgstr "مفتاح الحركة الأسفل, زر X على سوني, زر A على Xbox, زر B على Nintendo"
+
+msgid "Right Action, Sony Circle, Xbox B, Nintendo A"
+msgstr "مفتاح الحركة الأيمن, زر O على سوني, زر B على Xbox, زر A على Nintendo"
+
+msgid "Left Action, Sony Square, Xbox X, Nintendo Y"
+msgstr ""
+"مفتاح الحركة الأيسر, زر المربع على سوني, زر X على Xbox, زر Y على Nintendo"
+
+msgid "Top Action, Sony Triangle, Xbox Y, Nintendo X"
+msgstr ""
+"مفتاح الحركة الأعلى, زر المثلث على سوني, زر Y على Xbox, زر X على Nintendo"
+
+msgid "Back, Sony Select, Xbox Back, Nintendo -"
+msgstr ""
+"مفتاح الرجوع, زر الإختيار على سوني, زر الرجوع على Xbox, زر - على Nintendo"
+
+msgid "Guide, Sony PS, Xbox Home"
+msgstr "الدليل, Sony PS, زر الرئيسية على Xbox"
+
+msgid "Start, Nintendo +"
+msgstr "البداية, زر + على Nintendo"
+
+msgid "Left Stick, Sony L3, Xbox L/LS"
+msgstr "الإتجاه الأيسر على عصا التحكم, زر L3 على Sony, زر L/LS على Xbox"
+
+msgid "Right Stick, Sony R3, Xbox R/RS"
+msgstr "الإتجاه الأيمن على عصا التحكم, زر R3 على Sony, زر R/RS على Xbox"
+
+msgid "Left Shoulder, Sony L1, Xbox LB"
+msgstr "زر الكتف الأيسر, زر L1 على Sony, زر LB على Xbox"
+
+msgid "Right Shoulder, Sony R1, Xbox RB"
+msgstr "زر الكتف الأيمن, زر R1 على Sony, زر RB على Xbox"
+
+msgid "D-pad Up"
+msgstr "زر ذراع التحكم الأعلى"
+
+msgid "D-pad Down"
+msgstr "زر ذراع التحكم الأسفل"
+
+msgid "D-pad Left"
+msgstr "زر ذراع التحكم الأيسر"
+
+msgid "D-pad Right"
+msgstr "زر ذراع التحكم الأيمن"
+
+msgid "Xbox Share, PS5 Microphone, Nintendo Capture"
+msgstr "Xbox مشاركة, PS5 ميكروفون, Nintendo إلتقاط"
+
+msgid "Xbox Paddle 1"
+msgstr "Xbox المجداف 1"
+
+msgid "Xbox Paddle 2"
+msgstr "Xbox المجداف 2"
+
+msgid "Xbox Paddle 3"
+msgstr "Xbox المجداف 3"
+
+msgid "Xbox Paddle 4"
+msgstr "Xbox المجداف 4"
+
+msgid "PS4/5 Touchpad"
+msgstr "PS4/5 لوحة اللمس"
+
+msgid "Joypad Button %d"
+msgstr "ذراع التحكم d%"
+
+msgid "Pressure:"
+msgstr "الضغط:"
+
+msgid "touched"
+msgstr "لُمست"
+
+msgid "released"
+msgstr "تُركت"
+
+msgid "Screen %s at (%s) with %s touch points"
+msgstr "الشاشة s% في (s%) مع s% نقاط لمس"
+
+msgid ""
+"Screen dragged with %s touch points at position (%s) with velocity of (%s)"
+msgstr "الشاشة سُحبت مع s% نقاط لمس في الموقع (s%) مع سرعة (s%)"
+
+msgid "Magnify Gesture at (%s) with factor %s"
+msgstr "إيماءة تكبير في (s%) مع العامل s%"
+
+msgid "Pan Gesture at (%s) with delta (%s)"
+msgstr "إيماءة حركة في (s%) مع معامل دلتا (s%)"
+
+msgid "MIDI Input on Channel=%s Message=%s"
+msgstr "إدخال MIDI على القناة=s% الرسالة=s%"
+
+msgid "Input Event with Shortcut=%s"
+msgstr "حدث إدخال مع إختصار=s%"
+
+msgid "Accept"
+msgstr "قبول"
 
 msgid "Select"
 msgstr "حدد"
@@ -100,11 +274,32 @@ msgstr "حدد"
 msgid "Cancel"
 msgstr "إلغاء"
 
+msgid "Focus Next"
+msgstr "حدد التالي"
+
+msgid "Focus Prev"
+msgstr "حدد السابق"
+
+msgid "Left"
+msgstr "يساراً"
+
+msgid "Right"
+msgstr "يميناً"
+
 msgid "Up"
 msgstr "أعلى"
 
 msgid "Down"
 msgstr "أسفل"
+
+msgid "Page Up"
+msgstr "الصفحة السابقة"
+
+msgid "Page Down"
+msgstr "الصفحة التالية"
+
+msgid "Home"
+msgstr "الرئيسية"
 
 msgid "End"
 msgstr "النهاية"
@@ -124,11 +319,104 @@ msgstr "تراجع"
 msgid "Redo"
 msgstr "إعادة تراجع"
 
+msgid "Completion Query"
+msgstr "إستعلام إكمال"
+
+msgid "New Line"
+msgstr "سطر جديد"
+
+msgid "New Blank Line"
+msgstr "سطر فارغ جديد"
+
+msgid "New Line Above"
+msgstr "سطر جديد في الأعلى"
+
+msgid "Indent"
+msgstr "المسافة البادئة"
+
+msgid "Dedent"
+msgstr "إنعدام المسافة البادئة"
+
+msgid "Backspace"
+msgstr "مفتاح التراجع"
+
+msgid "Backspace Word"
+msgstr "تراجع عن كلمة"
+
+msgid "Backspace all to Left"
+msgstr "أرجع الكل إلى اليسار"
+
 msgid "Delete"
 msgstr "حذف"
 
+msgid "Delete Word"
+msgstr "حذف كلمة"
+
+msgid "Delete all to Right"
+msgstr "حذف الكل إلى اليمين"
+
+msgid "Caret Left"
+msgstr "علامة إقحام على اليسار"
+
+msgid "Caret Word Left"
+msgstr "علامة إقحام الكلمة على اليسار"
+
+msgid "Caret Right"
+msgstr "علامة إقحام على اليمين"
+
+msgid "Caret Word Right"
+msgstr "علامة إقحام الكلمة على اليمين"
+
+msgid "Caret Up"
+msgstr "علامة الإقحام العليا"
+
+msgid "Caret Down"
+msgstr "عالمة الإقحام السفلى"
+
+msgid "Caret Line Start"
+msgstr "علامة إقحام بداية السطر"
+
+msgid "Caret Line End"
+msgstr "علامة إقحام نهاية السطر"
+
+msgid "Caret Page Up"
+msgstr "علامة إقحام الصفحة السابقة"
+
+msgid "Caret Page Down"
+msgstr "علامة إقحام الصفحة التالية"
+
+msgid "Caret Document Start"
+msgstr "علامة إقحام بداية المستند"
+
+msgid "Caret Document End"
+msgstr "علامة إقحام نهاية المستند"
+
+msgid "Caret Add Below"
+msgstr "علامة إقحام إضافة للأسفل"
+
+msgid "Caret Add Above"
+msgstr "علامة إقحام إضافة للأعلى"
+
+msgid "Scroll Up"
+msgstr "مرر لأعلى"
+
+msgid "Scroll Down"
+msgstr "مرر لأسفل"
+
 msgid "Select All"
 msgstr "تحديد الكل"
+
+msgid "Select Word Under Caret"
+msgstr "حدد كلمة تحت علامة الإقحام"
+
+msgid "Add Selection for Next Occurrence"
+msgstr "أضف التحديد للتكرار التالي"
+
+msgid "Clear Carets and Selection"
+msgstr "مسح التحديد و علامات الإقحام"
+
+msgid "Toggle Insert Mode"
+msgstr "التبديل إلى وضع الإدخال"
 
 msgid "Duplicate Nodes"
 msgstr "مضاعفة العُقد"
@@ -136,8 +424,17 @@ msgstr "مضاعفة العُقد"
 msgid "Delete Nodes"
 msgstr "حذف العُقد"
 
+msgid "Go Up One Level"
+msgstr "إذهب مرحلة للأعلى"
+
 msgid "Refresh"
 msgstr "تحديث"
+
+msgid "Show Hidden"
+msgstr "أظهر الملفات المخفية"
+
+msgid "Swap Input Direction"
+msgstr "تبديل جهة الإدخال"
 
 msgid "Invalid input %d (not passed) in expression"
 msgstr "مدخلات خاطئة %d (لم يتم تمريرها) في التعبير"
@@ -160,6 +457,12 @@ msgstr "معامل غير صالح لإنشاء '%s'"
 msgid "On call to '%s':"
 msgstr "عند استدعاء '%s':"
 
+msgid "Built-in script"
+msgstr "النص المُدمج:"
+
+msgid "Built-in"
+msgstr "مُدمج:"
+
 msgid "B"
 msgstr "بايت"
 
@@ -181,6 +484,18 @@ msgstr "بيبي بايت (PiB)"
 msgid "EiB"
 msgstr "إكسي بايت (EiB)"
 
+msgid "Example: %s"
+msgstr "مثال: s%"
+
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "العنصر: d%"
+msgstr[1] "العنصر: d%"
+msgstr[2] "العنصران: d%"
+msgstr[3] "العناصر: d%"
+msgstr[4] "العناصر: d%"
+msgstr[5] "العناصر: d%"
+
 msgid ""
 "Invalid action name. It cannot be empty nor contain '/', ':', '=', '\\' or "
 "'\"'"
@@ -191,8 +506,17 @@ msgstr ""
 msgid "An action with the name '%s' already exists."
 msgstr "فعالية action بهذا الاسم '%s' موجودة سلفاً."
 
+msgid "Cannot Revert - Action is same as initial"
+msgstr "لا يمكن التراجع - الإجراء هو نفس الإجراء الأولي"
+
+msgid "Revert Action"
+msgstr "التراجع عن الإجراء"
+
 msgid "Add Event"
 msgstr "إضافة حَدث"
+
+msgid "Remove Action"
+msgstr "مسح الإجراء"
 
 msgid "Add"
 msgstr "أضف"
@@ -208,6 +532,9 @@ msgstr "الوقت:"
 
 msgid "Value:"
 msgstr "القيمة:"
+
+msgid "Update Selected Key Handles"
+msgstr "تحديث المفاتيح المحددة"
 
 msgid "Insert Key Here"
 msgstr "أدخل المفتاح هنا"
@@ -407,6 +734,9 @@ msgstr "موقع"
 msgid "Scale"
 msgstr "المقياس"
 
+msgid "BlendShape"
+msgstr "‏‮شكل ممزوج"
+
 msgid "Methods"
 msgstr "دوال"
 
@@ -488,12 +818,6 @@ msgstr "إستعمل منحنيات بيزر"
 
 msgid "Create RESET Track(s)"
 msgstr "إنشاء مسار(ات) إعادة التعيين (RESET)"
-
-msgid "Anim. Optimizer"
-msgstr "مُحسن الحركة"
-
-msgid "Max. Angular Error:"
-msgstr "أقصي أخطاء زواية:"
 
 msgid "Optimize"
 msgstr "تحسين"
@@ -601,6 +925,9 @@ msgstr "من إشارة:"
 msgid "Scene does not contain any script."
 msgstr "لا يحتوي المشهد علي اي برنامج نصي."
 
+msgid "Select Method"
+msgstr "إختر طريقة"
+
 msgid "Remove"
 msgstr "إمسح"
 
@@ -655,9 +982,6 @@ msgstr "قطع الاتصال"
 
 msgid "Connect a Signal to a Method"
 msgstr "قم بوصل الإشارة إلى الدالة"
-
-msgid "Edit Connection:"
-msgstr "تعديل الإتصال:"
 
 msgid "Are you sure you want to remove all connections from the \"%s\" signal?"
 msgstr "هل أنت متأكد أنك تود إزالة كل الإتصالات من الإشارة \"%s\"؟"
@@ -803,23 +1127,8 @@ msgstr "تحذير:"
 msgid "Error:"
 msgstr "خطأ:"
 
-msgid "C++ Error"
-msgstr "خطأ في C++"
-
-msgid "C++ Error:"
-msgstr "خطأ C++ :"
-
-msgid "Source"
-msgstr "مصدر"
-
-msgid "C++ Source"
-msgstr "مصدر C++"
-
-msgid "Source:"
-msgstr "مصدر:"
-
-msgid "C++ Source:"
-msgstr "مصدر C++:"
+msgid "%s Error"
+msgstr "٪s خطأ"
 
 msgid "Stack Trace"
 msgstr "تتبع المُكدس Stack Trace"
@@ -829,6 +1138,9 @@ msgstr "خطأ في نسخ"
 
 msgid "Open C++ Source on GitHub"
 msgstr "افتح مصدر ++C على GitHub"
+
+msgid "C++ Source"
+msgstr "مصدر C++"
 
 msgid "Video RAM"
 msgstr "الذاكرة العشوائية للفيديو"
@@ -1496,9 +1808,6 @@ msgstr "إفتح"
 msgid "Select Current Folder"
 msgstr "تحديد المجلد الحالي"
 
-msgid "File exists, overwrite?"
-msgstr "الملف موجود، إستبدال؟"
-
 msgid "Select This Folder"
 msgstr "حدد هذا المجلد"
 
@@ -1658,7 +1967,7 @@ msgid "Styles"
 msgstr "مظاهر"
 
 msgid "Enumerations"
-msgstr "تعداد"
+msgstr "تعدادات"
 
 msgid "Property Descriptions"
 msgstr "أوصاف المُلكية"
@@ -1776,11 +2085,11 @@ msgstr "إظهار جميع المَحليّات Locales"
 msgid "Show Selected Locales Only"
 msgstr "إظهار المَحليّات المُختارة فحسب"
 
+msgid "Edit Filters"
+msgstr "تعديل المُرشحات"
+
 msgid "Language:"
 msgstr "اللغة:"
-
-msgid "Script"
-msgstr "النص البرمجي"
 
 msgid "Clear Output"
 msgstr "مسح المُخرجات"
@@ -2287,7 +2596,7 @@ msgid "FileSystem"
 msgstr "نظام الملفات"
 
 msgid "Inspector"
-msgstr "مُتفحص"
+msgstr "الفاحص"
 
 msgid "Node"
 msgstr "وحدة"
@@ -2309,23 +2618,6 @@ msgstr "إدارة القوالب"
 
 msgid "Install from file"
 msgstr "تثبيت من ملف"
-
-msgid ""
-"This will set up your project for custom Android builds by installing the "
-"source template to \"res://android/build\".\n"
-"You can then apply modifications and build your own custom APK on export "
-"(adding modules, changing the AndroidManifest.xml, etc.).\n"
-"Note that in order to make custom builds instead of using pre-built APKs, "
-"the \"Use Custom Build\" option should be enabled in the Android export "
-"preset."
-msgstr ""
-"بهذه الطريقة سيتم إعداد المشروع الخاص بك لأجل نسخ بناء أندرويد مخصص عن طريق "
-"تثبيت قوالب المصدر البرمجي في \"res://android/build\".\n"
-"يمكنك تطبيق تعديلات الخاصة على نسخة البناء للحصول على حزمة تطبيق أندرويد APK "
-"معدّلة عند التصدير (زيادة مُلحقات، تعديل ملف AndroidManifest.xml إلخ..).\n"
-"ضع في بالك أنه من أجل إنشاء نسخ بناء مخصوصة بدلاً من الحزم APKs المبنية سلفاً، "
-"ينبغي أن يكون إعداد \"استخدام بناء مخصص\" ممكناً في إعدادات تصدير الأندرويد "
-"Android export preset."
 
 msgid ""
 "The Android build template is already installed in this project and it won't "
@@ -2547,9 +2839,6 @@ msgstr "الاختصارات"
 
 msgid "Binding"
 msgstr "الربط"
-
-msgid "%s Error"
-msgstr "٪s خطأ"
 
 msgid "All Devices"
 msgstr "جميع الأجهزة"
@@ -3156,7 +3445,7 @@ msgid "Import As:"
 msgstr "إستيراد ك:"
 
 msgid "Preset"
-msgstr "إعداد مُسبق"
+msgstr "المعد مسبقا"
 
 msgid "Save Scenes, Re-Import, and Restart"
 msgstr "احفظ المشاهد، إعادة-الإستيراد، وإعادة التشغيل"
@@ -3365,6 +3654,9 @@ msgstr "حدد وحرك النقاط، أنشئ النقاط باستخدام RM
 msgid "Enable snap and show grid."
 msgstr "تمكين المحاذاة وإظهار الشبكة."
 
+msgid "Blend:"
+msgstr "الدمج:"
+
 msgid "Point"
 msgstr "نقطة"
 
@@ -3408,14 +3700,8 @@ msgstr "مسح النقط والمثلثات."
 msgid "Generate blend triangles automatically (instead of manually)"
 msgstr "توليد مثلثات دمج بصورة تلقائية (بدلاً من اليدوية)"
 
-msgid "Blend:"
-msgstr "الدمج:"
-
 msgid "Parameter Changed:"
 msgstr "لقد تم تغيير المَعلم:"
-
-msgid "Edit Filters"
-msgstr "تعديل المُرشحات"
 
 msgid "Output node can't be added to the blend tree."
 msgstr "لا يمكن إضافة مخرجات الوحدة إلى شجرة الدمج."
@@ -3534,9 +3820,6 @@ msgstr "تشغيل الرسم المتحرك المختار بشكل عكسي م
 
 msgid "Play selected animation backwards from end. (Shift+A)"
 msgstr "تشغيل الرسم المتحرك المختار بشكل عكسي من النهاية. (Shift+A)"
-
-msgid "Stop animation playback. (S)"
-msgstr "إيقاف تشغيل الرسم المتحرك. (S)"
 
 msgid "Play selected animation from start. (Shift+D)"
 msgstr "تشغيل الرسم المتحرك المحدد من البداية. (Shift+D)"
@@ -4710,12 +4993,6 @@ msgstr "تعديل Notifier AABB"
 msgid "Change Particles AABB"
 msgstr "تعديل جُزيئات AABB"
 
-msgid "Change Box Shape Extents"
-msgstr "تعديل حجم الشكل الصندوقي"
-
-msgid "Change Probe Extents"
-msgstr "تعديل نطاقات المسبر Probe Extents"
-
 msgid "Change Capsule Shape Radius"
 msgstr "تعديل نصف قطر الشكل الكبسولي Capsule Shape"
 
@@ -5522,6 +5799,9 @@ msgstr "معياري"
 msgid "Connections to method:"
 msgstr "الاتصالات لدالة:"
 
+msgid "Source"
+msgstr "مصدر"
+
 msgid "Target"
 msgstr "الهدف"
 
@@ -5762,12 +6042,6 @@ msgstr "(فارغ)"
 
 msgid "Animations:"
 msgstr "الرسومات المتحركة:"
-
-msgid "Speed:"
-msgstr "السرعة:"
-
-msgid "Loop"
-msgstr "حلقة Loop"
 
 msgid "Animation Frames:"
 msgstr "إطارات الرسومات المتحركة:"
@@ -7045,14 +7319,8 @@ msgstr "إضافة إجراء إدخال"
 msgid "Change Action deadzone"
 msgstr "تغيير المنطقة الميتة للفعالية Action deadzone"
 
-msgid "Add Input Action Event"
-msgstr "إضافة حدث فعالية الإدخال"
-
 msgid "Erase Input Action"
 msgstr "مسح إجراء الإدخال"
-
-msgid "Rename Input Action Event"
-msgstr "إعادة تسمية حدث فعالية الإدخال"
 
 msgid "Project Settings (project.godot)"
 msgstr "إعدادات المشروع (project.godot)"
@@ -7071,9 +7339,6 @@ msgstr "انتقاء الخاصية"
 
 msgid "Select Virtual Method"
 msgstr "اختر الطريقة الإفتراضية"
-
-msgid "Select Method"
-msgstr "إختر طريقة"
 
 msgid "Batch Rename"
 msgstr "إعادة تسمية الدفعة"
@@ -7775,14 +8040,6 @@ msgstr "مفتاح عام غير صالح لأجل تصدير حزمة تطبي�
 msgid "Invalid package name:"
 msgstr "اسم رُزمة غير صالح:"
 
-msgid "\"Use Custom Build\" must be enabled to use the plugins."
-msgstr "يجب تفعيل \"Use Custom Build\" لإستخدام الإضافات."
-
-msgid "\"Export AAB\" is only valid when \"Use Custom Build\" is enabled."
-msgstr ""
-"يصبح خيار \"تصدير ABB\" صالحاً فقط عندما يتم اختيار \"استعمال تصدير مخصص "
-"Custom Build\"."
-
 msgid ""
 "'apksigner' could not be found. Please check that the command is available "
 "in the Android SDK build-tools directory. The resulting %s is unsigned."
@@ -7824,13 +8081,6 @@ msgstr "أسم الملف غير صالح! يتطلب ملف اندرويد APK 
 
 msgid "Unsupported export format!"
 msgstr "تنسيق تصدير غير مدعوم!"
-
-msgid ""
-"Trying to build from a custom built template, but no version info for it "
-"exists. Please reinstall from the 'Project' menu."
-msgstr ""
-"تتم محاولة البناء من قالب بناء مُخصص، ولكن لا تتواجد معلومات النسخة. من فضلك "
-"أعد التحميل من قائمة \"المشروع\"."
 
 msgid ""
 "Android build version mismatch: Template installed: %s, Godot version: %s. "
@@ -8140,9 +8390,6 @@ msgstr ""
 msgid "The AnimationPlayer root node is not a valid node."
 msgstr "العُقدة الرئيسة لمُشغل الرسومات المتحركة ليست عُقدة صالحة."
 
-msgid "Pick a color from the editor window."
-msgstr "اختر لوناً من نافذة المُحرر."
-
 msgid "Switch between hexadecimal and code values."
 msgstr "بدّل بين القيم البرمجية والسداسية العشرية."
 
@@ -8171,9 +8418,6 @@ msgstr "تنبيه!"
 
 msgid "Please Confirm..."
 msgstr "يُرجى التأكيد..."
-
-msgid "Must use a valid extension."
-msgstr "يجب أن يستخدم صيغة صحيحة."
 
 msgid "Enable grid minimap."
 msgstr "تفعيل الخريطة المصغرة للشبكة."
@@ -8205,6 +8449,9 @@ msgstr "مصدر غير صالح للمعاينة."
 
 msgid "Invalid source for shader."
 msgstr "مصدر غير صالح لتظليل."
+
+msgid "Filter"
+msgstr "المُرشح"
 
 msgid "Repeat"
 msgstr "كرر"

@@ -89,13 +89,18 @@
 # Dream Drunk <myemailpoly149@gmail.com>, 2022.
 # alpdenthedev <ekrem_ekrem_45@hotmail.com>, 2022.
 # Muhammed Said Gülberk <msgulberk@gmail.com>, 2022.
+# Cave Johnson <aperturelabs123@proton.me>, 2023.
+# Atilla Yiğit Şimşekoğlu <yigitsimsekoglu@gmail.com>, 2023.
+# Muhammed Mustafa Özbay <muhammed.ozby@outlook.com>, 2023.
+# Tolunay Mutlu <tlnymtlu@gmail.com>, 2023.
+# atahanacar <atahanacar@gmx.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine editor interface\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-12-05 10:16+0000\n"
-"Last-Translator: Muhammed Said Gülberk <msgulberk@gmail.com>\n"
+"PO-Revision-Date: 2023-02-22 12:24+0000\n"
+"Last-Translator: Atilla Yiğit Şimşekoğlu <yigitsimsekoglu@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/godot-engine/"
 "godot/tr/>\n"
 "Language: tr\n"
@@ -103,13 +108,130 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 4.16-dev\n"
+
+msgid "Unset"
+msgstr "Belirtilmemiş"
 
 msgid "Physical"
 msgstr "Fiziksel"
 
+msgid "Left Mouse Button"
+msgstr "Sol Fare Düğmesi"
+
+msgid "Right Mouse Button"
+msgstr "Sağ Fare Düğmesi"
+
+msgid "Middle Mouse Button"
+msgstr "Orta Fare Düğmesi"
+
+msgid "Mouse Wheel Up"
+msgstr "Fare Tekerleği Yukarı"
+
+msgid "Mouse Wheel Down"
+msgstr "Fare Tekerleği Aşağı"
+
+msgid "Mouse Wheel Left"
+msgstr "Sol Fare Tekerlek Düğmesi"
+
+msgid "Mouse Wheel Right"
+msgstr "Sağ Fare Tekerlek Düğmesi"
+
+msgid "Mouse Thumb Button 1"
+msgstr "Yan Fare Düğmesi 1"
+
+msgid "Mouse Thumb Button 2"
+msgstr "Yan Fare Düğmesi 2"
+
 msgid "Button"
 msgstr "Düğme"
+
+msgid "Double Click"
+msgstr "Çift Tıklama"
+
+msgid "Mouse motion at position (%s) with velocity (%s)"
+msgstr "Fare hareketi (%s) hızıyla (%s) pozisyonunda"
+
+msgid "Left Stick X-Axis, Joystick 0 X-Axis"
+msgstr "Sol Çubuk X-Ekseni, Oyun Çubuğu 0 X-Ekseni"
+
+msgid "Left Stick Y-Axis, Joystick 0 Y-Axis"
+msgstr "Sol Çubuk Y-Ekseni, Joystick 0 Y-Ekseni"
+
+msgid "Right Stick X-Axis, Joystick 1 X-Axis"
+msgstr "Sağ Çubuk X-Ekseni, Joystick 1 X-Ekseni"
+
+msgid "Right Stick Y-Axis, Joystick 1 Y-Axis"
+msgstr "Sağ Çubuk Y-Ekseni, Joystick 1 Y-Ekseni"
+
+msgid "Joystick 2 X-Axis, Left Trigger, Sony L2, Xbox LT"
+msgstr "Oyun Çubuğu 2 X-Ekseni, Sol Tetik, Sony L2, Xbox LT"
+
+msgid "Joystick 2 Y-Axis, Right Trigger, Sony R2, Xbox RT"
+msgstr "Oyun Çubuğu 2 Y-Ekseni, Sağ Tetik, Sony R2, Xbox RT"
+
+msgid "Joystick 3 X-Axis"
+msgstr "Joystick 3 X-Ekseni"
+
+msgid "Joystick 3 Y-Axis"
+msgstr "Joystick 3 Y-Ekseni"
+
+msgid "Joystick 4 X-Axis"
+msgstr "Oyun Çubuğu 4 X-Ekseni"
+
+msgid "Joystick 4 Y-Axis"
+msgstr "Oyun Çubuğu 4 Y-Ekseni"
+
+msgid "Unknown Joypad Axis"
+msgstr "Bilinmeyen Oyun Kolu Ekseni"
+
+msgid "Joypad Motion on Axis %d (%s) with Value %.2f"
+msgstr "%.2f Değerinde %d (%s) Ekseninde Oyun Kolu Hareketi"
+
+msgid "Bottom Action, Sony Cross, Xbox A, Nintendo B"
+msgstr "Alt Aksiyon, Sony Çarpı, Xbox A, Nintendo B"
+
+msgid "Right Action, Sony Circle, Xbox B, Nintendo A"
+msgstr "Sağ Aksiyon, Sony Daire, Xbox B, Nintendo A"
+
+msgid "Left Action, Sony Square, Xbox X, Nintendo Y"
+msgstr "Sol Aksiyon, Sony Kare, Xbox X, Nintendo Y"
+
+msgid "Top Action, Sony Triangle, Xbox Y, Nintendo X"
+msgstr "Üst Aksiyon, Sony Üçgen, Xbox Y, Nintendo X"
+
+msgid "Back, Sony Select, Xbox Back, Nintendo -"
+msgstr "Geri, Sony Select, Xbox Back, Nintendo -"
+
+msgid "Left Stick, Sony L3, Xbox L/LS"
+msgstr "Sol Çubuk, Sony L3, Xbox L/LS"
+
+msgid "Right Stick, Sony R3, Xbox R/RS"
+msgstr "Sağ Çubuk, Sony R3, Xbox R/RS"
+
+msgid "D-pad Up"
+msgstr "D-pad Yukarı"
+
+msgid "D-pad Down"
+msgstr "D-pad Aşağı"
+
+msgid "D-pad Left"
+msgstr "D-pad Sol"
+
+msgid "D-pad Right"
+msgstr "D-pad Sağ"
+
+msgid "Pressure:"
+msgstr "Basınç:"
+
+msgid "touched"
+msgstr "dokunuldu"
+
+msgid "released"
+msgstr "bırakıldı"
+
+msgid "Accept"
+msgstr "Kabul Et"
 
 msgid "Select"
 msgstr "Seç"
@@ -117,11 +239,32 @@ msgstr "Seç"
 msgid "Cancel"
 msgstr "Vazgeç"
 
+msgid "Focus Next"
+msgstr "Sonrakine Odaklan"
+
+msgid "Focus Prev"
+msgstr "Öncekine Odaklan"
+
+msgid "Left"
+msgstr "Sol"
+
+msgid "Right"
+msgstr "Sağ"
+
 msgid "Up"
 msgstr "Yukarı"
 
 msgid "Down"
 msgstr "Aşağı"
+
+msgid "Page Up"
+msgstr "Sayfa Yukarı"
+
+msgid "Page Down"
+msgstr "Sayfa Aşağı"
+
+msgid "Home"
+msgstr "Başlangıç"
 
 msgid "End"
 msgstr "Bitiş"
@@ -139,7 +282,16 @@ msgid "Undo"
 msgstr "Geri al"
 
 msgid "Redo"
-msgstr "Yeniden yap"
+msgstr "Yinele"
+
+msgid "New Line"
+msgstr "Yeni Satır"
+
+msgid "New Blank Line"
+msgstr "Yeni Boş Satır"
+
+msgid "New Line Above"
+msgstr "Yukarıya Yeni Satır"
 
 msgid "Indent"
 msgstr "Girintile"
@@ -543,12 +695,6 @@ msgstr "Bezier Eğrileri Kullan"
 msgid "Create RESET Track(s)"
 msgstr "RESET İz(ler)i oluşturun"
 
-msgid "Anim. Optimizer"
-msgstr "Anim. Eniyileştirici"
-
-msgid "Max. Angular Error:"
-msgstr "Maks. Açısal Hata:"
-
 msgid "Optimize"
 msgstr "En İyileştir"
 
@@ -593,6 +739,11 @@ msgstr "Satır Numarası:"
 
 msgid "%d replaced."
 msgstr "%d değiştirildi."
+
+msgid "%d match"
+msgid_plural "%d matches"
+msgstr[0] "% d eşleşme"
+msgstr[1] "% d eşleşme"
 
 msgid "Match Case"
 msgstr "Büyük/Küçük Harf Eşleştir"
@@ -655,6 +806,9 @@ msgstr "Sinyaller:"
 msgid "Scene does not contain any script."
 msgstr "Sahne hiç komut içermiyor."
 
+msgid "Select Method"
+msgstr "Metot Seç"
+
 msgid "Remove"
 msgstr "Kaldır"
 
@@ -709,9 +863,6 @@ msgstr "Bağlantıyı kes"
 
 msgid "Connect a Signal to a Method"
 msgstr "Bir Yönteme Bir Sinyal Bağlayın"
-
-msgid "Edit Connection:"
-msgstr "Bağlantıyı Düzenle:"
 
 msgid "Are you sure you want to remove all connections from the \"%s\" signal?"
 msgstr ""
@@ -855,23 +1006,8 @@ msgstr "Uyarılar:"
 msgid "Error:"
 msgstr "Hata:"
 
-msgid "C++ Error"
-msgstr "C++ Hatası"
-
-msgid "C++ Error:"
-msgstr "C++ Hatası:"
-
-msgid "Source"
-msgstr "Kaynak"
-
-msgid "C++ Source"
-msgstr "C++ Kaynağı"
-
-msgid "Source:"
-msgstr "Kaynak:"
-
-msgid "C++ Source:"
-msgstr "C++ Kaynak:"
+msgid "%s Error"
+msgstr "%s Hatası"
 
 msgid "Stack Trace"
 msgstr "Bellek Dökümü"
@@ -881,6 +1017,9 @@ msgstr "Hatayı Kopyala"
 
 msgid "Open C++ Source on GitHub"
 msgstr "GitHub'da C++ Kaynağını Açın"
+
+msgid "C++ Source"
+msgstr "C++ Kaynağı"
 
 msgid "Video RAM"
 msgstr "Görüntü Belleği"
@@ -1357,6 +1496,12 @@ msgstr "3B Fizik"
 msgid "Navigation"
 msgstr "Gezinim"
 
+msgid "OpenGL"
+msgstr "OpenGL"
+
+msgid "Vulkan"
+msgstr "Vulkan"
+
 msgid "Nodes and Classes:"
 msgstr "Düğümler ve Sınıflar:"
 
@@ -1564,9 +1709,6 @@ msgstr "Aç"
 msgid "Select Current Folder"
 msgstr "Geçerli Klasörü Seç"
 
-msgid "File exists, overwrite?"
-msgstr "Dosya var. Üzerine Yazılsın mı?"
-
 msgid "Select This Folder"
 msgstr "Bu Klasörü Seç"
 
@@ -1709,6 +1851,9 @@ msgstr "%s'yi geçersiz kılar:"
 msgid "default:"
 msgstr "varsayılan:"
 
+msgid "Operators"
+msgstr "Operatörler"
+
 msgid "Theme Properties"
 msgstr "Tema Özellikleri"
 
@@ -1742,6 +1887,9 @@ msgid ""
 msgstr ""
 "Bu özellik için henüz bir açıklama yok. Bize [color=$color][url=$url]katkıda "
 "bulunarak[/url][/color] yardım edebilirsiniz!"
+
+msgid "Constructor Descriptions"
+msgstr "Yapıcı metot açıklaması"
 
 msgid "Method Descriptions"
 msgstr "Yöntem Açıklamaları"
@@ -1847,11 +1995,11 @@ msgstr "Tüm Dilleri Göster"
 msgid "Show Selected Locales Only"
 msgstr "Sadece Seçili Dilleri Göster"
 
+msgid "Edit Filters"
+msgstr "Süzgeçleri Düzenle"
+
 msgid "Language:"
 msgstr "Dil:"
-
-msgid "Script"
-msgstr "Betik"
 
 msgid "Variant"
 msgstr "Varyant"
@@ -2406,24 +2554,6 @@ msgid "Install from file"
 msgstr "Dosyadan Kur"
 
 msgid ""
-"This will set up your project for custom Android builds by installing the "
-"source template to \"res://android/build\".\n"
-"You can then apply modifications and build your own custom APK on export "
-"(adding modules, changing the AndroidManifest.xml, etc.).\n"
-"Note that in order to make custom builds instead of using pre-built APKs, "
-"the \"Use Custom Build\" option should be enabled in the Android export "
-"preset."
-msgstr ""
-"Bu, kaynak şablonunu \"res://android/build\" dizinine kurarak projenizi özel "
-"Android derlemeleri için ayarlayacaktır.\n"
-"Daha sonra dışa aktarırken değişiklikleri uygulayabilir ve kendi özel "
-"APK'nızı oluşturabilirsiniz (modül ekleme, AndroidManifest.xml dosyasını "
-"değiştirme vb.).\n"
-"Önceden oluşturulmuş APK'ları kullanmak yerine özel derlemeler yapmak için "
-"Android dışa aktarma ön ayarında \"Özel Derleme Kullan\" seçeneğinin "
-"etkinleştirilmesi gerektiğini unutmayın."
-
-msgid ""
 "The Android build template is already installed in this project and it won't "
 "be overwritten.\n"
 "Remove the \"res://android/build\" directory manually before attempting this "
@@ -2598,6 +2728,9 @@ msgstr ""
 msgid "Quick Load"
 msgstr "Hızlı yükleme"
 
+msgid "Inspect"
+msgstr "İncele"
+
 msgid "Make Unique"
 msgstr "Benzersiz Yap"
 
@@ -2613,6 +2746,9 @@ msgstr "Yeni Betik"
 msgid "Extend Script"
 msgstr "Betik Aç"
 
+msgid "Remote Debug"
+msgstr "Uzaktan Hata Ayıklama"
+
 msgid ""
 "No runnable export preset found for this platform.\n"
 "Please add a runnable preset in the Export menu or define an existing preset "
@@ -2623,7 +2759,7 @@ msgstr ""
 "bir ön ayarı çalıştırılabilir olarak tanımlayın."
 
 msgid "Project Run"
-msgstr "Proje Koşusu"
+msgstr "Projeyi Çalıştır"
 
 msgid "Write your logic in the _run() method."
 msgstr "Mantığınızı _run() metoduna yazın."
@@ -2647,9 +2783,6 @@ msgstr "Kısayollar"
 
 msgid "Binding"
 msgstr "Bağlayıcı"
-
-msgid "%s Error"
-msgstr "%s Hatası"
 
 msgid "All Devices"
 msgstr "Tüm Aygıtlar"
@@ -3458,6 +3591,9 @@ msgstr "Yerele Göre Atamalar:"
 msgid "Locale"
 msgstr "Yerel"
 
+msgid "Set %s on %d nodes"
+msgstr "%d düğüme %s ayarla"
+
 msgid "Select a single node to edit its signals and groups."
 msgstr "Sinyallerini ve Gruplarını düzenlemek için bir Düğüm seçin."
 
@@ -3565,6 +3701,9 @@ msgstr "Noktaları seç ve taşı. Sağ fare düğmesi ile yeni noktalar oluştu
 msgid "Enable snap and show grid."
 msgstr "Yapıştırmayı etkinleştir ve ızgarayı göster."
 
+msgid "Blend:"
+msgstr "Karışma:"
+
 msgid "Point"
 msgstr "Nokta"
 
@@ -3607,14 +3746,8 @@ msgstr "Noktaları ve üçgenleri sil."
 msgid "Generate blend triangles automatically (instead of manually)"
 msgstr "Otomatik üçgen harmanlayıcı oluştur (el ile)"
 
-msgid "Blend:"
-msgstr "Karışma:"
-
 msgid "Parameter Changed:"
 msgstr "Parametre Değiştirildi:"
-
-msgid "Edit Filters"
-msgstr "Süzgeçleri Düzenle"
 
 msgid "Output node can't be added to the blend tree."
 msgstr "Çıktı düğümü işleme ağacına eklenemiyor."
@@ -3734,9 +3867,6 @@ msgstr "Seçilen animasyonu geçerli konumdan geriye doğru oynat. (A)"
 
 msgid "Play selected animation backwards from end. (Shift+A)"
 msgstr "Seçilen animasyonu geriye doğru oynat. (Shift + A)"
-
-msgid "Stop animation playback. (S)"
-msgstr "Animasyonu oynatmayı durdur. (S)"
 
 msgid "Play selected animation from start. (Shift+D)"
 msgstr "Seçilen animasyonu başlangıç anından oynat. (ÜstKrkt + D)"
@@ -4612,6 +4742,15 @@ msgstr ""
 "Bir cihazda uzaktan kullanıldığında, bu, ağ dosya sistemi seçeneği "
 "etkinleştirildiğinde daha etkilidir."
 
+msgid "No supported features"
+msgstr "Desteklenen özellik yok"
+
+msgid "Add Feature"
+msgstr "Özellik Ekle"
+
+msgid " - Variation"
+msgstr " Varyasyon"
+
 msgid "Convert to CPUParticles2D"
 msgstr "2BİşlemciPartikül'e dönüştür"
 
@@ -4942,12 +5081,6 @@ msgstr "Bildirici Değiştir AABB"
 msgid "Change Particles AABB"
 msgstr "Parçacık AABB Değişimi"
 
-msgid "Change Box Shape Extents"
-msgstr "Kübik Şekli Genişlet"
-
-msgid "Change Probe Extents"
-msgstr "Deşme Genişlemesini Değiştir"
-
 msgid "Change Capsule Shape Radius"
 msgstr "Kapsülün Çapını Değiştir"
 
@@ -5025,6 +5158,9 @@ msgstr "Anahtar ekleme devre dışı (eklenmiş anahtar yok)."
 
 msgid "Animation Key Inserted."
 msgstr "Animasyon Anahtarı Eklendi."
+
+msgid "Objects: %d\n"
+msgstr "Nesneler: %d\n"
 
 msgid "Top View."
 msgstr "Üstten Görünüm."
@@ -5755,6 +5891,9 @@ msgstr "Standart"
 msgid "Connections to method:"
 msgstr "Metotlara bağlantılar:"
 
+msgid "Source"
+msgstr "Kaynak"
+
 msgid "Target"
 msgstr "Hedef"
 
@@ -5993,11 +6132,8 @@ msgstr "(boş)"
 msgid "Animations:"
 msgstr "Animasyonlar:"
 
-msgid "Speed:"
-msgstr "Hız:"
-
-msgid "Loop"
-msgstr "Döngü"
+msgid "Delete Animation"
+msgstr "Animasyonu Sil"
 
 msgid "Animation Frames:"
 msgstr "Animasyon Çerçeveleri:"
@@ -6050,14 +6186,29 @@ msgstr "Adım:"
 msgid "Styleboxes"
 msgstr "StilKutusu"
 
+msgid "1 color"
+msgid_plural "{num} colors"
+msgstr[0] "1 renk"
+msgstr[1] "{num} renk"
+
 msgid "No colors found."
 msgstr "Renk bulunamadı."
+
+msgid "1 constant"
+msgid_plural "{num} constants"
+msgstr[0] "1 sabit"
+msgstr[1] "{num} sabit"
 
 msgid "No constants found."
 msgstr "Sabitler bulunamadı."
 
 msgid "No fonts found."
 msgstr "Yazı tipi bulunamadı."
+
+msgid "1 font size"
+msgid_plural "{num} font sizes"
+msgstr[0] "1 yazı boyutu"
+msgstr[1] "{num} yazı boyutu"
 
 msgid "No icons found."
 msgstr "Simge bulunamadı."
@@ -7364,14 +7515,8 @@ msgstr "Giriş Eylemi Ekle"
 msgid "Change Action deadzone"
 msgstr "Eylem Değiştir ölübölgesi"
 
-msgid "Add Input Action Event"
-msgstr "Giriş İşlem Olayı Ekle"
-
 msgid "Erase Input Action"
 msgstr "Girdi Eylemini Sil"
-
-msgid "Rename Input Action Event"
-msgstr "Girdi Eylem Olayını Yeniden Adlandır"
 
 msgid "Project Settings (project.godot)"
 msgstr "Proje Ayarları (proje.godot)"
@@ -7393,9 +7538,6 @@ msgstr "Özellik Seç"
 
 msgid "Select Virtual Method"
 msgstr "Sanal Metot Seç"
-
-msgid "Select Method"
-msgstr "Metot Seç"
 
 msgid "Batch Rename"
 msgstr "Tümden Yeniden Adlandır"
@@ -8012,6 +8154,9 @@ msgstr "Boyut"
 msgid "Network Profiler"
 msgstr "Ağ Profilcisi"
 
+msgid "Delete Property?"
+msgstr "Özellik Silinsin Mi?"
+
 msgid "A NavigationMesh resource must be set or created for this node to work."
 msgstr ""
 "Bu düğümün çalışması için bir NavigationMesh kaynağı ayarlanmış veya "
@@ -8162,15 +8307,6 @@ msgstr "APK genişletmesi için geçersiz ortak anahtar."
 msgid "Invalid package name:"
 msgstr "Geçersiz paket ismi:"
 
-msgid "\"Use Custom Build\" must be enabled to use the plugins."
-msgstr ""
-"Eklentileri kullanabilmek için \"Özel Derleme Kullan\" seçeneği aktif olmalı."
-
-msgid "\"Export AAB\" is only valid when \"Use Custom Build\" is enabled."
-msgstr ""
-"\"AAB Dışa Aktar\" yalnızca \"Özel Yapı Kullan\" etkinleştirildiğinde "
-"geçerlidir."
-
 msgid "Signing debug %s..."
 msgstr "%s hata ayıklaması imzalanıyor..."
 
@@ -8206,13 +8342,6 @@ msgstr "Geçersiz dosya adı! Android APK, * .apk uzantısını gerektirir."
 
 msgid "Unsupported export format!"
 msgstr "Desteklenmeyen dışa aktarım biçimi!"
-
-msgid ""
-"Trying to build from a custom built template, but no version info for it "
-"exists. Please reinstall from the 'Project' menu."
-msgstr ""
-"Özel olarak oluşturulmuş bir şablondan oluşturmaya çalışılıyor, ancak bunun "
-"için sürüm bilgisi yok. Lütfen 'Proje' menüsünden yeniden yükleyin."
 
 msgid ""
 "Android build version mismatch: Template installed: %s, Godot version: %s. "
@@ -8564,9 +8693,6 @@ msgstr ""
 msgid "The AnimationPlayer root node is not a valid node."
 msgstr "AnimationOynatıcı kök düğümü geçerli bir düğüm değil."
 
-msgid "Pick a color from the editor window."
-msgstr "Düzenleme penceresinden renk seç."
-
 msgid "Switch between hexadecimal and code values."
 msgstr "Hex ve kod değerleri arasında geçiş yap."
 
@@ -8596,9 +8722,6 @@ msgstr "Uyarı!"
 
 msgid "Please Confirm..."
 msgstr "Lütfen Doğrulayın..."
-
-msgid "Must use a valid extension."
-msgstr "Geçerli bir uzantı kullanılmalı."
 
 msgid "Enable grid minimap."
 msgstr "Izgara haritasını etkinleştir."

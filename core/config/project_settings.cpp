@@ -661,6 +661,7 @@ Error ProjectSettings::setup(const String &p_path, const String &p_main_pack, bo
 
 	Compression::gzip_level = GLOBAL_GET("compression/formats/gzip/compression_level");
 
+	project_loaded = err == OK;
 	return err;
 }
 
@@ -1109,6 +1110,10 @@ const HashMap<StringName, PropertyInfo> &ProjectSettings::get_custom_property_in
 
 bool ProjectSettings::is_using_datapack() const {
 	return using_datapack;
+}
+
+bool ProjectSettings::is_project_loaded() const {
+	return project_loaded;
 }
 
 bool ProjectSettings::_property_can_revert(const StringName &p_name) const {

@@ -231,14 +231,17 @@ Input::VelocityTrack::VelocityTrack() {
 bool Input::is_anything_pressed() const {
 	_THREAD_SAFE_METHOD_
 
+	if (!keys_pressed.is_empty() || !joy_buttons_pressed.is_empty() || !mouse_button_mask.is_empty()) {
+		return true;
+	}
+
 	for (const KeyValue<StringName, Input::Action> &E : action_state) {
 		if (E.value.pressed) {
 			return true;
 		}
 	}
-	return !keys_pressed.is_empty() ||
-			!joy_buttons_pressed.is_empty() ||
-			!mouse_button_mask.is_empty();
+
+	return false;
 }
 
 bool Input::is_key_pressed(Key p_keycode) const {
@@ -349,8 +352,8 @@ float Input::get_axis(const StringName &p_negative_action, const StringName &p_p
 
 Vector2 Input::get_vector(const StringName &p_negative_x, const StringName &p_positive_x, const StringName &p_negative_y, const StringName &p_positive_y, float p_deadzone) const {
 	Vector2 vector = Vector2(
-			get_action_strength(p_positive_x) - get_action_strength(p_negative_x),
-			get_action_strength(p_positive_y) - get_action_strength(p_negative_y));
+			get_action_raw_strength(p_positive_x) - get_action_raw_strength(p_negative_x),
+			get_action_raw_strength(p_positive_y) - get_action_raw_strength(p_negative_y));
 
 	if (p_deadzone < 0.0f) {
 		// If the deadzone isn't specified, get it from the average of the actions.
@@ -1362,8 +1365,9 @@ void Input::parse_mapping(String p_mapping) {
 
 		JoyButton output_button = _get_output_button(output);
 		JoyAxis output_axis = _get_output_axis(output);
-		ERR_CONTINUE_MSG(output_button == JoyButton::INVALID && output_axis == JoyAxis::INVALID,
-				vformat("Unrecognized output string \"%s\" in mapping:\n%s", output, p_mapping));
+		if (output_button == JoyButton::INVALID && output_axis == JoyAxis::INVALID) {
+			print_verbose(vformat("Unrecognized output string \"%s\" in mapping:\n%s", output, p_mapping));
+		}
 		ERR_CONTINUE_MSG(output_button != JoyButton::INVALID && output_axis != JoyAxis::INVALID,
 				vformat("Output string \"%s\" matched both button and axis in mapping:\n%s", output, p_mapping));
 

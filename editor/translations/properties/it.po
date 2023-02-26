@@ -82,16 +82,16 @@ msgstr ""
 "Project-Id-Version: Godot Engine properties\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-01-15 13:34+0000\n"
-"Last-Translator: Damiano Guida <damiano.guida22@gmail.com>\n"
+"PO-Revision-Date: 2023-02-23 00:30+0000\n"
+"Last-Translator: Mirko <miknsop@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/godot-engine/"
-"godot/it/>\n"
+"godot-properties/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15.1-dev\n"
+"X-Generator: Weblate 4.16-dev\n"
 
 msgid "Application"
 msgstr "Applicazione"
@@ -102,8 +102,17 @@ msgstr "Configurazione"
 msgid "Name"
 msgstr "Nome"
 
+msgid "Name Localized"
+msgstr "Nome Tradotto"
+
+msgid "Description"
+msgstr "Descrizione"
+
 msgid "Run"
 msgstr "Esegui"
+
+msgid "Main Scene"
+msgstr "Scena Principale"
 
 msgid "Disable stdout"
 msgstr "Disabilita stdout"
@@ -124,7 +133,7 @@ msgid "Project Settings Override"
 msgstr "Sovrascrittura Impostazioni del Progetto"
 
 msgid "Display"
-msgstr "Display"
+msgstr "Schermo"
 
 msgid "Window"
 msgstr "Finestra"
@@ -132,17 +141,44 @@ msgstr "Finestra"
 msgid "Size"
 msgstr "Dimensione"
 
+msgid "Viewport Width"
+msgstr "Larghezza del Viewport"
+
+msgid "Viewport Height"
+msgstr "Altezza del Viewport"
+
+msgid "Mode"
+msgstr "Modalità"
+
+msgid "Initial Position"
+msgstr "Posizione Iniziale"
+
+msgid "Initial Screen"
+msgstr "Schermata Iniziale"
+
 msgid "Resizable"
 msgstr "Ridimensionabile"
 
 msgid "Borderless"
 msgstr "Senza contorno"
 
+msgid "Transparent"
+msgstr "Trasparente"
+
+msgid "Window Width Override"
+msgstr "Sovrascrivi la Larghezza della Finestra"
+
+msgid "Window Height Override"
+msgstr "Sovrascrivi l'Altezza della Finestra"
+
 msgid "Energy Saving"
-msgstr "Risparmio Energia"
+msgstr "Risparmio Energetico"
 
 msgid "Keep Screen On"
 msgstr "Mantieni lo Schermo Acceso"
+
+msgid "Audio"
+msgstr "Audio"
 
 msgid "Editor"
 msgstr "Editor"
@@ -150,11 +186,17 @@ msgstr "Editor"
 msgid "Main Run Args"
 msgstr "Parametri Principali Eseguiti"
 
+msgid "Script"
+msgstr "Script"
+
 msgid "Physics"
 msgstr "Fisica"
 
 msgid "2D"
 msgstr "2D"
+
+msgid "Run on Separate Thread"
+msgstr "Esegui su un Thread Separato"
 
 msgid "3D"
 msgstr "3D"
@@ -165,6 +207,24 @@ msgstr "Debug"
 msgid "Settings"
 msgstr "Impostazioni"
 
+msgid "Profiler"
+msgstr "Profilatore"
+
+msgid "Compression"
+msgstr "Compressione"
+
+msgid "Formats"
+msgstr "Formati"
+
+msgid "Compression Level"
+msgstr "Livello di Compressione"
+
+msgid "Zlib"
+msgstr "Zlib"
+
+msgid "Gzip"
+msgstr "Gzip"
+
 msgid "Crash Handler"
 msgstr "Gestore di Crash"
 
@@ -173,6 +233,27 @@ msgstr "Messaggio"
 
 msgid "Rendering"
 msgstr "Renderer"
+
+msgid "Memory"
+msgstr "Memoria"
+
+msgid "Limits"
+msgstr "Limiti"
+
+msgid "Multithreaded Server"
+msgstr "Server Multithreading"
+
+msgid "Internationalization"
+msgstr "Lingue"
+
+msgid "GUI"
+msgstr "Interfaccia Grafica"
+
+msgid "Rendering Device"
+msgstr "Dispositivo per il Rendering"
+
+msgid "Vulkan"
+msgstr "Vulkan"
 
 msgid "Low Processor Usage Mode"
 msgstr "Modalità Processore a Basso Consumo"
@@ -221,6 +302,9 @@ msgstr "Coefficiente"
 
 msgid "Button Index"
 msgstr "Indice Pulsante Mouse"
+
+msgid "Double Click"
+msgstr "Doppio click"
 
 msgid "Tilt"
 msgstr "Tilt"
@@ -273,11 +357,14 @@ msgstr "Valore Controller"
 msgid "Big Endian"
 msgstr "Big Endian"
 
+msgid "Network"
+msgstr "Reti"
+
+msgid "Page Size"
+msgstr "Dimensione Pagina"
+
 msgid "Blocking Mode Enabled"
 msgstr "Modalità Blocco Attivata"
-
-msgid "Connection"
-msgstr "Connessione"
 
 msgid "Read Chunk Size"
 msgstr "Leggi Dimensione Chunk"
@@ -297,9 +384,6 @@ msgstr "Dimensione Massima Input Buffer"
 msgid "Output Buffer Max Size"
 msgstr "Dimensione Massima Output Buffer"
 
-msgid "Stream Peer"
-msgstr "Stream Peer"
-
 msgid "Resource"
 msgstr "Risorsa"
 
@@ -309,23 +393,20 @@ msgstr "Percorso"
 msgid "Data Array"
 msgstr "Array di Dati"
 
-msgid "Blocking Handshake"
-msgstr "Blocco Handshake"
-
 msgid "Max Pending Connections"
 msgstr "Quantità Massima Connessioni in Attesa"
 
 msgid "Offset"
 msgstr "Scostamento"
 
+msgid "Cell Size"
+msgstr "Dimensione Cella"
+
 msgid "Seed"
 msgstr "Seme"
 
 msgid "State"
 msgstr "Stato"
-
-msgid "Source Code"
-msgstr "Codice Sorgente"
 
 msgid "Locale"
 msgstr "Locale"
@@ -375,15 +456,6 @@ msgstr "Animazione"
 msgid "Easing"
 msgstr "Allentamento"
 
-msgid "Interface"
-msgstr "Interfaccia Utente"
-
-msgid "Editors"
-msgstr "Editori"
-
-msgid "Network"
-msgstr "Reti"
-
 msgid "Remote Port"
 msgstr "Porta Remota"
 
@@ -408,14 +480,8 @@ msgstr "Accedi"
 msgid "Display Mode"
 msgstr "Modalità di visualizzazione"
 
-msgid "Current Dir"
-msgstr "Cartella Corrente"
-
-msgid "Current File"
-msgstr "File Corrente"
-
-msgid "Current Path"
-msgstr "Percorso Corrente"
+msgid "Filters"
+msgstr "Filtri"
 
 msgid "Show Hidden Files"
 msgstr "Mostra File Nascosti"
@@ -424,7 +490,7 @@ msgid "Disable Overwrite Warning"
 msgstr "Disabilita Avviso di Sovrascrittura"
 
 msgid "Import"
-msgstr "Importare"
+msgstr "Importa"
 
 msgid "Reimport Missing Imported Files"
 msgstr "Reimporta Files Importati Mancanti"
@@ -453,8 +519,8 @@ msgstr "Selezionato"
 msgid "Keying"
 msgstr "Tasti"
 
-msgid "Main Scene"
-msgstr "Scena Principale"
+msgid "Interface"
+msgstr "Interfaccia Utente"
 
 msgid "Show Update Spinner"
 msgstr "Mostra Rotella di Caricamento dell'Update"
@@ -498,17 +564,11 @@ msgstr "Modalità senza distrazioni"
 msgid "Base Type"
 msgstr "Tipo di Base"
 
-msgid "Edited Resource"
-msgstr "Risorsa Modificata"
-
 msgid "Editable"
 msgstr "Elemento Modificabile"
 
 msgid "Toggle Mode"
 msgstr "Commuta la modalità"
-
-msgid "Script Owner"
-msgstr "Autore Script"
 
 msgid "Editor Language"
 msgstr "Lingua dell'Editor"
@@ -752,6 +812,9 @@ msgstr "Dimensione dei caratteri della sezione d'assistenza codice sorgente"
 
 msgid "Help Title Font Size"
 msgstr "Dimensione Carattere Titolo della Guida"
+
+msgid "Editors"
+msgstr "Editori"
 
 msgid "Grid Map"
 msgstr "Mappa di Griglia"
@@ -1137,9 +1200,6 @@ msgstr "ETC"
 msgid "ETC2"
 msgstr "ETC2"
 
-msgid "No BPTC Fallbacks"
-msgstr "Nessun fallback per BPTC"
-
 msgid "Export Path"
 msgstr "Percorso di Esportazione"
 
@@ -1151,6 +1211,12 @@ msgstr "Password"
 
 msgid "Compress"
 msgstr "Comprimi"
+
+msgid "Language"
+msgstr "Lingua"
+
+msgid "Transform"
+msgstr "Trasformazione"
 
 msgid "Collada"
 msgstr "Collada"
@@ -1175,12 +1241,6 @@ msgstr "Crea da"
 
 msgid "Delimiter"
 msgstr "Delimitatore"
-
-msgid "Preload"
-msgstr "Pre-carica"
-
-msgid "Mode"
-msgstr "Modalità"
 
 msgid "Lossy Quality"
 msgstr "Qualità Lossy"
@@ -1241,12 +1301,6 @@ msgstr "Ottimizzatore"
 
 msgid "Max Angular Error"
 msgstr "Errore Angolare Max"
-
-msgid "Compression"
-msgstr "Compressione"
-
-msgid "Page Size"
-msgstr "Dimensione Pagina"
 
 msgid "Nodes"
 msgstr "Nodi"
@@ -1353,6 +1407,9 @@ msgstr "Utilizza Threads"
 msgid "Available URLs"
 msgstr "URLs Disponibili"
 
+msgid "Unset"
+msgstr "Non impostato"
+
 msgid "Error"
 msgstr "Errore"
 
@@ -1416,6 +1473,15 @@ msgstr "Avvisi"
 msgid "ID"
 msgstr "ID"
 
+msgid "Texture"
+msgstr "Texture"
+
+msgid "Separation"
+msgstr "Separazione"
+
+msgid "Speed"
+msgstr "Velocità"
+
 msgid "Version Control"
 msgstr "Controllo della versione"
 
@@ -1464,9 +1530,6 @@ msgstr "Threads"
 msgid "Thread Model"
 msgstr "Modello Thread"
 
-msgid "Audio"
-msgstr "Audio"
-
 msgid "Handheld"
 msgstr "Maneggiato"
 
@@ -1497,6 +1560,9 @@ msgstr "iOS"
 msgid "Hide Home Indicator"
 msgstr "Nascondi Indicatore Home"
 
+msgid "XR"
+msgstr "XR"
+
 msgid "Boot Splash"
 msgstr "Sfondo Di Avvio"
 
@@ -1515,11 +1581,17 @@ msgstr "Colore Di Sfondo Di Default"
 msgid "Show Image"
 msgstr "Mostra Immagine"
 
+msgid "Image"
+msgstr "Immagine"
+
 msgid "Fullsize"
 msgstr "Dimensione Massima"
 
 msgid "Use Filter"
 msgstr "Usa Filtro"
+
+msgid "Icon"
+msgstr "Icona"
 
 msgid "Buffering"
 msgstr "Buffering"
@@ -1554,11 +1626,14 @@ msgstr "Cartella di Soluzione"
 msgid "Main Loop Type"
 msgstr "Tipo di Loop Principale"
 
+msgid "Stretch"
+msgstr "Allarga"
+
+msgid "Aspect"
+msgstr "Aspetto"
+
 msgid "Auto Accept Quit"
 msgstr "Auto-Accetta Uscita"
-
-msgid "GUI"
-msgstr "Interfaccia Grafica"
 
 msgid "Fonts"
 msgstr "Font"
@@ -1568,6 +1643,9 @@ msgstr "Font Dinamici"
 
 msgid "Use Oversampling"
 msgstr "Usa Oversampling"
+
+msgid "Textures"
+msgstr "Textures"
 
 msgid "Operation"
 msgstr "Operazione"
@@ -1736,9 +1814,6 @@ msgstr "Nome Scena"
 
 msgid "Root Nodes"
 msgstr "Nodi Radice"
-
-msgid "Textures"
-msgstr "Textures"
 
 msgid "Images"
 msgstr "Immagini"
@@ -2013,9 +2088,6 @@ msgstr "Indirizzo locale IGD"
 msgid "IGD Status"
 msgstr "Stato IGD"
 
-msgid "Limits"
-msgstr "Limiti"
-
 msgid "Handshake Timeout"
 msgstr "Timeout Handshake"
 
@@ -2057,12 +2129,6 @@ msgstr "Primo Piano Adattivo 432 X 432"
 
 msgid "Adaptive Background 432 X 432"
 msgstr "Sfondo Adattivo 432 X 432"
-
-msgid "Custom Build"
-msgstr "Build Personalizzata"
-
-msgid "Use Custom Build"
-msgstr "Utilizza Build Personalizzata"
 
 msgid "Export Format"
 msgstr "Formato Esportazione"
@@ -2319,9 +2385,6 @@ msgstr "Architettura"
 msgid "macOS"
 msgstr "macOS"
 
-msgid "Icon"
-msgstr "Icona"
-
 msgid "Copyright"
 msgstr "Copyright"
 
@@ -2439,14 +2502,14 @@ msgstr "UWP"
 msgid "Short Name"
 msgstr "Nome Corto"
 
-msgid "Description"
-msgstr "Descrizione"
-
 msgid "Publisher"
 msgstr "Publisher"
 
 msgid "Landscape"
 msgstr "Panorama"
+
+msgid "Tiles"
+msgstr "Tasselli"
 
 msgid "Web"
 msgstr "Web"
@@ -2511,11 +2574,14 @@ msgstr "Fotogramma"
 msgid "Point"
 msgstr "Punto"
 
+msgid "Left"
+msgstr "Sinistra"
+
 msgid "Top"
 msgstr "In cima"
 
-msgid "Speed"
-msgstr "Velocità"
+msgid "Right"
+msgstr "Destra"
 
 msgid "Horizontal Enabled"
 msgstr "Orizzontale Abilitato"
@@ -2541,9 +2607,6 @@ msgstr "FPS fisso"
 msgid "Drawing"
 msgstr "Disegnare"
 
-msgid "Texture"
-msgstr "Texture"
-
 msgid "Sphere Radius"
 msgstr "Raggio della Sfera"
 
@@ -2553,20 +2616,14 @@ msgstr "Punti"
 msgid "Colors"
 msgstr "Colori"
 
+msgid "Default Color"
+msgstr "Colore predefinito"
+
 msgid "Multimesh"
 msgstr "Multimesh"
 
 msgid "Navigation Layers"
 msgstr "Livelli Navigazione"
-
-msgid "Transform"
-msgstr "Trasformazione"
-
-msgid "Rotation Degrees"
-msgstr "Rotazione in Gradi"
-
-msgid "Global Rotation Degrees"
-msgstr "Rotazione Globale in Gradi"
 
 msgid "Scroll"
 msgstr "Scorrere"
@@ -2655,6 +2712,9 @@ msgstr "Spostamento"
 msgid "End"
 msgstr "Fine"
 
+msgid "Pose"
+msgstr "Posa"
+
 msgid "Sync"
 msgstr "Sincronizza"
 
@@ -2676,8 +2736,14 @@ msgstr "Nodo Radice"
 msgid "Button Group"
 msgstr "Gruppo Pulsanti"
 
+msgid "Indentation"
+msgstr "Indentazione"
+
 msgid "Localization"
 msgstr "Localizzazione"
+
+msgid "Focus"
+msgstr "Seleziona"
 
 msgid "Next"
 msgstr "Successivo"
@@ -2690,9 +2756,6 @@ msgstr "Mouse"
 
 msgid "Default Cursor Shape"
 msgstr "Forma Cursore Predefinita"
-
-msgid "Filters"
-msgstr "Filtri"
 
 msgid "Use Snap"
 msgstr "Usa Scatto"
@@ -2784,9 +2847,6 @@ msgstr "Passo"
 msgid "Page"
 msgstr "Pagina"
 
-msgid "Stretch"
-msgstr "Allarga"
-
 msgid "Current Tab"
 msgstr "Scheda Attuale"
 
@@ -2801,9 +2861,6 @@ msgstr "Disegno"
 
 msgid "Radial Fill"
 msgstr "Riempimento Radiale"
-
-msgid "Volume"
-msgstr "Volume"
 
 msgid "Expand"
 msgstr "Espandi"
@@ -2823,9 +2880,6 @@ msgstr "Modalità Trasferimento"
 msgid "Transfer Channel"
 msgstr "Canale Di Trasferimento"
 
-msgid "Current Scene"
-msgstr "Scena Corrente"
-
 msgid "Shapes"
 msgstr "Forme"
 
@@ -2841,8 +2895,11 @@ msgstr "Schermo Attuale"
 msgid "Min Size"
 msgstr "Dimensione Min"
 
-msgid "Aspect"
-msgstr "Aspetto"
+msgid "2D Physics"
+msgstr "Fisica 2D"
+
+msgid "3D Physics"
+msgstr "Fisica 3D"
 
 msgid "Format"
 msgstr "Formato"
@@ -2865,17 +2922,29 @@ msgstr "Separatore"
 msgid "Submenu"
 msgstr "Sottomenù"
 
-msgid "Separation"
-msgstr "Separazione"
-
 msgid "Cursor"
 msgstr "Cursore"
 
 msgid "Node"
 msgstr "Nodo"
 
+msgid "Sky"
+msgstr "Cielo"
+
+msgid "Ambient Light"
+msgstr "Luce Ambientale"
+
 msgid "Source"
 msgstr "Sorgente"
+
+msgid "SSAO"
+msgstr "SSAO"
+
+msgid "SSIL"
+msgstr "SSIL"
+
+msgid "Glow"
+msgstr "Bagliore"
 
 msgid "2"
 msgstr "2"
@@ -2931,6 +3000,9 @@ msgstr "Normal Texture"
 msgid "B"
 msgstr "B"
 
+msgid "Ground Color"
+msgstr "Colore del terreno"
+
 msgid "Blend"
 msgstr "Fondi"
 
@@ -2946,14 +3018,14 @@ msgstr "In Basso A Destra"
 msgid "Bottom Left"
 msgstr "In Basso A Sinistra"
 
-msgid "Image"
-msgstr "Immagine"
-
 msgid "Atlas"
 msgstr "Atlas"
 
 msgid "Image Size"
 msgstr "Dimensione Immagine"
+
+msgid "To"
+msgstr "A"
 
 msgid "Transpose"
 msgstr "Trasponi"
@@ -2964,8 +3036,17 @@ msgstr "Costante"
 msgid "Function"
 msgstr "Funzioni"
 
+msgid "Use All Surfaces"
+msgstr "Usa tutte le superfici"
+
+msgid "Surface Index"
+msgstr "Indice di superficie"
+
 msgid "Fallback Environment"
 msgstr "Ambiente di ripiego"
+
+msgid "Custom"
+msgstr "Personalizzato"
 
 msgid "Is Active"
 msgstr "È attiva"
@@ -2976,11 +3057,20 @@ msgstr "Vertice"
 msgid "Fragment"
 msgstr "Frammento"
 
+msgid "Shadow Atlas"
+msgstr "Atlas delle ombre"
+
 msgid "Reflections"
 msgstr "Riflessi"
 
+msgid "GI"
+msgstr "GI"
+
 msgid "Overrides"
 msgstr "Sovrascrizioni"
+
+msgid "OpenGL"
+msgstr "OpenGL"
 
 msgid "Shaders"
 msgstr "Shaders"

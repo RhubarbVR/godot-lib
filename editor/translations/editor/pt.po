@@ -32,13 +32,15 @@
 # Thuany <thutymsoares@gmail.com>, 2022.
 # Isaque Mendes <isaquemendes405@gmail.com>, 2022.
 # Alex Bruno Boiniak <aboiniak@gmail.com>, 2022.
+# Breno Alves Sampaio <chibifoxdiscord@gmail.com>, 2023.
+# SamuelPatrickMeneses <samuelmeneses800@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine editor interface\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-01-11 19:51+0000\n"
-"Last-Translator: ssantos <ssantos@web.de>\n"
+"PO-Revision-Date: 2023-02-16 05:26+0000\n"
+"Last-Translator: SamuelPatrickMeneses <samuelmeneses800@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/godot-engine/"
 "godot/pt/>\n"
 "Language: pt\n"
@@ -46,10 +48,25 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15.1-dev\n"
+"X-Generator: Weblate 4.16-dev\n"
 
 msgid "Physical"
 msgstr "Físico"
+
+msgid "Left Mouse Button"
+msgstr "Botão Esquerdo do Mouse"
+
+msgid "Right Mouse Button"
+msgstr "Botão Direito do Mouse"
+
+msgid "Middle Mouse Button"
+msgstr "Botão do meio"
+
+msgid "Mouse Wheel Up"
+msgstr "Roda do mouse para cima."
+
+msgid "Mouse Wheel Down"
+msgstr "Roda do mouse para baixo."
 
 msgid "Button"
 msgstr "Botão"
@@ -493,12 +510,6 @@ msgstr "Usar Curvas Bezier"
 msgid "Create RESET Track(s)"
 msgstr "Criar Pista(s) RESET"
 
-msgid "Anim. Optimizer"
-msgstr "Otimizador de Anim"
-
-msgid "Max. Angular Error:"
-msgstr "Máximo de Erros Angulares:"
-
 msgid "Optimize"
 msgstr "Otimizar"
 
@@ -605,6 +616,9 @@ msgstr "Do Sinal:"
 msgid "Scene does not contain any script."
 msgstr "A cena não contém qualquer script."
 
+msgid "Select Method"
+msgstr "Selecione Método"
+
 msgid "Remove"
 msgstr "Remover"
 
@@ -661,9 +675,6 @@ msgstr "Desligar"
 
 msgid "Connect a Signal to a Method"
 msgstr "Conectar Sinal a Método"
-
-msgid "Edit Connection:"
-msgstr "Editar Conexão:"
 
 msgid "Are you sure you want to remove all connections from the \"%s\" signal?"
 msgstr "Deseja remover todas as conexões do sinal \"%s\"?"
@@ -809,23 +820,8 @@ msgstr "Aviso:"
 msgid "Error:"
 msgstr "Erro:"
 
-msgid "C++ Error"
-msgstr "Erro C++"
-
-msgid "C++ Error:"
-msgstr "Erro C++:"
-
-msgid "Source"
-msgstr "Fonte"
-
-msgid "C++ Source"
-msgstr "Código-fonte C++"
-
-msgid "Source:"
-msgstr "Código-fonte:"
-
-msgid "C++ Source:"
-msgstr "Código-fonte C++:"
+msgid "%s Error"
+msgstr "%s Erro"
 
 msgid "Stack Trace"
 msgstr "Rastreamento de Pilha"
@@ -835,6 +831,9 @@ msgstr "Copiar Erro"
 
 msgid "Open C++ Source on GitHub"
 msgstr "Abrir Código C++ no GitHub"
+
+msgid "C++ Source"
+msgstr "Código-fonte C++"
 
 msgid "Video RAM"
 msgstr "Memória Vídeo"
@@ -1513,9 +1512,6 @@ msgstr "Abrir"
 msgid "Select Current Folder"
 msgstr "Selecionar pasta atual"
 
-msgid "File exists, overwrite?"
-msgstr "O ficheiro existe, sobrescrever?"
-
 msgid "Select This Folder"
 msgstr "Selecionar esta Pasta"
 
@@ -1679,21 +1675,40 @@ msgstr "Estilos"
 msgid "Enumerations"
 msgstr "Enumerações"
 
+msgid "There is currently no description for this annotation."
+msgstr "Atualmente não há descrição para esta anotação."
+
+msgid ""
+"There is currently no description for this annotation. Please help us by "
+"[color=$color][url=$url]contributing one[/url][/color]!"
+msgstr ""
+"Atualmente não existe descrição para este Método. Por favor nos ajude "
+"[color=$color][url=$url]contribuindo com uma[/url][/color]!"
+
 msgid "Property Descriptions"
 msgstr "Descrições da Propriedade"
 
 msgid "(value)"
 msgstr "(valor)"
 
+msgid "There is currently no description for this property."
+msgstr "Atualmente não há descrição para esta propriedade."
+
 msgid ""
 "There is currently no description for this property. Please help us by "
 "[color=$color][url=$url]contributing one[/url][/color]!"
 msgstr ""
-"Atualmente não existe descrição para esta Propriedade. Por favor ajude-nos "
-"[color=$color][url=$url]a contribuir com uma[/url][/color]!"
+"Atualmente não existe descrição para esta Propriedade. Por favor nos ajude "
+"[color=$color][url=$url]contribuindo com uma[/url][/color]!"
+
+msgid "Constructor Descriptions"
+msgstr "Descrições do Construtor"
 
 msgid "Method Descriptions"
-msgstr "Descrições do Método"
+msgstr "Descrições de Método"
+
+msgid "Operator Descriptions"
+msgstr "Descrições de Operadores"
 
 msgid "%d match."
 msgstr "%d correspondência."
@@ -1702,10 +1717,10 @@ msgid "%d matches."
 msgstr "%d correspondências."
 
 msgid "Search Help"
-msgstr "Procurar em Ajuda"
+msgstr "Procure em Ajuda"
 
 msgid "Case Sensitive"
-msgstr "Sensível a maiúsculas"
+msgstr "Com distinção entre maiúsculas e minúsculas"
 
 msgid "Show Hierarchy"
 msgstr "Mostrar Hierarquia"
@@ -1716,11 +1731,20 @@ msgstr "Mostrar Tudo"
 msgid "Classes Only"
 msgstr "Apenas Classes"
 
+msgid "Constructors Only"
+msgstr "Apenas Construtores"
+
 msgid "Methods Only"
 msgstr "Apenas Métodos"
 
+msgid "Operators Only"
+msgstr "Apenas Operadores"
+
 msgid "Signals Only"
 msgstr "Apenas Sinais"
+
+msgid "Annotations Only"
+msgstr "Apenas Anotações"
 
 msgid "Constants Only"
 msgstr "Apenas Constantes"
@@ -1734,6 +1758,9 @@ msgstr "Apenas Propriedades do Tema"
 msgid "Member Type"
 msgstr "Tipo do Membro"
 
+msgid "(constructors)"
+msgstr "(Construtores)"
+
 msgid "Class"
 msgstr "Classe"
 
@@ -1742,6 +1769,9 @@ msgstr "Método"
 
 msgid "Signal"
 msgstr "Sinal"
+
+msgid "Annotation"
+msgstr "Anotações"
 
 msgid "Constant"
 msgstr "Constante"
@@ -1752,13 +1782,25 @@ msgstr "Propriedade"
 msgid "Theme Property"
 msgstr "Propriedade do Tema"
 
+msgid "This member is marked as deprecated."
+msgstr "Este membro esta marcado como obsoleto."
+
+msgid "This member is marked as experimental."
+msgstr "Este membro está marcado como experimental."
+
 msgid "Property:"
 msgstr "Propriedade:"
+
+msgid "Pin Value"
+msgstr "Fixar valor"
+
+msgid "Pin Value [Disabled because '%s' is editor-only]"
+msgstr "Fixar Valor [Desativado porque '%s' é restrito(a) ao editor]"
 
 msgid ""
 "Pinning a value forces it to be saved even if it's equal to the default."
 msgstr ""
-"Fixar um valor força-o a ser guardado mesmo que seja igual à predefinição."
+"Fixar um valor força que ele seja salvo mesmo que ele seja igual ao padrão."
 
 msgid "Open Documentation"
 msgstr "Abrir documentação"
@@ -1796,11 +1838,11 @@ msgstr "Mostrar Todos os Idiomas"
 msgid "Show Selected Locales Only"
 msgstr "Mostrar Apenas Idiomas Selecionados"
 
+msgid "Edit Filters"
+msgstr "Editar filtros"
+
 msgid "Language:"
 msgstr "Linguagem:"
-
-msgid "Script"
-msgstr "Script"
 
 msgid "Variant"
 msgstr "Variante"
@@ -2356,23 +2398,6 @@ msgid "Install from file"
 msgstr "Instalar do ficheiro"
 
 msgid ""
-"This will set up your project for custom Android builds by installing the "
-"source template to \"res://android/build\".\n"
-"You can then apply modifications and build your own custom APK on export "
-"(adding modules, changing the AndroidManifest.xml, etc.).\n"
-"Note that in order to make custom builds instead of using pre-built APKs, "
-"the \"Use Custom Build\" option should be enabled in the Android export "
-"preset."
-msgstr ""
-"O projeto será preparado para compilações personalizadas Android com a "
-"instalação do modelo fonte em \"res://android/build\".\n"
-"Poderá depois aplicar modificações e compilar o seu APK personalizado a "
-"exportar (com adição de módulos, a alterar AndroidManifest.xml, etc.).\n"
-"Repare que de forma a criar compilações personalizadas em vez de usar APKs "
-"pré-compilados, a opção \"Use Custom Build\" deve ser ativada na "
-"predefinição da exportação Android."
-
-msgid ""
 "The Android build template is already installed in this project and it won't "
 "be overwritten.\n"
 "Remove the \"res://android/build\" directory manually before attempting this "
@@ -2598,9 +2623,6 @@ msgstr "Atalhos"
 
 msgid "Binding"
 msgstr "Ligação"
-
-msgid "%s Error"
-msgstr "%s Erro"
 
 msgid "All Devices"
 msgstr "Todos os Aparelhos"
@@ -3538,6 +3560,9 @@ msgstr "Selecionar e mover pontos, criar pontos com RMB."
 msgid "Enable snap and show grid."
 msgstr "Ativar ajuste e mostrar a grelha."
 
+msgid "Blend:"
+msgstr "Mistura:"
+
 msgid "Point"
 msgstr "Ponto"
 
@@ -3580,14 +3605,8 @@ msgstr "Apagar pontos e triângulos."
 msgid "Generate blend triangles automatically (instead of manually)"
 msgstr "Gera triângulos automaticamente (em vez de manual)"
 
-msgid "Blend:"
-msgstr "Mistura:"
-
 msgid "Parameter Changed:"
 msgstr "Parâmetro Alterado:"
-
-msgid "Edit Filters"
-msgstr "Editar filtros"
 
 msgid "Output node can't be added to the blend tree."
 msgstr "Saída do nó não pode ser adicionada à árvore de mistura."
@@ -3711,9 +3730,6 @@ msgstr ""
 
 msgid "Play selected animation backwards from end. (Shift+A)"
 msgstr "Reproduzir a Animação selecionada para trás a partir do fim. (Shift+A)"
-
-msgid "Stop animation playback. (S)"
-msgstr "Parar reprodução da Animação. (S)"
 
 msgid "Play selected animation from start. (Shift+D)"
 msgstr "Reproduzir a Animação selecionada a partir do início. (Shift+D)"
@@ -4938,12 +4954,6 @@ msgstr "Mudar Notificador AABB"
 msgid "Change Particles AABB"
 msgstr "Mudar partículas AABB"
 
-msgid "Change Box Shape Extents"
-msgstr "Mudar medidas da forma caixa"
-
-msgid "Change Probe Extents"
-msgstr "Mudar Extensões de Sonda"
-
 msgid "Change Capsule Shape Radius"
 msgstr "Mudar raio da forma cápsula"
 
@@ -5758,6 +5768,9 @@ msgstr "Padrão"
 msgid "Connections to method:"
 msgstr "Conexões ao método:"
 
+msgid "Source"
+msgstr "Fonte"
+
 msgid "Target"
 msgstr "Alvo"
 
@@ -5998,12 +6011,6 @@ msgstr "(vazio)"
 
 msgid "Animations:"
 msgstr "Animações:"
-
-msgid "Speed:"
-msgstr "Velocidade:"
-
-msgid "Loop"
-msgstr "Ciclo"
 
 msgid "Animation Frames:"
 msgstr "Frames da Animação:"
@@ -7430,14 +7437,8 @@ msgstr "Adicionar ação de entrada"
 msgid "Change Action deadzone"
 msgstr "Mudar a zona morta da Ação"
 
-msgid "Add Input Action Event"
-msgstr "Adicionar evento ação de entrada"
-
 msgid "Erase Input Action"
 msgstr "Apagar Ação de Entrada"
-
-msgid "Rename Input Action Event"
-msgstr "Renomear evento ação de entrada"
 
 msgid "Project Settings (project.godot)"
 msgstr "Configurações do Projeto (project.godot)"
@@ -7459,9 +7460,6 @@ msgstr "Selecionar Propriedade"
 
 msgid "Select Virtual Method"
 msgstr "Selecione Método virtual"
-
-msgid "Select Method"
-msgstr "Selecione Método"
 
 msgid "Batch Rename"
 msgstr "Renomear em Massa"
@@ -8249,20 +8247,8 @@ msgstr "Chave pública inválida para expansão APK."
 msgid "Invalid package name:"
 msgstr "Nome de pacote inválido:"
 
-msgid "\"Use Custom Build\" must be enabled to use the plugins."
-msgstr "\"Use Custom Build\" têm de estar ativa para usar os plugins."
-
 msgid "\"Passthrough\" is only valid when \"XR Mode\" is \"OpenXR\"."
 msgstr "\"Passthrough\" só é válido quando o \"XR Mode\" é \"OpenXR\"."
-
-msgid "\"Export AAB\" is only valid when \"Use Custom Build\" is enabled."
-msgstr "\"Exportar AAB\" só é válido quando \"Use Custom Build\" está ativa."
-
-msgid ""
-"\"Min SDK\" can only be overridden when \"Use Custom Build\" is enabled."
-msgstr ""
-"\"Min SDK\" só pode ser substituído quando \"Usar Compilação Customizada\" "
-"está ativado."
 
 msgid "\"Min SDK\" should be a valid integer, but got \"%s\" which is invalid."
 msgstr ""
@@ -8275,12 +8261,6 @@ msgid ""
 msgstr ""
 "\"Min SDK\" não pode ser inferior a %d, que é a versão necessária para a "
 "biblioteca Godot."
-
-msgid ""
-"\"Target SDK\" can only be overridden when \"Use Custom Build\" is enabled."
-msgstr ""
-"\"Target SDK\" só pode ser substituído quando \"Usar Compilação "
-"Customizada\" está ativado."
 
 msgid ""
 "\"Target SDK\" should be a valid integer, but got \"%s\" which is invalid."
@@ -8346,13 +8326,6 @@ msgstr "Nome de ficheiro inválido! APK Android exige a extensão *.apk."
 
 msgid "Unsupported export format!"
 msgstr "Formato de exportação não suportado!"
-
-msgid ""
-"Trying to build from a custom built template, but no version info for it "
-"exists. Please reinstall from the 'Project' menu."
-msgstr ""
-"A tentar compilar a partir de um modelo personalizado, mas sem informação de "
-"versão. Reinstale no menu 'Projeto'."
 
 msgid ""
 "Android build version mismatch: Template installed: %s, Godot version: %s. "
@@ -8877,9 +8850,6 @@ msgstr ""
 msgid "The AnimationPlayer root node is not a valid node."
 msgstr "O nó raiz de AnimationPlayer não é um nó válido."
 
-msgid "Pick a color from the editor window."
-msgstr "Escolha uma cor através do editor."
-
 msgid "Switch between hexadecimal and code values."
 msgstr "Alternar valores entre hexadecimal e código."
 
@@ -8908,9 +8878,6 @@ msgstr "Alerta!"
 
 msgid "Please Confirm..."
 msgstr "Confirme por favor..."
-
-msgid "Must use a valid extension."
-msgstr "Deve usar uma extensão válida."
 
 msgid "Enable grid minimap."
 msgstr "Ativar grelha do minimapa."

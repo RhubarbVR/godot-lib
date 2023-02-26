@@ -19,7 +19,7 @@
 # Pieter-Jan Briers <pieterjan.briers@gmail.com>, 2017-2018.
 # Robin Arys <robinarys@hotmail.com>, 2017.
 # Senno Kaasjager <senno.kaasjager@gmail.com>, 2017.
-# Uxilo <jmolendijk93@gmail.com>, 2017-2018.
+# Uxilo <jmolendijk93@gmail.com>, 2017-2018, 2023.
 # Willem <studiebolmail@gmail.com>, 2018.
 # Wout Standaert <wout@blobkat.com>, 2017.
 # Zatherz <zatherz@linux.pl>, 2017.
@@ -60,13 +60,14 @@
 # voylin <0voylin0@gmail.com>, 2022.
 # Gert-dev <qnyasgjhapqyuhoibr@kiabws.com>, 2022.
 # Nnn <irri2020@outlook.com>, 2022.
+# Jasper <jasper@dj-dj.be>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine editor interface\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-09-23 04:16+0000\n"
-"Last-Translator: Nnn <irri2020@outlook.com>\n"
+"PO-Revision-Date: 2023-02-13 03:50+0000\n"
+"Last-Translator: Jasper <jasper@dj-dj.be>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/godot-engine/godot/"
 "nl/>\n"
 "Language: nl\n"
@@ -74,13 +75,79 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.16-dev\n"
+
+msgid "Unset"
+msgstr "Niet ingesteld"
 
 msgid "Physical"
 msgstr "Fysiek"
 
+msgid "Left Mouse Button"
+msgstr "Linker Muis Knop"
+
+msgid "Right Mouse Button"
+msgstr "Rechter Muis Knop"
+
+msgid "Middle Mouse Button"
+msgstr "Middelste Muis Knop"
+
+msgid "Mouse Wheel Up"
+msgstr "Scrollwiel Omhoog"
+
+msgid "Mouse Wheel Down"
+msgstr "Scrollwiel Omlaag"
+
 msgid "Button"
 msgstr "Button (Knop)"
+
+msgid "Double Click"
+msgstr "Dubbel Klik"
+
+msgid "Mouse motion at position (%s) with velocity (%s)"
+msgstr "Muis beweging op positie (%s) met snelheid (%s)"
+
+msgid "Left Stick X-Axis, Joystick 0 X-Axis"
+msgstr "Linker Pook X-As, Joystick 0 X-As"
+
+msgid "Left Stick Y-Axis, Joystick 0 Y-Axis"
+msgstr "Linker Pook Y-As, Joystick 0 Y-As"
+
+msgid "Right Stick X-Axis, Joystick 1 X-Axis"
+msgstr "Rechter Pook X-As, Joystick 1 X-As"
+
+msgid "Right Stick Y-Axis, Joystick 1 Y-Axis"
+msgstr "Rechter Pook Y-As, Joystick 1 Y-As"
+
+msgid "Joystick 2 X-Axis, Left Trigger, Sony L2, Xbox LT"
+msgstr "Joystick 2 X-As, Linker Trekker, Sony L2, Xbox LT"
+
+msgid "Joystick 2 Y-Axis, Right Trigger, Sony R2, Xbox RT"
+msgstr "Joystick 2 Y-As, Rechter Trekker, Sony R2, Xbox RT"
+
+msgid "Unknown Joypad Axis"
+msgstr "Onbekende Joypad As"
+
+msgid "Joypad Motion on Axis %d (%s) with Value %.2f"
+msgstr "Joypad Beweging op As %d (%s) met Waarde %.2f"
+
+msgid "Bottom Action, Sony Cross, Xbox A, Nintendo B"
+msgstr "Onderste Actie, Sony Kruisje, Xbox A, Nintendo B"
+
+msgid "Right Action, Sony Circle, Xbox B, Nintendo A"
+msgstr "Rechter Actie, Sony Cirkel, Xbox B, Nintendo A"
+
+msgid "Left Action, Sony Square, Xbox X, Nintendo Y"
+msgstr "Linker Actie, Sony Vierkantje, Xbox X, Nintendo Y"
+
+msgid "Top Action, Sony Triangle, Xbox Y, Nintendo X"
+msgstr "Bovenste Actie, Sony Driehoekje, Xbox Y, Nintendo X"
+
+msgid "Back, Sony Select, Xbox Back, Nintendo -"
+msgstr "Terug, Sony Selecteer, Xbox Terug, Nintendo -"
+
+msgid "Guide, Sony PS, Xbox Home"
+msgstr "Gids, Sony PS, Xbox Thuis"
 
 msgid "Select"
 msgstr "Selecteer"
@@ -93,6 +160,9 @@ msgstr "Omhoog"
 
 msgid "Down"
 msgstr "Omlaag"
+
+msgid "Page Up"
+msgstr "Pagina Omhoog"
 
 msgid "End"
 msgstr "Einde"
@@ -114,6 +184,9 @@ msgstr "Opnieuw"
 
 msgid "Delete"
 msgstr "Verwijder"
+
+msgid "Caret Page Up"
+msgstr "Caret Pagina Omhoog"
 
 msgid "Select All"
 msgstr "Alles selecteren"
@@ -181,8 +254,26 @@ msgstr "Action '%s' bestaat al."
 msgid "Add Event"
 msgstr "Event Toevoegen"
 
+msgid "Remove Action"
+msgstr "Verwijder Actie"
+
+msgid "Cannot Remove Action"
+msgstr "Kan Actie Niet Verwijderen"
+
+msgid "Remove Event"
+msgstr "Remote Event"
+
+msgid "Filter by name..."
+msgstr "Filter op naam..."
+
+msgid "Add New Action"
+msgstr "Nieuwe Actie Toevoegen"
+
 msgid "Add"
 msgstr "Toevoegen"
+
+msgid "Show Built-in Actions"
+msgstr "Weergeef Ingebouwde Acties"
 
 msgid "Action"
 msgstr "Actie"
@@ -210,6 +301,9 @@ msgstr "Bézierpunt toevoegen"
 
 msgid "Move Bezier Points"
 msgstr "Beweeg Bézierpunten"
+
+msgid "Focus"
+msgstr "Focus"
 
 msgid "Change Animation Length"
 msgstr "Verander Animatielengte"
@@ -250,6 +344,9 @@ msgstr "Functies:"
 msgid "Audio Clips:"
 msgstr "Audioclips:"
 
+msgid "Animation Clips:"
+msgstr "Animatieclips:"
+
 msgid "Change Track Path"
 msgstr "Verander Track pad"
 
@@ -268,11 +365,32 @@ msgstr "Naadloze-lusmodus (interpoleert einde met begin van lus)"
 msgid "Remove this track."
 msgstr "Verwijder deze track."
 
+msgid "Time (s):"
+msgstr "Tijd (s):"
+
+msgid "Position:"
+msgstr "Positie:"
+
+msgid "Rotation:"
+msgstr "Rotatie:"
+
 msgid "Scale:"
 msgstr "Schaal:"
 
 msgid "Type:"
 msgstr "Type:"
+
+msgid "(Invalid, expected type: %s)"
+msgstr "(Ongeldig, verwachtte type: %s)"
+
+msgid "Start (s):"
+msgstr "Start (s):"
+
+msgid "End (s):"
+msgstr "Eind (s):"
+
+msgid "Animation Clip:"
+msgstr "Animatie Clip:"
 
 msgid "Toggle Track Enabled"
 msgstr "Track in-/uit schakelen"
@@ -381,11 +499,23 @@ msgstr "Track path is niet geldig, dus kan geen methode key toevoegen."
 msgid "Add Method Track Key"
 msgstr "Voeg Methode Track sleutel toe"
 
+msgid "Method not found in object:"
+msgstr "Methode niet gevonden in object:"
+
 msgid "Position"
 msgstr "Positie"
 
+msgid "Rotation"
+msgstr "Rotatie"
+
+msgid "Scale"
+msgstr "Schaal"
+
 msgid "Methods"
 msgstr "Methoden"
+
+msgid "Bezier"
+msgstr "Bezier"
 
 msgid "Audio"
 msgstr "Audio"
@@ -408,6 +538,9 @@ msgstr "Waarschuwing: Er wordt een geïmporteerde animatie bewerkt"
 msgid "Select an AnimationPlayer node to create and edit animations."
 msgstr ""
 "Selecteer een AnimationPlayer uit de Scene Tree om animaties te wijzigen."
+
+msgid "Imported Scene"
+msgstr "Geïmporteerde Scene"
 
 msgid "Only show tracks from nodes selected in tree."
 msgstr "Alleen sporen van geselecteerde knopen tonen."
@@ -460,17 +593,20 @@ msgstr "Ga naar Vorige Stap"
 msgid "Apply Reset"
 msgstr "Reset"
 
+msgid "Optimize Animation (no undo)"
+msgstr "Optimaliseer Animatie (Onomkeerbaar)"
+
+msgid "Clean-Up Animation (no undo)"
+msgstr "Animatie Opschonen (Onomkeerbaar)"
+
+msgid "Pick a node to animate:"
+msgstr "Kies een node om te animeren:"
+
 msgid "Use Bezier Curves"
 msgstr "Gebruik Bezier Curves"
 
 msgid "Create RESET Track(s)"
 msgstr "Creëer RESET Track(s)"
-
-msgid "Anim. Optimizer"
-msgstr "Anim. Optimalisator"
-
-msgid "Max. Angular Error:"
-msgstr "Max. Fout in hoek:"
 
 msgid "Optimize"
 msgstr "Optimaliseren"
@@ -516,6 +652,16 @@ msgstr "Regelnummer:"
 
 msgid "%d replaced."
 msgstr "%d vervangingen."
+
+msgid "%d match"
+msgid_plural "%d matches"
+msgstr[0] "%d overeenkomst gevonden"
+msgstr[1] "%d overeenkomsten gevonden"
+
+msgid "%d of %d match"
+msgid_plural "%d of %d matches"
+msgstr[0] "%d overeenkomst gevonden"
+msgstr[1] "%d overeenkomsten gevonden"
 
 msgid "Match Case"
 msgstr "Hoofdlettergevoelig"
@@ -567,7 +713,7 @@ msgstr ""
 "script aan de doelknoop."
 
 msgid "Connect to Node:"
-msgstr "Aan knoop verbinden:"
+msgstr "Aan Node verbinden:"
 
 msgid "Connect to Script:"
 msgstr "Met script verbinden:"
@@ -577,6 +723,9 @@ msgstr "Vanuit signaal:"
 
 msgid "Scene does not contain any script."
 msgstr "Scene bevat geen script."
+
+msgid "Select Method"
+msgstr "Selecteer Method"
 
 msgid "Remove"
 msgstr "Verwijderen"
@@ -602,6 +751,9 @@ msgstr ""
 "Stelt het signaal uit, bewaart het in een wachtrij en activeert het pas op "
 "een dood moment."
 
+msgid "One Shot"
+msgstr "Eenmalig"
+
 msgid "Disconnects the signal after its first emission."
 msgstr "Koppelt het signaal automatisch los na de eerste uitzending."
 
@@ -616,6 +768,9 @@ msgstr "Verbinden"
 
 msgid "Signal:"
 msgstr "Signaal:"
+
+msgid "No description."
+msgstr "Geen omschrijving."
 
 msgid "Connect '%s' to '%s'"
 msgstr "Verbind '%s' met '%s'"
@@ -635,15 +790,15 @@ msgstr "Loskoppelen"
 msgid "Connect a Signal to a Method"
 msgstr "Verbind een signaal met een methode"
 
-msgid "Edit Connection:"
-msgstr "Verbinding bewerken:"
-
 msgid "Are you sure you want to remove all connections from the \"%s\" signal?"
 msgstr ""
 "Weet je zeker dat je alle verbindingen met signaal \"%s\" wilt verwijderen?"
 
 msgid "Signals"
 msgstr "Signalen"
+
+msgid "Filter Signals"
+msgstr "Filter Signalen"
 
 msgid "Are you sure you want to remove all connections from this signal?"
 msgstr ""
@@ -652,11 +807,17 @@ msgstr ""
 msgid "Disconnect All"
 msgstr "Alles loskoppelen"
 
+msgid "Copy Name"
+msgstr "Kopieer Naam"
+
 msgid "Edit..."
 msgstr "Bewerken..."
 
 msgid "Go to Method"
 msgstr "Ga naar Methode"
+
+msgid "Change Type of \"%s\""
+msgstr "Wijzig Type van \"%s\""
 
 msgid "Change"
 msgstr "Wijzig"
@@ -666,6 +827,12 @@ msgstr "%s opstellen"
 
 msgid "No results for \"%s\"."
 msgstr "Geen resultaten voor \"%s\"."
+
+msgid "This class is marked as deprecated."
+msgstr "Deze klasse is gemarkeerd als verouderd."
+
+msgid "This class is marked as experimental."
+msgstr "Deze klasse is gemarkeerd als experimenteel."
 
 msgid "No description available for %s."
 msgstr "Geen beschrijving beschikbaar voor %s."
@@ -684,6 +851,9 @@ msgstr "Overeenkomsten:"
 
 msgid "Description:"
 msgstr "Omschrijving:"
+
+msgid "Remote %s:"
+msgstr "Remote %s:"
 
 msgid "Debugger"
 msgstr "Debugger"
@@ -757,6 +927,18 @@ msgstr "Tijd"
 msgid "Calls"
 msgstr "Aanroepen"
 
+msgid "Linked"
+msgstr "Gekoppeld"
+
+msgid "CPU"
+msgstr "CPU"
+
+msgid "GPU"
+msgstr "GPU"
+
+msgid "Execution resumed."
+msgstr "Uitvoering hervat."
+
 msgid "Bytes:"
 msgstr "Bytes:"
 
@@ -766,29 +948,35 @@ msgstr "Waarschuwing:"
 msgid "Error:"
 msgstr "Fout:"
 
-msgid "C++ Error"
-msgstr "C++ Fout"
-
-msgid "C++ Error:"
-msgstr "C++ Fout:"
-
-msgid "Source"
-msgstr "Bron"
-
-msgid "C++ Source"
-msgstr "C++ Bron"
-
-msgid "Source:"
-msgstr "Bron:"
-
-msgid "C++ Source:"
-msgstr "C++ Bron:"
+msgid "%s Error"
+msgstr "%s Fout"
 
 msgid "Stack Trace"
 msgstr "Stack Trace"
 
+msgid "Stack Trace:"
+msgstr "Stack Trace:"
+
+msgid "Line %d"
+msgstr "Regel %d"
+
+msgid "Delete Breakpoint"
+msgstr "Verwijder Breekpunt"
+
+msgid "Delete All Breakpoints in:"
+msgstr "Verwijder Alle Breekpunten in:"
+
+msgid "Delete All Breakpoints"
+msgstr "Verwijder Alle Breekpunten"
+
 msgid "Copy Error"
 msgstr "Kopieer Fout"
+
+msgid "Open C++ Source on GitHub"
+msgstr "Open C++ Bron op GitHub"
+
+msgid "C++ Source"
+msgstr "C++ Bron"
 
 msgid "Video RAM"
 msgstr "Videogeheugen"
@@ -811,6 +999,9 @@ msgstr "Vervolg"
 msgid "Stack Frames"
 msgstr "Stack Frames"
 
+msgid "Filter Stack Variables"
+msgstr "Filter Stack Variablen"
+
 msgid "Breakpoints"
 msgstr "Breekpunten"
 
@@ -822,6 +1013,9 @@ msgstr "Alles inklappen"
 
 msgid "Profiler"
 msgstr "Profiler"
+
+msgid "Visual Profiler"
+msgstr "Visuele Profiler"
 
 msgid "List of Video Memory Usage by Resource:"
 msgstr "Lijst van videogeheugengebruik per bron:"
@@ -1462,9 +1656,6 @@ msgstr "Openen"
 msgid "Select Current Folder"
 msgstr "Huidige Map Selecteren"
 
-msgid "File exists, overwrite?"
-msgstr "Bestand bestaat, overschrijven?"
-
 msgid "Select This Folder"
 msgstr "Deze map selecteren"
 
@@ -1607,6 +1798,9 @@ msgstr "overschrijft %s:"
 msgid "default:"
 msgstr "standaard:"
 
+msgid "Operators"
+msgstr "Operatoren"
+
 msgid "Theme Properties"
 msgstr "Thema-eigenschappen"
 
@@ -1722,6 +1916,9 @@ msgstr "Plaats Omlaag"
 msgid "Resize Array"
 msgstr "Array Grootte Wijzigen"
 
+msgid "New Size:"
+msgstr "Nieuwe Grootte:"
+
 msgid "Set %s"
 msgstr "Zet %s"
 
@@ -1746,11 +1943,11 @@ msgstr "Laat alle lokalen zien"
 msgid "Show Selected Locales Only"
 msgstr "Alleen geselecteerde talen tonen"
 
+msgid "Edit Filters"
+msgstr "Filters berwerken"
+
 msgid "Language:"
 msgstr "Taal:"
-
-msgid "Script"
-msgstr "Script"
 
 msgid "Clear Output"
 msgstr "Uitvoer wissen"
@@ -1931,8 +2128,14 @@ msgstr "Kan niet ongedaan maken terwijl de muis knoppen ingedrukt zijn."
 msgid "Nothing to undo."
 msgstr "Niks om ongedaan te maken."
 
+msgid "Remote Undo: %s"
+msgstr "Op afstand ongedaan maken: %s"
+
 msgid "Can't redo while mouse buttons are pressed."
 msgstr "Kan niet opnieuw doen terwijl de muis knoppen ingedrukt zijn."
+
+msgid "Remote Redo: %s"
+msgstr "Op afstand opnieuw doen: %s"
 
 msgid "Can't reload a scene that was never saved."
 msgstr "Een scène die nooit opgeslagen is kan niet opnieuw laden worden."
@@ -2270,23 +2473,6 @@ msgid "Install from file"
 msgstr "Installeer Vanuit Bestand"
 
 msgid ""
-"This will set up your project for custom Android builds by installing the "
-"source template to \"res://android/build\".\n"
-"You can then apply modifications and build your own custom APK on export "
-"(adding modules, changing the AndroidManifest.xml, etc.).\n"
-"Note that in order to make custom builds instead of using pre-built APKs, "
-"the \"Use Custom Build\" option should be enabled in the Android export "
-"preset."
-msgstr ""
-"Hiermee wordt je project ingesteld voor aangepaste Android-builds door de "
-"bronsjabloon te installeren naar \"res://android/build\".\n"
-"Je kan vervolgens wijzigingen toepassen en je eigen aangepaste APK maken bij "
-"export (modules toevoegen, de AndroidManifest.xml aanpassen, enz.).\n"
-"Houd er rekening mee dat om aangepaste builds te maken in plaats van vooraf "
-"gebouwde APK's te gebruiken, de optie \"Use Custom Build\" moet ingeschakeld "
-"zijn in de Android-export preset."
-
-msgid ""
 "The Android build template is already installed in this project and it won't "
 "be overwritten.\n"
 "Remove the \"res://android/build\" directory manually before attempting this "
@@ -2431,6 +2617,9 @@ msgstr "Beeldvenster kiezen"
 msgid "Selected node is not a Viewport!"
 msgstr "Geselecteerde knoop is geen Viewport!"
 
+msgid "Size:"
+msgstr "Grootte:"
+
 msgid "Remove Item"
 msgstr "Verwijder Item"
 
@@ -2468,6 +2657,9 @@ msgstr "Nieuw Script"
 msgid "Extend Script"
 msgstr "Script uitbreiden"
 
+msgid "Remote Debug"
+msgstr "Remote Debug"
+
 msgid ""
 "No runnable export preset found for this platform.\n"
 "Please add a runnable preset in the Export menu or define an existing preset "
@@ -2497,8 +2689,12 @@ msgstr "Sneltoetsen"
 msgid "Binding"
 msgstr "Binding"
 
-msgid "%s Error"
-msgstr "%s Fout"
+msgid ""
+"Hold %s to round to integers.\n"
+"Hold Shift for more precise changes."
+msgstr ""
+"Houdt %s ingedrukt om op gehele getallen af te ronden.\n"
+"Houdt Shift ingedrukt voor preciezere veranderingen."
 
 msgid "All Devices"
 msgstr "Alle Apparaten"
@@ -3111,6 +3307,9 @@ msgstr "Omleidingen per lokalisatie:"
 msgid "Locale"
 msgstr "Localisatie"
 
+msgid "Set %s on %d nodes"
+msgstr "Verwijder %d knopen"
+
 msgid "Select a single node to edit its signals and groups."
 msgstr "Selecteer één knoop om zijn signalen groepen aan te passen."
 
@@ -3219,6 +3418,9 @@ msgstr "Selecteer en verplaats punten, maak punten aan met RMK."
 msgid "Enable snap and show grid."
 msgstr "Kleven inschakelen en raster weergeven."
 
+msgid "Blend:"
+msgstr "Mengen:"
+
 msgid "Point"
 msgstr "Punt"
 
@@ -3261,14 +3463,8 @@ msgstr "Punten en driehoeken wissen."
 msgid "Generate blend triangles automatically (instead of manually)"
 msgstr "Genereer geblende driehoeken automatisch (in plaats van handmatig)"
 
-msgid "Blend:"
-msgstr "Mengen:"
-
 msgid "Parameter Changed:"
 msgstr "Parameter veranderd:"
-
-msgid "Edit Filters"
-msgstr "Filters berwerken"
 
 msgid "Output node can't be added to the blend tree."
 msgstr "Uitvoerknoop kan niet worden toegevoegd aan de overgangsboom."
@@ -3386,9 +3582,6 @@ msgstr "Speel geselecteerde animatie achterwaarts vanaf huidige positie. (A)"
 
 msgid "Play selected animation backwards from end. (Shift+A)"
 msgstr "Speel geselecteerde animatie achterwaarts vanaf het einde. (Shift+A)"
-
-msgid "Stop animation playback. (S)"
-msgstr "Stop animatie opname. (S)"
 
 msgid "Play selected animation from start. (Shift+D)"
 msgstr "Speel geselecteerde animatie vanaf het begin. (Shift+D)"
@@ -3509,6 +3702,9 @@ msgstr "Knopen verbinden."
 
 msgid "Remove selected node or transition."
 msgstr "De uitgekozen knoop of overgang verwijderen."
+
+msgid "Transition:"
+msgstr "Overgang:"
 
 msgid "Play Mode:"
 msgstr "Afspeelmodus:"
@@ -3744,6 +3940,9 @@ msgstr "Verplaats %d CanvasItems"
 msgid "Move CanvasItem \"%s\" to (%d, %d)"
 msgstr "CanvasItem \"%s\" naar (%d, %d) verplaatsen"
 
+msgid "Scaling:"
+msgstr "Schaal:"
+
 msgid "Lock Selected"
 msgstr "Slot Geselecteerd"
 
@@ -3777,6 +3976,11 @@ msgstr "Alt + Slepen : Schalen."
 msgid "V: Set selected node's pivot position."
 msgstr "V: Stel het draaipunt in van de geselecteerde Node."
 
+msgid "Alt+RMB: Show list of all nodes at position clicked, including locked."
+msgstr ""
+"Alt+RMB: Toont een lijst van alle nodes op de aangeklikte positie, inclusief "
+"vergrendeld."
+
 msgid "Move Mode"
 msgstr "Verplaatsingsmodus"
 
@@ -3788,6 +3992,9 @@ msgstr "Schaalmodus"
 
 msgid "Shift: Scale proportionally."
 msgstr "Shift: Proportioneel schalen."
+
+msgid "Show list of selectable nodes at position clicked."
+msgstr "Toont een lijst van selecteerbare nodes op de aangeklikte positie."
 
 msgid "Click to change object's rotation pivot."
 msgstr "Klik om het draaipunt van het object aan te passen."
@@ -4157,6 +4364,14 @@ msgstr ""
 "Wanneer dit op afstand wordt gebruikt op een andere machine, is dit "
 "efficiënter met de netwerk bestandssysteem optie aan."
 
+msgid "Run %d Instance"
+msgid_plural "Run %d Instances"
+msgstr[0] "Run %d Instantie"
+msgstr[1] "Run %d Instanties"
+
+msgid " - Variation"
+msgstr " - Variatie"
+
 msgid "Convert to CPUParticles2D"
 msgstr "Omzetten naar CPUParticles2D"
 
@@ -4195,6 +4410,9 @@ msgstr "Oppervlakte Punten+Normaal (Gericht)"
 
 msgid "Volume"
 msgstr "Volume"
+
+msgid "Emission Source:"
+msgstr "Emissiebron:"
 
 msgid "Generate Visibility AABB"
 msgstr "Genereer Zichtbaarheid AABB"
@@ -4439,12 +4657,6 @@ msgstr "Verander Notifier AABB"
 msgid "Change Particles AABB"
 msgstr "Verander Particles AABB"
 
-msgid "Change Box Shape Extents"
-msgstr "Wijzig Box Vorm Extents"
-
-msgid "Change Probe Extents"
-msgstr "Verander Probe Extents"
-
 msgid "Change Capsule Shape Radius"
 msgstr "Wijzig Capsule Vorm Straal"
 
@@ -4484,6 +4696,9 @@ msgstr "Sleutelinvoer is uitgeschakeld (geen sleutel ingevoegd)."
 msgid "Animation Key Inserted."
 msgstr "Animatiesleutel Ingevoegd."
 
+msgid "Objects: %d\n"
+msgstr "Objecten: %d\n"
+
 msgid "Top View."
 msgstr "Bovenaanzicht."
 
@@ -4511,6 +4726,9 @@ msgstr "Arrangeer Rotatie naar Aanzicht"
 msgid "None"
 msgstr "Geen"
 
+msgid "Translating:"
+msgstr "Translatie:"
+
 msgid "Rotating %s degrees."
 msgstr "Roteren %s graden."
 
@@ -4531,6 +4749,9 @@ msgstr "Weergave Overdraw"
 
 msgid "Display Unshaded"
 msgstr "Weergave Zonder Shading"
+
+msgid "Normal Buffer"
+msgstr "Normale Buffer"
 
 msgid "View Environment"
 msgstr "Bekijk Omgeving"
@@ -5173,6 +5394,9 @@ msgstr "Standaard"
 msgid "Connections to method:"
 msgstr "Verbindingen aan methode:"
 
+msgid "Source"
+msgstr "Bron"
+
 msgid "Target"
 msgstr "Doel"
 
@@ -5351,6 +5575,15 @@ msgstr "Ongeldige geometrie, kan geen light occluder creëren."
 msgid "Create LightOccluder2D Sibling"
 msgstr "Creëer LightOccluder2D Sibling"
 
+msgid "Simplification:"
+msgstr "Simplificatie:"
+
+msgid "Shrink (Pixels):"
+msgstr "Krimpen (Pixels):"
+
+msgid "Grow (Pixels):"
+msgstr "Vergroot (Pixels):"
+
 msgid "Update Preview"
 msgstr "Voorbeeld bijwerken"
 
@@ -5396,11 +5629,8 @@ msgstr "(leeg)"
 msgid "Animations:"
 msgstr "Animaties:"
 
-msgid "Speed:"
-msgstr "Snelheid:"
-
-msgid "Loop"
-msgstr "Lus"
+msgid "Delete Animation"
+msgstr "Animatie wissen"
 
 msgid "Animation Frames:"
 msgstr "Animatiebeelden:"
@@ -5449,6 +5679,29 @@ msgstr "Automatisch Snijden"
 
 msgid "Step:"
 msgstr "Stap:"
+
+msgid "1 color"
+msgid_plural "{num} colors"
+msgstr[0] "1 kleur"
+msgstr[1] "{num} kleuren"
+
+msgid "1 constant"
+msgid_plural "{num} constants"
+msgstr[0] "1 constante"
+msgstr[1] "{num} constantes"
+
+msgid "1 font size"
+msgid_plural "{num} font sizes"
+msgstr[0] "1 lettertype grootte"
+msgstr[1] "{num} lettertype groottes"
+
+msgid "1 stylebox"
+msgid_plural "{num} styleboxes"
+msgstr[0] "1 stijlbox"
+msgstr[1] "{num} stijlboxen"
+
+msgid "Updating the editor"
+msgstr "Editor aan het updaten"
 
 msgid "Remove Class Items"
 msgstr "Class Items Verwijderen"
@@ -5534,6 +5787,9 @@ msgstr "Horizontaal omdraaien"
 msgid "Flip Vertically"
 msgstr "Verticaal omdraaien"
 
+msgid "Scattering:"
+msgstr "Verspreiding:"
+
 msgid "Yes"
 msgstr "Ja"
 
@@ -5545,6 +5801,9 @@ msgstr "Fout"
 
 msgid "Commit"
 msgstr "Commit"
+
+msgid "Discard changes"
+msgstr "Wijzigingen ongedaan maken"
 
 msgid "Staged Changes"
 msgstr "Gefaseerde Wijzigingen"
@@ -5579,8 +5838,17 @@ msgstr "SSH Wachtwoord"
 msgid "Detect new changes"
 msgstr "Detecteer nieuwe veranderingen"
 
+msgid "Discard all changes"
+msgstr "Alle wijzigingen ongedaan maken"
+
 msgid "Commit Changes"
 msgstr "Commit veranderingen"
+
+msgid "Remote Name"
+msgstr "Remote Naam"
+
+msgid "Remote URL"
+msgstr "Remote URL"
 
 msgid "Modified"
 msgstr "Bewerkt"
@@ -6040,10 +6308,10 @@ msgid ""
 "incident vector, and Nref, the reference vector. If the dot product of I and "
 "Nref is smaller than zero the return value is N. Otherwise -N is returned."
 msgstr ""
-"Geeft de vector met dezelfde richting als de referentievector. De functie "
-"bevat drie vectorparameters: N, de oriëntatievector, I, de incidentvector en "
-"Nref, de referentievector. Als het inproduct van I en Nref kleiner dan nul "
-"is, is de terugkeerwaarde N, anders -N."
+"Geeft de vector dat naar dezelfde richting als de referentievector kijkt. De "
+"functie bevat drie vector parameters: N, de oriëntatievector, I, de "
+"incidenten vector en Nref, de referentievector. Als het punt product van I "
+"en Nref kleiner dan nul is, is de terugkeer waarde N, anders -N."
 
 msgid ""
 "Returns falloff based on the dot product of surface normal and view "
@@ -6259,6 +6527,12 @@ msgstr ""
 msgid "Are you sure to run %d projects at once?"
 msgstr "Weet je zeker dat je %d projecten wilt uitvoeren?"
 
+msgid "Remove %d projects from the list?"
+msgstr "%d projecten uit de lijst verwijderen?"
+
+msgid "Remove this project from the list?"
+msgstr "Dit project van de lijst verwijderen?"
+
 msgid ""
 "Remove all missing projects from the list?\n"
 "The project folders' contents won't be modified."
@@ -6323,14 +6597,8 @@ msgstr "Toevoegen Input Action"
 msgid "Change Action deadzone"
 msgstr "Wijzig Action Deadzone"
 
-msgid "Add Input Action Event"
-msgstr "Toevoegen Input Action Event"
-
 msgid "Erase Input Action"
 msgstr "Verwijder Input Actie"
-
-msgid "Rename Input Action Event"
-msgstr "Hernoem Input Action Event"
 
 msgid "Project Settings (project.godot)"
 msgstr "Projectinstellingen (project.godot)"
@@ -6352,9 +6620,6 @@ msgstr "Selecteer Eigenschap"
 
 msgid "Select Virtual Method"
 msgstr "Selecteer Virtuele Method"
-
-msgid "Select Method"
-msgstr "Selecteer Method"
 
 msgid "Batch Rename"
 msgstr "Bulk hernoemen"
@@ -6449,6 +6714,9 @@ msgstr "3D Scène"
 
 msgid "User Interface"
 msgstr "Gebruikersomgeving"
+
+msgid "Root Name:"
+msgstr "Root Naam:"
 
 msgid "Error loading scene from %s"
 msgstr "Fout bij het laden van scène uit %s"
@@ -6634,6 +6902,16 @@ msgstr "(Verbonden vanaf)"
 
 msgid "Node configuration warning:"
 msgstr "Waarschuwing over knoopconfiguratie:"
+
+msgid "Node has one connection."
+msgid_plural "Node has {num} connections."
+msgstr[0] "Node heeft een connectie."
+msgstr[1] "Node heeft {num} connecties."
+
+msgid "Node is in this group:"
+msgid_plural "Node is in the following groups:"
+msgstr[0] "Node is in deze groep:"
+msgstr[1] "Node is in de volgende groepen:"
 
 msgid "Open Script:"
 msgstr "Open Script:"
@@ -6906,6 +7184,9 @@ msgstr "Grootte"
 msgid "Network Profiler"
 msgstr "Netwerk Profiler"
 
+msgid "Delete Property?"
+msgstr "Property verwijderen?"
+
 msgid "A NavigationMesh resource must be set or created for this node to work."
 msgstr "Een NavigationMesh-bron is nodig om deze knoop te laten werken."
 
@@ -7012,12 +7293,6 @@ msgstr "Ongeldige publieke sleutel voor APK -uitbreiding."
 msgid "Invalid package name:"
 msgstr "Ongeldige pakketnaam:"
 
-msgid "\"Use Custom Build\" must be enabled to use the plugins."
-msgstr "\"Use Custom Build\" moet geactiveerd zijn om plugins te gebruiken."
-
-msgid "\"Export AAB\" is only valid when \"Use Custom Build\" is enabled."
-msgstr "\"Export AAB\" is alleen geldig als \"Use Custom Build\" aan staat."
-
 msgid "Invalid filename! Android App Bundle requires the *.aab extension."
 msgstr ""
 "Bestandsnaam niet toegestaan! Android App Bundle vereist een *.aab extensie."
@@ -7029,11 +7304,12 @@ msgid "Invalid filename! Android APK requires the *.apk extension."
 msgstr "Bestandsnaam niet toegestaan! Android APK vereist een *.apk extensie."
 
 msgid ""
-"Trying to build from a custom built template, but no version info for it "
-"exists. Please reinstall from the 'Project' menu."
+"Android build version mismatch: Template installed: %s, Godot version: %s. "
+"Please reinstall Android build template from 'Project' menu."
 msgstr ""
-"Geprobeerd met een eigen bouwsjabloon te bouwen, maar versie info ontbreekt. "
-"Installeer alstublieft opnieuw vanuit het 'Project' menu."
+"Android build versie mismatch: Template geïnstalleerd: %s, Godot versie: %s. "
+"Gelieve het Android build template vanuit het 'Project' menu te "
+"Herinstalleren."
 
 msgid "Building Android Project (gradle)"
 msgstr "Bouwen van Android Project (gradle)"
@@ -7228,6 +7504,9 @@ msgstr ""
 "Niets is zichtbaar want meshes zijn niet toegewezen aan de tekendoorlopen "
 "(draw passes)."
 
+msgid "Generating Probe Volumes"
+msgstr "Sonde volumes aan het genereren"
+
 msgid "This body will be ignored until you set a mesh."
 msgstr "Dit lichaam zal worden genegeerd totdat je een mesh instelt."
 
@@ -7272,9 +7551,6 @@ msgstr ""
 msgid "The AnimationPlayer root node is not a valid node."
 msgstr "De AnimationPlayer wortel is een ongeldig knoop."
 
-msgid "Pick a color from the editor window."
-msgstr "Kies een kleur uit het editorvenster."
-
 msgid "Switch between hexadecimal and code values."
 msgstr "Wissel tussen hexadecimaal en codewaarden."
 
@@ -7304,9 +7580,6 @@ msgstr "Alarm!"
 
 msgid "Please Confirm..."
 msgstr "Bevestig alstublieft..."
-
-msgid "Must use a valid extension."
-msgstr "Een geldige extensie moet gebruikt worden."
 
 msgid "Enable grid minimap."
 msgstr "Rasteroverzicht inschakelen."
@@ -7350,3 +7623,15 @@ msgstr "Toewijzing aan uniform."
 
 msgid "Constants cannot be modified."
 msgstr "Constanten kunnen niet worden aangepast."
+
+msgid "Invalid argument name."
+msgstr "Ongeldige argument naam."
+
+msgid "Invalid macro argument list."
+msgstr "Ongeldige macro argumenten lijst."
+
+msgid "Invalid macro argument."
+msgstr "Ongeldig macro argument."
+
+msgid "Invalid macro argument count."
+msgstr "Ongeldige hoeveelheid macro argumenten."

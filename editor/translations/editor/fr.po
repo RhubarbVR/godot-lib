@@ -101,7 +101,7 @@
 # Arnaud Lier <arnaud@ric-rac.org>, 2022.
 # Jérémie Guegain <mirejai@orange.fr>, 2022.
 # cwulveryck <cwulveryck@online.fr>, 2022.
-# Helix Sir <vincentbarkmann@gmail.com>, 2022.
+# Helix Sir <vincentbarkmann@gmail.com>, 2022, 2023.
 # SCHUTZ Lucas <lucas.schutz0954@gmail.com>, 2022.
 # EGuillemot <Elouen.Guillemot@gmail.com>, 2022.
 # Entiz <maxime.salido@gmail.com>, 2022.
@@ -109,13 +109,22 @@
 # Hugo Berthet-Rambaud <hugoberthetrambaud@outlook.com>, 2023.
 # Nathan Chambrette <n.chambrette@gmail.com>, 2023.
 # slundi <slundi@gmail.com>, 2023.
+# Elouan MAILLY <leloupandco@gmail.com>, 2023.
+# nuclehon <benjamin.deslandes1@gmail.com>, 2023.
+# Siandfrance <Siandfrance@gmail.com>, 2023.
+# Thalya Gauvrit <skar0ps.dev@gmail.com>, 2023.
+# Malo Barbot <moy_97@hotmail.fr>, 2023.
+# Quentin Franchi <general@quentinfranchi.com>, 2023.
+# Godot Trad FR <godottrad@mailo.com>, 2023.
+# Ponthieu <7hip.po6@orange.fr>, 2023.
+# Hipolyte Ponthieu <7hip.po6@orange.fr>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine editor interface\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-01-14 00:01+0000\n"
-"Last-Translator: slundi <slundi@gmail.com>\n"
+"PO-Revision-Date: 2023-02-24 12:28+0000\n"
+"Last-Translator: Hipolyte Ponthieu <7hip.po6@orange.fr>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/godot-engine/"
 "godot/fr/>\n"
 "Language: fr\n"
@@ -123,19 +132,196 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.15.1-dev\n"
+"X-Generator: Weblate 4.16-dev\n"
+
+msgid "Unset"
+msgstr "Non défini"
 
 msgid "Physical"
 msgstr "Physique"
 
+msgid "Left Mouse Button"
+msgstr "Bouton de souris gauche"
+
+msgid "Right Mouse Button"
+msgstr "Bouton de souris droit"
+
+msgid "Middle Mouse Button"
+msgstr "Clic molette de souris"
+
+msgid "Mouse Wheel Up"
+msgstr "Molette vers le haut"
+
+msgid "Mouse Wheel Down"
+msgstr "Molette vers le bas"
+
+msgid "Mouse Wheel Left"
+msgstr "Molette vers la gauche"
+
+msgid "Mouse Wheel Right"
+msgstr "Molette vers la droite"
+
+msgid "Mouse Thumb Button 1"
+msgstr "Bouton latéral de souris 1"
+
+msgid "Mouse Thumb Button 2"
+msgstr "Bouton latéral de souris 2"
+
 msgid "Button"
 msgstr "Bouton"
+
+msgid "Double Click"
+msgstr "Double clic"
+
+msgid "Mouse motion at position (%s) with velocity (%s)"
+msgstr "Mouvement de souris vers la position (%s) avec une vélocité de (%s)"
+
+msgid "Left Stick X-Axis, Joystick 0 X-Axis"
+msgstr "Axe X stick gauche , Axe X Joystick 0"
+
+msgid "Left Stick Y-Axis, Joystick 0 Y-Axis"
+msgstr "Axe Y stick gauche, Axe Y Joystick 0"
+
+msgid "Right Stick X-Axis, Joystick 1 X-Axis"
+msgstr "Axe X stick droit, Axe X Joystick 1"
+
+msgid "Right Stick Y-Axis, Joystick 1 Y-Axis"
+msgstr "Axe Y stick droit, Axe Y Joystick 1"
+
+msgid "Joystick 2 X-Axis, Left Trigger, Sony L2, Xbox LT"
+msgstr "Axe X Joystick 2, Gâchette gauche, L2 Sony, LT Xbox"
+
+msgid "Joystick 2 Y-Axis, Right Trigger, Sony R2, Xbox RT"
+msgstr "Axe Y Joystick 2, Gâchette droite, R2 Sony, RT Xbox"
+
+msgid "Joystick 3 X-Axis"
+msgstr "Axe X du Joystick 3"
+
+msgid "Joystick 3 Y-Axis"
+msgstr "Axe Y du Joystick 3"
+
+msgid "Joystick 4 X-Axis"
+msgstr "Axe X du Joystick 4"
+
+msgid "Joystick 4 Y-Axis"
+msgstr "Axe Y du Joystick 4"
+
+msgid "Unknown Joypad Axis"
+msgstr "Axe de contrôleur inconnu"
+
+msgid "Joypad Motion on Axis %d (%s) with Value %.2f"
+msgstr "Mouvement du contrôleur sur l'axe %d (%s) d'une valeur de %.2f"
+
+msgid "Bottom Action, Sony Cross, Xbox A, Nintendo B"
+msgstr "Action du bas, Croix Sony, A Xbox, B Nintendo"
+
+msgid "Right Action, Sony Circle, Xbox B, Nintendo A"
+msgstr "Action droite, Rond Sony, B Xbox, A Nintendo"
+
+msgid "Left Action, Sony Square, Xbox X, Nintendo Y"
+msgstr "Action gauche, Carré Sony, X Xbox, Y Nintendo"
+
+msgid "Top Action, Sony Triangle, Xbox Y, Nintendo X"
+msgstr "Action du haut, Triangle Sony, Y Xbox, X Nintendo"
+
+msgid "Back, Sony Select, Xbox Back, Nintendo -"
+msgstr "Retour, Select Sony, Back Xbox, - Nintendo"
+
+msgid "Guide, Sony PS, Xbox Home"
+msgstr "Guide, PS Sony, Home Xbox"
+
+msgid "Start, Nintendo +"
+msgstr "Start, + Nintendo"
+
+msgid "Left Stick, Sony L3, Xbox L/LS"
+msgstr "Stick gauche, L3 Sony, L/LS Xbox"
+
+msgid "Right Stick, Sony R3, Xbox R/RS"
+msgstr "Stick droit, R3 Sony, R/RS Xbox"
+
+msgid "Left Shoulder, Sony L1, Xbox LB"
+msgstr "Gâchette haute gauche, L1 Sony, LB Xbox"
+
+msgid "Right Shoulder, Sony R1, Xbox RB"
+msgstr "Gâchette haute droite, R1 Sony, RB Xbox"
+
+msgid "D-pad Up"
+msgstr "Flèche du haut"
+
+msgid "D-pad Down"
+msgstr "Flèche du bas"
+
+msgid "D-pad Left"
+msgstr "Flèche gauche"
+
+msgid "D-pad Right"
+msgstr "Flèche droite"
+
+msgid "Xbox Share, PS5 Microphone, Nintendo Capture"
+msgstr "Share Xbox, Microphone PS5, Capture Nintendo"
+
+msgid "Xbox Paddle 1"
+msgstr "Palette Xbox 1"
+
+msgid "Xbox Paddle 2"
+msgstr "Palette Xbox 2"
+
+msgid "Xbox Paddle 3"
+msgstr "Palette Xbox 3"
+
+msgid "Xbox Paddle 4"
+msgstr "Palette Xbox 4"
+
+msgid "PS4/5 Touchpad"
+msgstr "Pavé tactile PS4/5"
+
+msgid "Joypad Button %d"
+msgstr "Bouton de joystick %d"
+
+msgid "Pressure:"
+msgstr "Pression :"
+
+msgid "touched"
+msgstr "Touché"
+
+msgid "released"
+msgstr "relâché"
+
+msgid "Screen %s at (%s) with %s touch points"
+msgstr "Écran %s à (%s) avec %s points de contact"
+
+msgid ""
+"Screen dragged with %s touch points at position (%s) with velocity of (%s)"
+msgstr ""
+"Écran glissé avec %s points de contact vers la position (%s) avec une "
+"vélocité de (%s)"
+
+msgid "Magnify Gesture at (%s) with factor %s"
+msgstr "Geste d’agrandissement à (%s) avec un facteur de %s"
+
+msgid "Pan Gesture at (%s) with delta (%s)"
+msgstr "Geste de mouvement panoramique à (%s) avec un delta de (%s)"
+
+msgid "MIDI Input on Channel=%s Message=%s"
+msgstr "Entrée MIDI sur le canal=%s Message=%s"
+
+msgid "Input Event with Shortcut=%s"
+msgstr "Événement d’entrée avec raccourci=%s"
+
+msgid "Accept"
+msgstr "Accepter"
 
 msgid "Select"
 msgstr "Sélectionner"
 
 msgid "Cancel"
 msgstr "Annuler"
+
+msgid "Focus Next"
+msgstr "Cibler suivant"
+
+msgid "Focus Prev"
+msgstr "Cibler précédent"
 
 msgid "Left"
 msgstr "Gauche"
@@ -148,6 +334,15 @@ msgstr "Monter"
 
 msgid "Down"
 msgstr "Descendre"
+
+msgid "Page Up"
+msgstr "Page Haut"
+
+msgid "Page Down"
+msgstr "Page Bas"
+
+msgid "Home"
+msgstr "Accueil"
 
 msgid "End"
 msgstr "Fin"
@@ -167,23 +362,89 @@ msgstr "Annuler"
 msgid "Redo"
 msgstr "Refaire"
 
+msgid "Completion Query"
+msgstr "Requête de complétion"
+
+msgid "New Line"
+msgstr "Nouvelle ligne"
+
+msgid "New Blank Line"
+msgstr "Nouvelle ligne vide"
+
+msgid "New Line Above"
+msgstr "Nouvelle ligne au dessus"
+
 msgid "Indent"
 msgstr "Indentation"
+
+msgid "Dedent"
+msgstr "Désindenter"
+
+msgid "Backspace"
+msgstr "Effacer"
+
+msgid "Backspace Word"
+msgstr "Effacer mot"
+
+msgid "Backspace all to Left"
+msgstr "Effacer tout à gauche"
 
 msgid "Delete"
 msgstr "Supprimer"
 
+msgid "Delete Word"
+msgstr "Supprimer mot"
+
+msgid "Delete all to Right"
+msgstr "Tout supprimer à droite"
+
+msgid "Caret Left"
+msgstr "Curseur à Gauche"
+
+msgid "Caret Right"
+msgstr "Curseur à droite"
+
+msgid "Caret Word Right"
+msgstr "Curseur à droite du mot"
+
+msgid "Caret Up"
+msgstr "Déplacer le curseur vers le haut"
+
+msgid "Caret Add Above"
+msgstr "Ajouter un curseur au-dessus"
+
+msgid "Scroll Up"
+msgstr "Défilement vers le haut"
+
+msgid "Scroll Down"
+msgstr "Défilement vers le bas"
+
 msgid "Select All"
 msgstr "Tout sélectionner"
+
+msgid "Select Word Under Caret"
+msgstr "Sélectionner les mots sous le caret"
+
+msgid "Add Selection for Next Occurrence"
+msgstr "Ajouter la Sélection pour la Prochaine Occurence"
+
+msgid "Toggle Insert Mode"
+msgstr "Basculer en mode insertion"
 
 msgid "Duplicate Nodes"
 msgstr "Dupliquer le(s) nœud(s)"
 
 msgid "Delete Nodes"
-msgstr "Supprimer des nœuds"
+msgstr "Supprimer le(s) nœud(s)"
+
+msgid "Go Up One Level"
+msgstr "Monter d'un Niveau"
 
 msgid "Refresh"
 msgstr "Rafraîchir"
+
+msgid "Swap Input Direction"
+msgstr "Échanger les Directions d'Entrée"
 
 msgid "Invalid input %d (not passed) in expression"
 msgstr "Entrée non valide %d (non transmise) dans l’expression"
@@ -206,6 +467,12 @@ msgstr "Arguments invalides pour construire '%s'"
 msgid "On call to '%s':"
 msgstr "Lors de l’appel à '%s' :"
 
+msgid "Built-in script"
+msgstr "Script intégré"
+
+msgid "Built-in"
+msgstr "Intégré"
+
 msgid "B"
 msgstr "o"
 
@@ -227,33 +494,73 @@ msgstr "Pio"
 msgid "EiB"
 msgstr "Eio"
 
+msgid "Example: %s"
+msgstr "Exemple : %s"
+
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d élément"
+msgstr[1] "%d éléments"
+
 msgid ""
 "Invalid action name. It cannot be empty nor contain '/', ':', '=', '\\' or "
 "'\"'"
 msgstr ""
-"Nom d'action invalide. Il ne peut être vide ni contenir « / », « : », « = », "
-"« \\ » ou « \" »"
+"Nom d'action invalide. Elle ne peut être vide ni contenir «/», «:», «=», "
+"«\\» ou «\"»"
 
 msgid "An action with the name '%s' already exists."
 msgstr "Une action avec le nom « %s » existe déjà."
 
+msgid "Cannot Revert - Action is same as initial"
+msgstr ""
+"Impossible de revenir en arrière - L'action est identique à ce qui était "
+"initialement"
+
 msgid "Add Event"
-msgstr "Ajouter évènement"
+msgstr "Ajouter un évènement"
+
+msgid "Remove Action"
+msgstr "Supprimer l'action"
+
+msgid "Cannot Remove Action"
+msgstr "Impossible de Retirer l'Action"
+
+msgid "Edit Event"
+msgstr "Editer l'Évènement"
+
+msgid "Remove Event"
+msgstr "Supprimer l'Évènement"
+
+msgid "Filter by name..."
+msgstr "Filtrer par nom..."
+
+msgid "Clear All"
+msgstr "Tout Effacer"
+
+msgid "Add New Action"
+msgstr "Ajouter une Action"
 
 msgid "Add"
 msgstr "Ajouter"
+
+msgid "Show Built-in Actions"
+msgstr "Afficher les Actions Intégrées"
 
 msgid "Action"
 msgstr "Action"
 
 msgid "Deadzone"
-msgstr "Zone morte"
+msgstr "Zone Morte"
 
 msgid "Time:"
 msgstr "Temps :"
 
 msgid "Value:"
 msgstr "Valeur :"
+
+msgid "Update Selected Key Handles"
+msgstr "Dupliquer la(les) clé(s) sélectionnée(s)"
 
 msgid "Insert Key Here"
 msgstr "Insérer la clé ici"
@@ -263,6 +570,12 @@ msgstr "Dupliquer la(les) clé(s) sélectionnée(s)"
 
 msgid "Delete Selected Key(s)"
 msgstr "Supprimer (la)les clé(s) sélectionnée(s)"
+
+msgid "Make Handles Mirrored"
+msgstr "Inverser les Anses"
+
+msgid "Make Handles Balanced (Auto Tangent)"
+msgstr "Équilibrer les Anses (Tangente Automatique)"
 
 msgid "Add Bezier Point"
 msgstr "Ajouter un point de Bézier"
@@ -357,6 +670,18 @@ msgstr "Poignée d'entrée :"
 msgid "Out-Handle:"
 msgstr "Poignée de sortie :"
 
+msgid "Handle mode: Free\n"
+msgstr "Mode de manipulation: Libre\n"
+
+msgid "Handle mode: Linear\n"
+msgstr "Mode de manipulation: Linéaire\n"
+
+msgid "Handle mode: Balanced\n"
+msgstr "Mode de manipulation: Équilibré\n"
+
+msgid "Handle mode: Mirrored\n"
+msgstr "Mode de manipulation: En miroir\n"
+
 msgid "Stream:"
 msgstr "Flux :"
 
@@ -371,6 +696,9 @@ msgstr "Clip d'animation :"
 
 msgid "Toggle Track Enabled"
 msgstr "Basculement de piste activé"
+
+msgid "Don't Use Blend"
+msgstr "Ne pas utiliser de transitions"
 
 msgid "Continuous"
 msgstr "Continu"
@@ -579,12 +907,6 @@ msgstr "Utiliser les courbes de Bézier"
 msgid "Create RESET Track(s)"
 msgstr "Créer des pistes RESET"
 
-msgid "Anim. Optimizer"
-msgstr "Optimiser l'animation"
-
-msgid "Max. Angular Error:"
-msgstr "Erreur angulaire max. :"
-
 msgid "Optimize"
 msgstr "Optimiser"
 
@@ -605,6 +927,9 @@ msgstr "Nettoyer"
 
 msgid "Scale Ratio:"
 msgstr "Ratio d'échelle :"
+
+msgid "Select Transition and Easing"
+msgstr "Sélectionner transition et fondu"
 
 msgid "Select Tracks to Copy"
 msgstr "Sélectionner les pistes à copier"
@@ -629,6 +954,16 @@ msgstr "Numéro de ligne :"
 
 msgid "%d replaced."
 msgstr "%d remplacé."
+
+msgid "%d match"
+msgid_plural "%d matches"
+msgstr[0] "%d correspondance trouvée"
+msgstr[1] "%d correspondances trouvées"
+
+msgid "%d of %d match"
+msgid_plural "%d of %d matches"
+msgstr[0] "%d de %d correspondance trouvée"
+msgstr[1] "%d de %d correspondances trouvées"
 
 msgid "Match Case"
 msgstr "Sensible à la casse"
@@ -691,6 +1026,12 @@ msgstr "Depuis le signal :"
 msgid "Scene does not contain any script."
 msgstr "La scène ne comprend pas de script."
 
+msgid "Select Method"
+msgstr "Sélectionner une méthode"
+
+msgid "No method found matching given filters."
+msgstr "Aucune méthode ne correspond aux filtres sélectionnés."
+
 msgid "Remove"
 msgstr "Supprimer"
 
@@ -750,9 +1091,6 @@ msgstr "Déconnecter"
 
 msgid "Connect a Signal to a Method"
 msgstr "Connecter un signal à une méthode"
-
-msgid "Edit Connection:"
-msgstr "Modifier la connexion :"
 
 msgid "Are you sure you want to remove all connections from the \"%s\" signal?"
 msgstr "Voulez-vous vraiment supprimer toutes les connexions de ce signal ?"
@@ -819,6 +1157,9 @@ msgstr "Instance :"
 
 msgid "Toggle Visibility"
 msgstr "Basculer la visibilité"
+
+msgid "ms"
+msgstr "ms"
 
 msgid "Monitors"
 msgstr "Moniteurs"
@@ -900,23 +1241,8 @@ msgstr "Avertissement :"
 msgid "Error:"
 msgstr "Erreur :"
 
-msgid "C++ Error"
-msgstr "Erreur C++"
-
-msgid "C++ Error:"
-msgstr "Erreur C++ :"
-
-msgid "Source"
-msgstr "Source"
-
-msgid "C++ Source"
-msgstr "Source C++"
-
-msgid "Source:"
-msgstr "Source :"
-
-msgid "C++ Source:"
-msgstr "Source C++ :"
+msgid "%s Error"
+msgstr "Erreur %s"
 
 msgid "Stack Trace"
 msgstr "Pile des appels"
@@ -926,6 +1252,9 @@ msgstr "Copier l'erreur"
 
 msgid "Open C++ Source on GitHub"
 msgstr "Ouvrir les sources C++ sur GitHub"
+
+msgid "C++ Source"
+msgstr "Source C++"
 
 msgid "Video RAM"
 msgstr "Mémoire vidéo"
@@ -1366,6 +1695,9 @@ msgstr ""
 msgid "Must not collide with an existing global constant name."
 msgstr "Ne doit pas entrer en collision avec une constante globale existante."
 
+msgid "Keyword cannot be used as an Autoload name."
+msgstr "Le mot-clé ne peut pas être utilisé comme nom d'Autoload."
+
 msgid "Autoload '%s' already exists!"
 msgstr "L'autoload « %s » existe déjà !"
 
@@ -1395,6 +1727,9 @@ msgstr ""
 msgid "Path:"
 msgstr "Chemin :"
 
+msgid "Set path or press \"%s\" to create a script."
+msgstr "Définir le chemin d'accès ou appuyer sur \"%s\" pour créer un script."
+
 msgid "Node Name:"
 msgstr "Nom de nœud :"
 
@@ -1413,6 +1748,62 @@ msgstr "Navigation"
 msgid "OpenGL"
 msgstr "OpenGL"
 
+msgid "Vulkan"
+msgstr "Vulkan"
+
+msgid "Multi-channel Signed Distance Field Font Rendering"
+msgstr "Rendu de police multicanal par champ de distance signée"
+
+msgid "3D Nodes as well as RenderingServer access to 3D features."
+msgstr "Accés de 3D Nodes et RenderingServer aux fonctionnalités 3D."
+
+msgid ""
+"OpenGL back-end (if disabled, the RenderingDevice back-end is required)."
+msgstr ""
+"Back-end OpenGL (si désactivé, le back-end RenderingDevice est nécessaire)."
+
+msgid ""
+"Fallback implementation of Text Server\n"
+"Supports basic text layouts."
+msgstr ""
+"Implémentation de secours du Serveur de Texte\n"
+"Prend en charge les mises en page de texte basiques."
+
+msgid ""
+"Text Server implementation powered by ICU and HarfBuzz libraries.\n"
+"Supports complex text layouts, BiDi, and contextual OpenType font features."
+msgstr ""
+"Implémentation Text Server au travers de ICU et des bibliothèques HarfBuzz.\n"
+"Prise en charge de mises en page de texte complexes, BiDi, et des "
+"fonctionnalités contextuelles des polices OpenType."
+
+msgid ""
+"TrueType, OpenType, Type 1, and WOFF1 font format support using FreeType "
+"library (if disabled, WOFF2 support is also disabled)."
+msgstr ""
+"Prise en charge des formats de polices TrueType, OpenType, Type 1 et WOFF1 "
+"par l'utilisation de la bibliothèque FreeType (si désactivé, la comptabilité "
+"du format WOFF2 l'est aussi)."
+
+msgid "WOFF2 font format support using FreeType and Brotli libraries."
+msgstr ""
+"Prise en charge du format de police WOFF2 par les bibliothèques FreeType et "
+"Brottli."
+
+msgid ""
+"Multi-channel signed distance field font rendering support using msdfgen "
+"library (pre-rendered MSDF fonts can be used even if this option disabled)."
+msgstr ""
+"Prise en charge du rendu multicanal des polices de champs de distance signée "
+"par la bibliothèque msdfgen (les polices MSDF pré-rendues peuvent être "
+"utilisées même si cette option est désactivée)."
+
+msgid "Text Rendering and Font Options:"
+msgstr "Options sur le Rendu du Texte et les Polices :"
+
+msgid "File saving failed."
+msgstr "Echec de l'enregistrement du fichier."
+
 msgid "Nodes and Classes:"
 msgstr "Nœuds et classes :"
 
@@ -1428,11 +1819,20 @@ msgstr "Nouveau"
 msgid "Save"
 msgstr "Enregistrer"
 
+msgid "Profile:"
+msgstr "Profil:"
+
 msgid "Reset to Defaults"
 msgstr "Réinitialiser"
 
+msgid "Please Confirm:"
+msgstr "Veuillez confirmer :"
+
 msgid "Export Profile"
 msgstr "Profil d'exportation"
+
+msgid "Edit Build Configuration Profile"
+msgstr "Modifier le profil de configuration de build"
 
 msgid "Paste Params"
 msgstr "Coller les paramètres"
@@ -1624,9 +2024,6 @@ msgstr "Ouvrir"
 msgid "Select Current Folder"
 msgstr "Sélectionner le dossier courant"
 
-msgid "File exists, overwrite?"
-msgstr "Le fichier existe, l'écraser ?"
-
 msgid "Select This Folder"
 msgstr "Sélectionner ce dossier"
 
@@ -1742,6 +2139,12 @@ msgstr ""
 msgid "(Re)Importing Assets"
 msgstr "Ré-importation des assets"
 
+msgid "Experimental"
+msgstr "Expérimental"
+
+msgid "Error codes returned:"
+msgstr "Codes d'erreur renvoyés :"
+
 msgid "Top"
 msgstr "Dessus"
 
@@ -1768,6 +2171,9 @@ msgstr "écrase %s :"
 
 msgid "default:"
 msgstr "par défaut :"
+
+msgid "Operators"
+msgstr "Opérateurs"
 
 msgid "Theme Properties"
 msgstr "Propriétés du thème"
@@ -1908,11 +2314,11 @@ msgstr "Afficher toutes les langues"
 msgid "Show Selected Locales Only"
 msgstr "Afficher uniquement les langues sélectionnées"
 
+msgid "Edit Filters"
+msgstr "Modifier les filtres"
+
 msgid "Language:"
 msgstr "Langage :"
-
-msgid "Script"
-msgstr "Script"
 
 msgid "Variant"
 msgstr "Variant"
@@ -2483,24 +2889,6 @@ msgid "Install from file"
 msgstr "Installer depuis un fichier"
 
 msgid ""
-"This will set up your project for custom Android builds by installing the "
-"source template to \"res://android/build\".\n"
-"You can then apply modifications and build your own custom APK on export "
-"(adding modules, changing the AndroidManifest.xml, etc.).\n"
-"Note that in order to make custom builds instead of using pre-built APKs, "
-"the \"Use Custom Build\" option should be enabled in the Android export "
-"preset."
-msgstr ""
-"Ceci configurera votre projet pour des compilations Android personnalisées "
-"en installant le modèle source dans \"res://android/build\".\n"
-"Vous pouvez ensuite appliquer des modifications et créer votre propre APK "
-"personnalisé à l'exportation (ajout de modules, modification du fichier "
-"AndroidManifest.xml, etc.).\n"
-"Notez que pour faire des compilations personnalisées au lieu d'utiliser des "
-"APKs préconstruits, l'option \"Use Custom Build\" doit être activée dans le "
-"Preset d'exportation Android."
-
-msgid ""
 "The Android build template is already installed in this project and it won't "
 "be overwritten.\n"
 "Remove the \"res://android/build\" directory manually before attempting this "
@@ -2725,8 +3113,12 @@ msgstr "Raccourcis"
 msgid "Binding"
 msgstr "Liaison"
 
-msgid "%s Error"
-msgstr "Erreur %s"
+msgid ""
+"Hold %s to round to integers.\n"
+"Hold Shift for more precise changes."
+msgstr ""
+"Maintenir %s pour arrondir à l'entier près.\n"
+"Maintenir Maj. pour des changements plus précis."
 
 msgid "All Devices"
 msgstr "Tous les périphérique"
@@ -3363,6 +3755,9 @@ msgstr "Réimporter"
 msgid "Offset:"
 msgstr "Décalage :"
 
+msgid "Pre-render Configurations"
+msgstr "Configurations de pré-rendus"
+
 msgid "Importing Scene..."
 msgstr "Importation de la scène…"
 
@@ -3397,6 +3792,11 @@ msgstr "2D"
 
 msgid "3D"
 msgstr "3D"
+
+msgid "Set paths to save animations as resource files on Reimport"
+msgstr ""
+"Définir les chemins pour sauvegarder les animations en tant que fichiers de "
+"ressources lors de la réimportation"
 
 msgid "Meshes"
 msgstr "Maillages"
@@ -3566,6 +3966,9 @@ msgstr "Réaffectations (remaps) par langue :"
 msgid "Locale"
 msgstr "Localisation"
 
+msgid "Set %s on %d nodes"
+msgstr "Définir %s sur les nœuds %d"
+
 msgid "Select a single node to edit its signals and groups."
 msgstr "Sélectionnez un seul nœud pour éditer ses signaux et groupes."
 
@@ -3676,6 +4079,9 @@ msgstr ""
 msgid "Enable snap and show grid."
 msgstr "Activer l'aimantation et afficher la grille."
 
+msgid "Blend:"
+msgstr "Mélange :"
+
 msgid "Point"
 msgstr "Point"
 
@@ -3719,14 +4125,8 @@ msgid "Generate blend triangles automatically (instead of manually)"
 msgstr ""
 "Générer des triangles de mélange automatiquement (au lieu de manuellement)"
 
-msgid "Blend:"
-msgstr "Mélange :"
-
 msgid "Parameter Changed:"
 msgstr "Paramètre modifié :"
-
-msgid "Edit Filters"
-msgstr "Modifier les filtres"
 
 msgid "Output node can't be added to the blend tree."
 msgstr "Un nœud de sortie ne peut être ajouté à l'arborescence du mélange."
@@ -3801,8 +4201,17 @@ msgstr "Ajouter un nœud..."
 msgid "Enable Filtering"
 msgstr "Activer le filtrage"
 
+msgid "Animation name can't be empty."
+msgstr "Le nom de l'animation ne peut pas être vide."
+
 msgid "Load Animation"
 msgstr "Charger l'animation"
+
+msgid "Invalid AnimationLibrary file."
+msgstr "Fichier AnimationLibrary non valide."
+
+msgid "Invalid Animation file."
+msgstr "Fichier d'animation non valide."
 
 msgid "Animation Name:"
 msgstr "Nom de l'animation :"
@@ -3812,6 +4221,19 @@ msgstr "Animation collée"
 
 msgid "Open in Inspector"
 msgstr "Ouvrir dans l'Inspecteur"
+
+msgid "Paste Animation to Library from clipboard"
+msgstr "Coller l'animation dans la Bibliothèque à partir du presse-papiers"
+
+msgid "Save animation library to resource on disk"
+msgstr ""
+"Sauvegarder la bibliothèque d'animations dans une ressource sur le disque"
+
+msgid "Copy animation to clipboard"
+msgstr "Copier l'animation dans le presse-papiers"
+
+msgid "Save animation to resource on disk"
+msgstr "Sauvegarder l'animation en tant que ressource sur le disque"
 
 msgid "Storage"
 msgstr "Stockage"
@@ -3852,9 +4274,6 @@ msgstr ""
 
 msgid "Play selected animation backwards from end. (Shift+A)"
 msgstr "Lire l'animation sélectionnée à rebours depuis la fin. (Maj+A)"
-
-msgid "Stop animation playback. (S)"
-msgstr "Arrêter la lecture de l'animation. (S)"
 
 msgid "Play selected animation from start. (Shift+D)"
 msgstr "Lire l'animation sélectionnée depuis le début. (Maj+D)"
@@ -4066,6 +4485,9 @@ msgstr "Vérification du hachage SHA-256 échouée"
 
 msgid "Asset Download Error:"
 msgstr "Erreur dans le téléchargement d'une ressource :"
+
+msgid "Ready to install!"
+msgstr "Prêt à être installé !"
 
 msgid "Downloading (%s / %s)..."
 msgstr "Téléchargement (%s / %s)..."
@@ -4287,7 +4709,7 @@ msgid "Paste Pose"
 msgstr "Coller la pose"
 
 msgid "Clear Guides"
-msgstr "Effacé Guides"
+msgstr "Effacer les Guides"
 
 msgid "Zoom to 3.125%"
 msgstr "Zoomer à 3.125%"
@@ -4758,6 +5180,14 @@ msgstr ""
 "Quand elle est utilisée à distance sur un périphérique, cette option est "
 "plus efficace avec le système de fichiers réseau."
 
+msgid "Run %d Instance"
+msgid_plural "Run %d Instances"
+msgstr[0] "Exécuter une instance %d"
+msgstr[1] "Exécuter des instances %d"
+
+msgid " - Variation"
+msgstr " - Variation"
+
 msgid "Convert to CPUParticles2D"
 msgstr "Convertir en CPUParticles2D"
 
@@ -4895,6 +5325,19 @@ msgstr "Aucun maillage à déboguer."
 
 msgid "Mesh has no UV in layer %d."
 msgstr "Le maillage n'a pas d'UV dans la couche %d."
+
+msgid "MeshInstance3D lacks a Mesh."
+msgstr "Le MeshInstance3D n'a pas de maillage."
+
+msgid "Mesh has no surface to create outlines from."
+msgstr ""
+"Le maillage n'a pas de surfaces où des contours pourraient être créées."
+
+msgid "Mesh primitive type is not PRIMITIVE_TRIANGLES."
+msgstr "Le type de maillage primitif n'est pas PRIMITIVE_TRIANGLES."
+
+msgid "Could not create outline."
+msgstr "Impossible de créer le contour."
 
 msgid "Create Outline"
 msgstr "Créer le contour"
@@ -5107,12 +5550,6 @@ msgstr "Changer le notificateur AABB"
 msgid "Change Particles AABB"
 msgstr "Changer particules AABB"
 
-msgid "Change Box Shape Extents"
-msgstr "Changer l'étendue de la forme rectangulaire"
-
-msgid "Change Probe Extents"
-msgstr "Changer les ampleurs de la sonde"
-
 msgid "Change Capsule Shape Radius"
 msgstr "Changer le rayon de la forme capsule"
 
@@ -5190,6 +5627,9 @@ msgstr "L'insertion de clé est désactivée (pas de clé insérée)."
 
 msgid "Animation Key Inserted."
 msgstr "Clé d'animation insérée."
+
+msgid "Objects: %d\n"
+msgstr "Objets : %d\n"
 
 msgid "Top View."
 msgstr "Vue de dessus."
@@ -5935,6 +6375,9 @@ msgstr "Standard"
 msgid "Connections to method:"
 msgstr "Connexions à la méthode :"
 
+msgid "Source"
+msgstr "Source"
+
 msgid "Target"
 msgstr "Cible"
 
@@ -6099,6 +6542,9 @@ msgstr "Créer un LightOccluder2D"
 msgid "LightOccluder2D Preview"
 msgstr "Prévisualisation du LightOccluder2D"
 
+msgid "Can't convert a Sprite2D from a foreign scene."
+msgstr "Impossible de convertir un Sprite2D à partir d'une scène étrangère."
+
 msgid "Can't convert a sprite using animation frames to mesh."
 msgstr ""
 "Impossible de convertir un sprite en utilisant des images d'animation à "
@@ -6182,11 +6628,8 @@ msgstr "(vide)"
 msgid "Animations:"
 msgstr "Animations :"
 
-msgid "Speed:"
-msgstr "Vitesse :"
-
-msgid "Loop"
-msgstr "Boucle"
+msgid "Delete Animation"
+msgstr "Supprimer l'animation"
 
 msgid "Animation Frames:"
 msgstr "Trames d'animation :"
@@ -6239,8 +6682,18 @@ msgstr "Pas (s) :"
 msgid "Styleboxes"
 msgstr "Styleboxes"
 
+msgid "1 color"
+msgid_plural "{num} colors"
+msgstr[0] "1 couleur"
+msgstr[1] "{num} couleurs"
+
 msgid "No colors found."
 msgstr "Pas de couleurs trouvées."
+
+msgid "1 constant"
+msgid_plural "{num} constants"
+msgstr[0] "1 constante"
+msgstr[1] "{num} constantes"
 
 msgid "No constants found."
 msgstr "Pas de constantes trouvées."
@@ -6248,11 +6701,26 @@ msgstr "Pas de constantes trouvées."
 msgid "No fonts found."
 msgstr "Pas de polices trouvées."
 
+msgid "1 font size"
+msgid_plural "{num} font sizes"
+msgstr[0] "1 taille de police"
+msgstr[1] "{num} tailles de police"
+
 msgid "No icons found."
 msgstr "Pas d'icônes trouvées."
 
+msgid "1 stylebox"
+msgid_plural "{num} styleboxes"
+msgstr[0] "1 boîte de style"
+msgstr[1] "{num} boîtes de style"
+
 msgid "No styleboxes found."
 msgstr "Pas de styleboxes trouvées."
+
+msgid "{num} currently selected"
+msgid_plural "{num} currently selected"
+msgstr[0] "{num} actuellement sélectionné(s)"
+msgstr[1] "{num} actuellement sélectionné(s)"
 
 msgid "Nothing was selected for the import."
 msgstr "Rien n'a été sélectionné pour l'importation."
@@ -7520,6 +7988,65 @@ msgid "Can't open project at '%s'."
 msgstr "Impossible d'ouvrir le projet à \"%s\"."
 
 msgid ""
+"The selected project \"%s\" does not specify its supported Godot version in "
+"its configuration file (\"project.godot\").\n"
+"\n"
+"Project path: %s\n"
+"\n"
+"If you proceed with opening it, it will be converted to Godot's current "
+"configuration file format.\n"
+"\n"
+"Warning: You won't be able to open the project with previous versions of the "
+"engine anymore."
+msgstr ""
+"Le fichier de configuration de projet ci-dessous n'indique pas par quelle "
+"version de Godot il a été généré.\n"
+"\n"
+"Chemin du projet : %s\n"
+"\n"
+"Si vous choisissez de l'ouvrir, il sera converti vers le format actuel de "
+"fichier de configuration de Godot.\n"
+"\n"
+"Attention : Il ne sera plus possible d'ouvrir ce projet avec les précédentes "
+"versions du moteur."
+
+msgid ""
+"The selected project \"%s\" was generated by an older engine version, and "
+"needs to be converted for this version.\n"
+"\n"
+"Project path: %s\n"
+"\n"
+"Do you want to convert it?\n"
+"\n"
+"Warning: You won't be able to open the project with previous versions of the "
+"engine anymore."
+msgstr ""
+"Le fichier de configuration de projet ci-dessous a été généré par une "
+"précédente version du moteur, et doit être mis à niveau pour cette version.\n"
+"\n"
+"Chemin du projet : %s\n"
+"\n"
+"Souhaitez-vous le convertir ?\n"
+"\n"
+"Attention : Il ne sera plus possible d'ouvrir ce projet avec les précédentes "
+"versions du moteur de jeu."
+
+msgid ""
+"Can't open project \"%s\" at the following path:\n"
+"\n"
+"%s\n"
+"\n"
+"The project settings were created by a newer engine version, whose settings "
+"are not compatible with this version."
+msgstr ""
+"Impossible d'ouvrir le projet \"%s\" au chemin suivant :\n"
+"\n"
+"%s\n"
+"\n"
+"Ce fichier de configuration de projet a été créé par une version ultérieure "
+"du moteur, dont les paramètres ne sont pas compatibles avec cette version."
+
+msgid ""
 "Can't run project: no main scene defined.\n"
 "Please edit the project and set the main scene in the Project Settings under "
 "the \"Application\" category."
@@ -7639,17 +8166,14 @@ msgstr "Ajouter une action d'entrée"
 msgid "Change Action deadzone"
 msgstr "Modifier la zone morte de l'action"
 
-msgid "Add Input Action Event"
-msgstr "Ajouter un événement d'action d'entrée"
-
 msgid "Erase Input Action"
 msgstr "Effacer l'action d'entrée"
 
-msgid "Rename Input Action Event"
-msgstr "Renommer l'événement d'action d'entrée"
-
 msgid "Project Settings (project.godot)"
 msgstr "Paramètres du projet (project.godot)"
+
+msgid "Select a Setting or Type its Name"
+msgstr "Sélectionnez un paramètre ou tapez son nom"
 
 msgid "Input Map"
 msgstr "Contrôles"
@@ -7668,9 +8192,6 @@ msgstr "Sélectionnez une propriété"
 
 msgid "Select Virtual Method"
 msgstr "Sélectionner une méthode virtuelle"
-
-msgid "Select Method"
-msgstr "Sélectionner une méthode"
 
 msgid "Batch Rename"
 msgstr "Renommer par lot"
@@ -7936,6 +8457,9 @@ msgstr "Enfants modifiables"
 msgid "Load As Placeholder"
 msgstr "Charger en tant qu'instance temporaire"
 
+msgid "Auto Expand to Selected"
+msgstr "Étirement auto à la sélection"
+
 msgid "Filters"
 msgstr "Filtres"
 
@@ -8020,6 +8544,19 @@ msgstr ""
 "Ce Nœud est accessible de n'importe où dans la scène en le préfixant de '%s' "
 "dans un chemin de Nœud.\n"
 "Cliquer pour désactiver cela."
+
+msgid "Node has one connection."
+msgid_plural "Node has {num} connections."
+msgstr[0] "Le nœud a une connexion."
+msgstr[1] "Le nœud a {num} connexions."
+
+msgid "Node is in this group:"
+msgid_plural "Node is in the following groups:"
+msgstr[0] "Le nœud fait partie du groupe :"
+msgstr[1] "Le nœud fait partie des groupes :"
+
+msgid "Click to show signals dock."
+msgstr "Cliquez pour afficher le dock des signaux."
 
 msgid "Open Script:"
 msgstr "Ouvrir le script :"
@@ -8150,6 +8687,9 @@ msgstr "Chemin de base invalide."
 
 msgid "Wrong extension chosen."
 msgstr "Choix d'extension erroné."
+
+msgid "Global shader parameter '%s' already exists'"
+msgstr "Le paramètre global de shaders '%s' existe déjà"
 
 msgid "Change Cylinder Radius"
 msgstr "Changer le rayon du cylindre"
@@ -8316,6 +8856,9 @@ msgstr "Taille"
 msgid "Network Profiler"
 msgstr "Profileur réseau"
 
+msgid "Delete Property?"
+msgstr "Supprimer la propriété ?"
+
 msgid "A NavigationMesh resource must be set or created for this node to work."
 msgstr ""
 "Une ressource de type NavigationMesh doit être définie ou créée pour que ce "
@@ -8480,23 +9023,9 @@ msgstr "Clé publique invalide pour l'expansion APK."
 msgid "Invalid package name:"
 msgstr "Nom de paquet invalide :"
 
-msgid "\"Use Custom Build\" must be enabled to use the plugins."
-msgstr "« Use Custom Build » doit être activé pour utiliser les plugins."
-
 msgid "\"Passthrough\" is only valid when \"XR Mode\" is \"OpenXR\"."
 msgstr ""
 "« Passthrough » est valide uniquement lorsque le « Mode XR » est « OpenXR »."
-
-msgid "\"Export AAB\" is only valid when \"Use Custom Build\" is enabled."
-msgstr ""
-"« Export AAB » est valide uniquement lorsque l'option « Use Custom Build » "
-"est activée."
-
-msgid ""
-"\"Min SDK\" can only be overridden when \"Use Custom Build\" is enabled."
-msgstr ""
-"Changer « Min SDK » est valide uniquement lorsque l'option « Use Custom "
-"Build » est activée."
 
 msgid "\"Min SDK\" should be a valid integer, but got \"%s\" which is invalid."
 msgstr ""
@@ -8509,12 +9038,6 @@ msgid ""
 msgstr ""
 "« Min SDK » ne peut être inférieur à %d, la version requise par la libraire "
 "de Godot."
-
-msgid ""
-"\"Target SDK\" can only be overridden when \"Use Custom Build\" is enabled."
-msgstr ""
-"Changer « Target SDK » est valide uniquement lorsque l'option « Use Custom "
-"Build » est activée."
 
 msgid ""
 "\"Target SDK\" should be a valid integer, but got \"%s\" which is invalid."
@@ -8560,6 +9083,13 @@ msgstr "Impossible de le programme apksigner."
 msgid "'apksigner' returned with error #%d"
 msgstr "'apksigner' est retourné avec l'erreur #%d"
 
+msgid ""
+"output: \n"
+"%s"
+msgstr ""
+"Sortie : \n"
+"%s"
+
 msgid "Verifying %s..."
 msgstr "Vérification de %s..."
 
@@ -8586,14 +9116,6 @@ msgstr ""
 
 msgid "Unsupported export format!"
 msgstr "Format d'export non supporté !"
-
-msgid ""
-"Trying to build from a custom built template, but no version info for it "
-"exists. Please reinstall from the 'Project' menu."
-msgstr ""
-"A essayé de construire à partir d'un modèle personnalisé, mais aucune "
-"information de version n'existe pour lui. Veuillez réinstaller à partir du "
-"menu 'Projet'."
 
 msgid ""
 "Android build version mismatch: Template installed: %s, Godot version: %s. "
@@ -9208,6 +9730,13 @@ msgstr ""
 "Le nœud PathFollow2D ne fonctionne que s'il est défini en tant qu'enfant "
 "d'un nœud de type Path2D."
 
+msgid ""
+"A PhysicalBone2D only works with a Skeleton2D or another PhysicalBone2D as a "
+"parent node!"
+msgstr ""
+"Un nœud de type PhysicalBone2D ne fonctionne qu'avec un Skeleton2D ou un "
+"autre PhysicalBone2D en tant que nœud parent !"
+
 msgid "Path property must point to a valid Node2D node to work."
 msgstr ""
 "La propriété Path doit pointer vers un nœud de type Node2D valide pour "
@@ -9227,6 +9756,28 @@ msgstr ""
 "Cet os ne dispose pas d'une position de repos appropriée. Accédez au nœud "
 "Skeleton2D et définissez-en une."
 
+msgid ""
+"CollisionPolygon3D only serves to provide a collision shape to a "
+"CollisionObject3D derived node.\n"
+"Please only use it as a child of Area3D, StaticBody3D, RigidBody3D, "
+"CharacterBody3D, etc. to give them a shape."
+msgstr ""
+"CollisionPolygon3D sert uniquement à fournir une forme de collision à un "
+"nœud dérivé de CollisionObject3D.\n"
+"Veuillez l'utiliser uniquement comme enfant d'Area3D, StaticBody3D, "
+"RigidBody3D, CharacterBody3D, etc. pour leur donner une forme."
+
+msgid ""
+"CollisionShape3D only serves to provide a collision shape to a "
+"CollisionObject3D derived node.\n"
+"Please only use it as a child of Area3D, StaticBody3D, RigidBody3D, "
+"CharacterBody3D, etc. to give them a shape."
+msgstr ""
+"CollisionShape3D sert uniquement à fournir une forme de collision à un nœud "
+"dérivé de CollisionObject3D.\n"
+"Veuillez l'utiliser uniquement comme enfant d'Area3D, StaticBody3D, "
+"RigidBody3D, CharacterBody3D, etc. pour leur donner une forme."
+
 msgid "Nothing is visible because no mesh has been assigned."
 msgstr "Rien n'est visible car aucun maillage n'a été assigné."
 
@@ -9235,6 +9786,9 @@ msgid ""
 msgstr ""
 "Rien n'est visible car les maillages n'ont pas été assignés au tirage des "
 "passes."
+
+msgid "Creating probes"
+msgstr "Création d'un maillage de contour"
 
 msgid "This body will be ignored until you set a mesh."
 msgstr "Ce corps sera ignoré jusqu'à ce que vous définissiez un maillage."
@@ -9291,8 +9845,12 @@ msgstr ""
 "Clic gauche : Appliquer la couleur\n"
 "Clic droit : Supprimer le préréglage"
 
-msgid "Pick a color from the editor window."
-msgstr "Échantillonner une couleur depuis la fenêtre de l'éditeur."
+msgid ""
+"Color: #%s\n"
+"LMB: Apply color"
+msgstr ""
+"Couleur : #%s\n"
+"Clic gauche : Appliquer la couleur"
 
 msgid "Switch between hexadecimal and code values."
 msgstr "Alterner entre les valeurs hexadécimales ou brutes."
@@ -9327,9 +9885,6 @@ msgstr "Alerte !"
 msgid "Please Confirm..."
 msgstr "Veuillez confirmer…"
 
-msgid "Must use a valid extension."
-msgstr "Utilisez une extension valide."
-
 msgid "Enable grid minimap."
 msgstr "Activer l'alignement."
 
@@ -9350,6 +9905,15 @@ msgstr ""
 
 msgid "(Other)"
 msgstr "(Autre)"
+
+msgid ""
+"Setting node name '%s' to be unique within scene for '%s', but it's already "
+"claimed by '%s'.\n"
+"'%s' is no longer set as having a unique name."
+msgstr ""
+"Impossible de déclarer le nom de nœud '%s' comme unique dans la scène pour "
+"'%s', car ce nom est déjà attribué à '%s'.\n"
+"'%s' n'est plus considéré comme ayant un nom unique."
 
 msgid ""
 "Default Environment as specified in Project Settings (Rendering -> "
@@ -9375,6 +9939,17 @@ msgid ""
 msgstr ""
 "La taille de la fenêtre d'affichage doit être supérieure ou égale à 2 pixels "
 "dans les deux sens pour que le rendu soit possible."
+
+msgid "Unsupported BMFont texture format."
+msgstr "Format de texture BMFont non pris en charge."
+
+msgid ""
+"Shader keywords cannot be used as parameter names.\n"
+"Choose another name."
+msgstr ""
+"Les mots-clés de shader ne peuvent pas être utilisés comme noms de "
+"paramètres.\n"
+"Choisissez un autre nom."
 
 msgid ""
 "The sampler port is connected but not used. Consider changing the source to "
@@ -9412,3 +9987,12 @@ msgstr "Affectation à la variable uniform."
 
 msgid "Constants cannot be modified."
 msgstr "Les constantes ne peuvent être modifiées."
+
+msgid "The function '%s' is declared but never used."
+msgstr "La fonction '%s' est déclarée mais jamais appelée."
+
+msgid "The struct '%s' is declared but never used."
+msgstr "La structure '%s' est déclarée mais jamais utilisée."
+
+msgid "The local variable '%s' is declared but never used."
+msgstr "La variable locale '%s' est déclarée mais jamais utilisée."

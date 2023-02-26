@@ -37,10 +37,6 @@
 #include "gdscript_cache.h"
 #include "gdscript_parser.h"
 
-#ifdef TOOLS_ENABLED
-#include "editor/project_converter_3_to_4.h"
-#endif
-
 class GDScriptAnalyzer {
 	GDScriptParser *parser = nullptr;
 	HashMap<String, Ref<GDScriptParserRef>> depended_parsers;
@@ -102,8 +98,9 @@ class GDScriptAnalyzer {
 	void reduce_literal(GDScriptParser::LiteralNode *p_literal);
 	void reduce_preload(GDScriptParser::PreloadNode *p_preload);
 	void reduce_self(GDScriptParser::SelfNode *p_self);
-	void reduce_subscript(GDScriptParser::SubscriptNode *p_subscript);
+	void reduce_subscript(GDScriptParser::SubscriptNode *p_subscript, bool p_can_be_pseudo_type = false);
 	void reduce_ternary_op(GDScriptParser::TernaryOpNode *p_ternary_op, bool p_is_root = false);
+	void reduce_type_test(GDScriptParser::TypeTestNode *p_type_test);
 	void reduce_unary_op(GDScriptParser::UnaryOpNode *p_unary_op);
 
 	Variant make_expression_reduced_value(GDScriptParser::ExpressionNode *p_expression, bool &is_reduced);
@@ -136,13 +133,6 @@ class GDScriptAnalyzer {
 #ifdef DEBUG_ENABLED
 	bool is_shadowing(GDScriptParser::IdentifierNode *p_local, const String &p_context);
 #endif
-
-#ifdef TOOLS_ENABLED
-#ifndef DISABLE_DEPRECATED
-	const char *get_rename_from_map(const char *map[][2], String key);
-	const char *check_for_renamed_identifier(String identifier, GDScriptParser::Node::Type type);
-#endif // DISABLE_DEPRECATED
-#endif // TOOLS_ENABLED
 
 public:
 	Error resolve_inheritance();

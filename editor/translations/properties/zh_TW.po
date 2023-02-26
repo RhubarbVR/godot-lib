@@ -44,16 +44,16 @@ msgstr ""
 "Project-Id-Version: Godot Engine properties\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-01-14 10:06+0000\n"
-"Last-Translator: Edison Lee <edisonlee@edisonlee55.com>\n"
+"PO-Revision-Date: 2023-02-18 17:29+0000\n"
+"Last-Translator: Eric K <eric900601@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
-"godot-engine/godot/zh_Hant/>\n"
+"godot-engine/godot-properties/zh_Hant/>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.15.1-dev\n"
+"X-Generator: Weblate 4.16-dev\n"
 
 msgid "Application"
 msgstr "應用"
@@ -64,8 +64,14 @@ msgstr "設置"
 msgid "Name"
 msgstr "名稱"
 
+msgid "Description"
+msgstr "說明"
+
 msgid "Run"
 msgstr "執行"
+
+msgid "Main Scene"
+msgstr "主場景"
 
 msgid "Disable stdout"
 msgstr "停用標準輸出"
@@ -94,17 +100,26 @@ msgstr "視窗"
 msgid "Size"
 msgstr "大小"
 
+msgid "Mode"
+msgstr "模式"
+
 msgid "Resizable"
 msgstr "可調整大小的"
 
 msgid "Borderless"
 msgstr "無邊框"
 
+msgid "No Focus"
+msgstr "關閉聚焦"
+
 msgid "Energy Saving"
 msgstr "節能"
 
 msgid "Keep Screen On"
 msgstr "保持螢幕開啟"
+
+msgid "Audio"
+msgstr "音訊"
 
 msgid "Editor"
 msgstr "編輯器"
@@ -127,6 +142,9 @@ msgstr "偵錯"
 msgid "Settings"
 msgstr "設定"
 
+msgid "Compression"
+msgstr "壓縮"
+
 msgid "Crash Handler"
 msgstr "當機處理常式"
 
@@ -136,6 +154,21 @@ msgstr "訊息"
 msgid "Rendering"
 msgstr "算繪"
 
+msgid "Limits"
+msgstr "限制"
+
+msgid "Force Right to Left Layout Direction"
+msgstr "強制畫面佈局由右至左"
+
+msgid "GUI"
+msgstr "圖形使用者介面"
+
+msgid "Vulkan"
+msgstr "Vulkan"
+
+msgid "Max Descriptors per Pool"
+msgstr "各池最大描述符數"
+
 msgid "Low Processor Usage Mode"
 msgstr "低處理器使用率模式"
 
@@ -144,6 +177,9 @@ msgstr "低處理器使用率模式睡眠（微秒）"
 
 msgid "Print Error Messages"
 msgstr "顯示錯誤訊息"
+
+msgid "Physics Ticks per Second"
+msgstr "每秒物理週期數"
 
 msgid "Time Scale"
 msgstr "時間縮放"
@@ -160,8 +196,14 @@ msgstr "使用累積輸入"
 msgid "Device"
 msgstr "裝置"
 
+msgid "Command or Control Autoremap"
+msgstr "自動重對映 Command 和 Control"
+
 msgid "Pressed"
 msgstr "按下"
+
+msgid "Keycode"
+msgstr "鍵碼"
 
 msgid "Unicode"
 msgstr "Unicode"
@@ -183,6 +225,9 @@ msgstr "因素"
 
 msgid "Button Index"
 msgstr "按鍵索引"
+
+msgid "Double Click"
+msgstr "雙擊"
 
 msgid "Tilt"
 msgstr "傾斜"
@@ -207,6 +252,9 @@ msgstr "軸數值"
 
 msgid "Index"
 msgstr "索引"
+
+msgid "Double Tap"
+msgstr "雙擊"
 
 msgid "Action"
 msgstr "操作"
@@ -235,11 +283,14 @@ msgstr "控制器值"
 msgid "Big Endian"
 msgstr "大端"
 
+msgid "Network"
+msgstr "網路"
+
+msgid "Page Size"
+msgstr "分頁大小"
+
 msgid "Blocking Mode Enabled"
 msgstr "啟用阻塞模式"
-
-msgid "Connection"
-msgstr "連接"
 
 msgid "Read Chunk Size"
 msgstr "讀取區塊大小"
@@ -259,9 +310,6 @@ msgstr "輸入緩衝區大小上限"
 msgid "Output Buffer Max Size"
 msgstr "輸出緩衝區大小上限"
 
-msgid "Stream Peer"
-msgstr "串流使用者"
-
 msgid "Resource"
 msgstr "資源"
 
@@ -271,14 +319,14 @@ msgstr "路徑"
 msgid "Data Array"
 msgstr "資料陣列"
 
-msgid "Blocking Handshake"
-msgstr "停用握手"
-
 msgid "Max Pending Connections"
 msgstr "最大等待連接數"
 
 msgid "Offset"
 msgstr "偏移"
+
+msgid "Cell Size"
+msgstr "單元格大小"
 
 msgid "Seed"
 msgstr "種子"
@@ -286,8 +334,14 @@ msgstr "種子"
 msgid "State"
 msgstr "狀態"
 
-msgid "Source Code"
-msgstr "原始碼"
+msgid "Worker Pool"
+msgstr "工作池"
+
+msgid "Use System Threads for Low Priority Tasks"
+msgstr "將系統執行緒用於低優先度任務"
+
+msgid "Low Priority Thread Ratio"
+msgstr "低優先度執行緒的比率"
 
 msgid "Locale"
 msgstr "地區"
@@ -297,6 +351,9 @@ msgstr "測試"
 
 msgid "Fallback"
 msgstr "後備語言"
+
+msgid "Double Vowels"
+msgstr "重複母音"
 
 msgid "Prefix"
 msgstr "前綴"
@@ -343,15 +400,6 @@ msgstr "動畫"
 msgid "Easing"
 msgstr "緩入緩出"
 
-msgid "Interface"
-msgstr "界面"
-
-msgid "Editors"
-msgstr "編輯器"
-
-msgid "Network"
-msgstr "網路"
-
 msgid "Remote Port"
 msgstr "遠端阜"
 
@@ -376,14 +424,8 @@ msgstr "存取"
 msgid "Display Mode"
 msgstr "顯示模式"
 
-msgid "Current Dir"
-msgstr "目前目錄"
-
-msgid "Current File"
-msgstr "所在檔案"
-
-msgid "Current Path"
-msgstr "所在目錄"
+msgid "Filters"
+msgstr "篩選器"
 
 msgid "Show Hidden Files"
 msgstr "顯示隱藏的檔案"
@@ -421,8 +463,8 @@ msgstr "已勾選"
 msgid "Keying"
 msgstr "輸入"
 
-msgid "Main Scene"
-msgstr "主場景"
+msgid "Interface"
+msgstr "界面"
 
 msgid "Show Update Spinner"
 msgstr "顯示更新旋轉圖"
@@ -466,23 +508,23 @@ msgstr "專注模式"
 msgid "Base Type"
 msgstr "基礎型別"
 
-msgid "Edited Resource"
-msgstr "已經編輯資"
-
 msgid "Editable"
 msgstr "可編輯"
 
 msgid "Toggle Mode"
 msgstr "切換模式"
 
-msgid "Script Owner"
-msgstr "腳本所有者"
-
 msgid "Editor Language"
 msgstr "編輯器語言"
 
 msgid "Display Scale"
 msgstr "顯示縮放"
+
+msgid "Enable Pseudolocalization"
+msgstr "啟用模擬翻譯模式"
+
+msgid "Use Embedded Menu"
+msgstr "使用嵌入式選單"
 
 msgid "Custom Display Scale"
 msgstr "自訂顯示縮放"
@@ -492,6 +534,12 @@ msgstr "主要字體大小"
 
 msgid "Code Font Size"
 msgstr "程式碼字體大小"
+
+msgid "Code Font Contextual Ligatures"
+msgstr "程式碼字體前後合字"
+
+msgid "Code Font Custom OpenType Features"
+msgstr "程式碼字體自定義 OpenType 功能"
 
 msgid "Font Hinting"
 msgstr "字體微調"
@@ -506,19 +554,28 @@ msgid "Code Font"
 msgstr "程式碼字體"
 
 msgid "Low Processor Mode Sleep (µsec)"
-msgstr "低處理器睡眠模式（微秒）"
+msgstr "處理器節能模式睡眠 (微秒)"
 
 msgid "Unfocused Low Processor Mode Sleep (µsec)"
-msgstr "未聚焦低處理器睡眠模式（微秒）"
+msgstr "未聚焦時處理器節能模式睡眠 (微秒)"
 
 msgid "Separate Distraction Mode"
-msgstr "獨立專注模式"
+msgstr "將專注模式分離"
 
 msgid "Automatically Open Screenshots"
 msgstr "自動開啟截圖"
 
+msgid "Single Window Mode"
+msgstr "單視窗模式"
+
 msgid "Mouse Extra Buttons Navigate History"
-msgstr "使用額外滑鼠按鍵查看歷史"
+msgstr "使用追加滑鼠按鍵以查看歷史紀錄"
+
+msgid "Save Each Scene on Quit"
+msgstr "每次退出時儲存場景"
+
+msgid "Accept Dialog Cancel OK Buttons"
+msgstr "接受對話框的取消/確定按鈕"
 
 msgid "Theme"
 msgstr "主題"
@@ -600,6 +657,9 @@ msgstr "顏色主題"
 
 msgid "Appearance"
 msgstr "外觀"
+
+msgid "Caret"
+msgstr "輸入指標"
 
 msgid "Caret Blink"
 msgstr "插入符閃爍"
@@ -720,6 +780,9 @@ msgstr "幫助源字體大小"
 
 msgid "Help Title Font Size"
 msgstr "幫助標題字體大小"
+
+msgid "Editors"
+msgstr "編輯器"
 
 msgid "Grid Map"
 msgstr "網格地圖"
@@ -1108,9 +1171,6 @@ msgstr "ETC"
 msgid "ETC2"
 msgstr "ETC2"
 
-msgid "No BPTC Fallbacks"
-msgstr "無 BPTC 後備"
-
 msgid "Export Path"
 msgstr "匯出路徑"
 
@@ -1123,11 +1183,17 @@ msgstr "密碼"
 msgid "Compress"
 msgstr "壓縮"
 
+msgid "Language"
+msgstr "語言"
+
 msgid "Outline Size"
 msgstr "輪廓尺寸"
 
 msgid "Variation"
 msgstr "變化"
+
+msgid "Transform"
+msgstr "變換"
 
 msgid "Collada"
 msgstr "Collada"
@@ -1153,14 +1219,8 @@ msgstr "建立自"
 msgid "Delimiter"
 msgstr "分隔符號"
 
-msgid "Mode"
-msgstr "模式"
-
 msgid "Lossy Quality"
 msgstr "低品質"
-
-msgid "BPTC LDR"
-msgstr "BPTC LDR"
 
 msgid "Mipmaps"
 msgstr "Mipmap"
@@ -1175,7 +1235,7 @@ msgid "Vertical"
 msgstr "垂直"
 
 msgid "Layout"
-msgstr "畫面配置"
+msgstr "配置；畫面佈局"
 
 msgid "Amount"
 msgstr "數量"
@@ -1215,12 +1275,6 @@ msgstr "最佳化器"
 
 msgid "Max Angular Error"
 msgstr "最大角度誤差"
-
-msgid "Compression"
-msgstr "壓縮"
-
-msgid "Page Size"
-msgstr "分頁大小"
 
 msgid "Nodes"
 msgstr "節點"
@@ -1327,6 +1381,9 @@ msgstr "使用執行緒"
 msgid "Available URLs"
 msgstr "可用 URL"
 
+msgid "Unset"
+msgstr "未設定"
+
 msgid "Error"
 msgstr "錯誤"
 
@@ -1396,6 +1453,15 @@ msgstr "警告"
 msgid "ID"
 msgstr "ID"
 
+msgid "Texture"
+msgstr "紋理貼圖"
+
+msgid "Separation"
+msgstr "間距"
+
+msgid "Speed"
+msgstr "速度"
+
 msgid "Version Control"
 msgstr "版本控制"
 
@@ -1443,9 +1509,6 @@ msgstr "執行緒"
 
 msgid "Thread Model"
 msgstr "執行緒模型"
-
-msgid "Audio"
-msgstr "音訊"
 
 msgid "Handheld"
 msgstr "攜帶型"
@@ -1495,11 +1558,17 @@ msgstr "預設清除顏色"
 msgid "Show Image"
 msgstr "顯示圖像"
 
+msgid "Image"
+msgstr "圖像"
+
 msgid "Fullsize"
 msgstr "全尺寸"
 
 msgid "Use Filter"
 msgstr "使用篩選器"
+
+msgid "Icon"
+msgstr "圖示"
 
 msgid "Buffering"
 msgstr "緩衝"
@@ -1531,11 +1600,14 @@ msgstr "專案"
 msgid "Main Loop Type"
 msgstr "主迴圈類型"
 
+msgid "Stretch"
+msgstr "伸縮"
+
+msgid "Aspect"
+msgstr "方位"
+
 msgid "Auto Accept Quit"
 msgstr "自動接受退出"
-
-msgid "GUI"
-msgstr "圖形使用者介面"
 
 msgid "Fonts"
 msgstr "字體"
@@ -1855,9 +1927,6 @@ msgstr "IGD 控制 URL"
 msgid "IGD Our Addr"
 msgstr "IGD 我方位址"
 
-msgid "Limits"
-msgstr "限制"
-
 msgid "WebRTC"
 msgstr "WebRTC"
 
@@ -1877,7 +1946,7 @@ msgid "Reference Space Type"
 msgstr "參照空間類型"
 
 msgid "Android"
-msgstr "安卓"
+msgstr "Android"
 
 msgid "Android SDK Path"
 msgstr "Android SDK 路徑"
@@ -1902,9 +1971,6 @@ msgstr "自適應前景 432 X 432"
 
 msgid "Adaptive Background 432 X 432"
 msgstr "自適應背景 432 X 432"
-
-msgid "Use Custom Build"
-msgstr "使用自定義建構"
 
 msgid "Min SDK"
 msgstr "最小 SDK"
@@ -1971,9 +2037,6 @@ msgstr "相機使用描述"
 
 msgid "Microphone Usage Description"
 msgstr "麥克風使用描述"
-
-msgid "Icon"
-msgstr "圖示"
 
 msgid "Codesign"
 msgstr "程式碼簽章"
@@ -2047,9 +2110,6 @@ msgstr "Apple 團隊 ID"
 msgid "Short Name"
 msgstr "短名稱"
 
-msgid "Description"
-msgstr "說明"
-
 msgid "Publisher Display Name"
 msgstr "發布者顯示名稱"
 
@@ -2061,6 +2121,9 @@ msgstr "憑證"
 
 msgid "Splash Screen"
 msgstr "啟動畫面"
+
+msgid "Web"
+msgstr "Web"
 
 msgid "HTTP Host"
 msgstr "HTTP 主機"
@@ -2101,11 +2164,14 @@ msgstr "目前"
 msgid "Max Distance"
 msgstr "最大距離"
 
+msgid "Left"
+msgstr "左"
+
 msgid "Top"
 msgstr "頂端"
 
-msgid "Speed"
-msgstr "速度"
+msgid "Right"
+msgstr "右"
 
 msgid "Horizontal Enabled"
 msgstr "已啟用水平"
@@ -2127,9 +2193,6 @@ msgstr "時間"
 
 msgid "Randomness"
 msgstr "隨機性"
-
-msgid "Texture"
-msgstr "紋理貼圖"
 
 msgid "Sphere Radius"
 msgstr "球體半徑"
@@ -2160,18 +2223,6 @@ msgstr "路徑最大距離"
 
 msgid "Max Speed"
 msgstr "最大速度"
-
-msgid "Transform"
-msgstr "變換"
-
-msgid "Rotation Degrees"
-msgstr "旋轉角度"
-
-msgid "Global Rotation Degrees"
-msgstr "全域旋轉角度"
-
-msgid "Global Scale"
-msgstr "全域縮放"
 
 msgid "Base Offset"
 msgstr "基礎偏移"
@@ -2315,7 +2366,7 @@ msgid "Extra Cull Margin"
 msgstr "額外剔除邊距"
 
 msgid "End"
-msgstr "結束"
+msgstr "頁尾"
 
 msgid "World Scale"
 msgstr "世界縮放"
@@ -2341,14 +2392,14 @@ msgstr "隨機延遲"
 msgid "Xfade Time"
 msgstr "Xfade 時間"
 
-msgid "Reset"
-msgstr "重設"
-
 msgid "Add Amount"
 msgstr "增加數量"
 
 msgid "Blend Amount"
 msgstr "混合量"
+
+msgid "Reset"
+msgstr "重設"
 
 msgid "Switch"
 msgstr "切換"
@@ -2382,9 +2433,6 @@ msgstr "上一頁"
 
 msgid "Default Cursor Shape"
 msgstr "預設游標形狀"
-
-msgid "Filters"
-msgstr "篩選器"
 
 msgid "Scroll Offset"
 msgstr "捲軸偏移量"
@@ -2431,9 +2479,6 @@ msgstr "分頁大小"
 msgid "Split Offset"
 msgstr "拆分偏移"
 
-msgid "Stretch"
-msgstr "伸縮"
-
 msgid "Current Tab"
 msgstr "當前分頁"
 
@@ -2449,9 +2494,6 @@ msgstr "填充角度"
 msgid "Hide Root"
 msgstr "隱藏根節點"
 
-msgid "Volume"
-msgstr "體積"
-
 msgid "Z Index"
 msgstr "Z 索引"
 
@@ -2466,15 +2508,6 @@ msgstr "傳輸模式"
 
 msgid "Transfer Channel"
 msgstr "傳輸通道"
-
-msgid "Owner"
-msgstr "擁有者"
-
-msgid "Multiplayer"
-msgstr "多人"
-
-msgid "Current Scene"
-msgstr "目前場景"
 
 msgid "Autostart"
 msgstr "自動開始"
@@ -2493,9 +2526,6 @@ msgstr "最小尺寸"
 
 msgid "Max Size"
 msgstr "最大大小"
-
-msgid "Aspect"
-msgstr "方位"
 
 msgid "Format"
 msgstr "格式"
@@ -2544,9 +2574,6 @@ msgstr "分隔線字體"
 
 msgid "V Separation"
 msgstr "垂直分隔"
-
-msgid "Separation"
-msgstr "間距"
 
 msgid "Title Offset"
 msgstr "標題偏移量"
@@ -2680,9 +2707,6 @@ msgstr "右下"
 msgid "Bottom Left"
 msgstr "左下"
 
-msgid "Image"
-msgstr "圖像"
-
 msgid "Image Size"
 msgstr "圖片大小"
 
@@ -2697,9 +2721,6 @@ msgstr "常數"
 
 msgid "Function"
 msgstr "函式"
-
-msgid "Default Edge Connection Margin"
-msgstr "預設邊緣連接邊距"
 
 msgid "Plane"
 msgstr "平面"
@@ -2719,11 +2740,8 @@ msgstr "FFT 大小"
 msgid "Time Pullout (ms)"
 msgstr "撤離時間（毫秒）"
 
-msgid "Sleep Threshold Linear"
-msgstr "線性睡眠速度閾值"
-
-msgid "Sleep Threshold Angular"
-msgstr "睡眠角速度閾值"
+msgid "Default Edge Connection Margin"
+msgstr "預設邊緣連接邊距"
 
 msgid "Inverse Mass"
 msgstr "逆質量"
@@ -2752,6 +2770,12 @@ msgstr "區域間碰撞"
 msgid "Shape RID"
 msgstr "形狀RID"
 
+msgid "Sleep Threshold Linear"
+msgstr "線性睡眠速度閾值"
+
+msgid "Sleep Threshold Angular"
+msgstr "睡眠角速度閾值"
+
 msgid "Physics Engine"
 msgstr "物理引擎"
 
@@ -2772,18 +2796,6 @@ msgstr "啟用算繪迴圈"
 
 msgid "VRAM Compression"
 msgstr "VRAM壓縮"
-
-msgid "Import BPTC"
-msgstr "匯入BPTC"
-
-msgid "Import S3TC"
-msgstr "匯入S3TC"
-
-msgid "Import ETC"
-msgstr "匯入ETC"
-
-msgid "Import ETC2"
-msgstr "匯入ETC2"
 
 msgid "Force PNG"
 msgstr "強制 PNG"

@@ -390,12 +390,6 @@ msgstr "Ir ao Anterior Paso"
 msgid "Use Bezier Curves"
 msgstr "Usar Curvas Bezier"
 
-msgid "Anim. Optimizer"
-msgstr "Optimizador de Animación"
-
-msgid "Max. Angular Error:"
-msgstr "Erro Angular Máximo:"
-
 msgid "Optimize"
 msgstr "Optimizar"
 
@@ -559,9 +553,6 @@ msgstr "Desconectar"
 msgid "Connect a Signal to a Method"
 msgstr "Conectar unha Sinal a un Método"
 
-msgid "Edit Connection:"
-msgstr "Editar Conexión:"
-
 msgid "Are you sure you want to remove all connections from the \"%s\" signal?"
 msgstr "Está seguro de que quere eliminar tódalas conexións da sinal '%s'?"
 
@@ -670,23 +661,8 @@ msgstr "Aviso:"
 msgid "Error:"
 msgstr "Erro:"
 
-msgid "C++ Error"
-msgstr "Erro de C++"
-
-msgid "C++ Error:"
-msgstr "Erro de C++:"
-
-msgid "Source"
-msgstr "Fonte"
-
 msgid "C++ Source"
 msgstr "Fonte C++"
-
-msgid "Source:"
-msgstr "Fonte:"
-
-msgid "C++ Source:"
-msgstr "Fonte C++:"
 
 msgid "Continue"
 msgstr "Continuar"
@@ -1395,11 +1371,11 @@ msgstr "Amosar Tódolos Linguaxes"
 msgid "Show Selected Locales Only"
 msgstr "Amosar só os Linguaxes Seleccionados"
 
+msgid "Edit Filters"
+msgstr "Editar Flitros"
+
 msgid "Language:"
 msgstr "Linguaxe:"
-
-msgid "Script"
-msgstr "Script"
 
 msgid "Clear Output"
 msgstr "Limpar Saída"
@@ -2440,6 +2416,9 @@ msgstr ""
 msgid "Enable snap and show grid."
 msgstr "Activar axuste de cuadrícula e amosar cuadrícula."
 
+msgid "Blend:"
+msgstr "Mezcla:"
+
 msgid "Point"
 msgstr "Punto"
 
@@ -2448,12 +2427,6 @@ msgstr "Abrir Editor"
 
 msgid "Add Triangle"
 msgstr "Engadir Triángulo"
-
-msgid "Blend:"
-msgstr "Mezcla:"
-
-msgid "Edit Filters"
-msgstr "Editar Flitros"
 
 msgid "Node Moved"
 msgstr "Nodo Movido"
@@ -3436,6 +3409,9 @@ msgstr "Resultados de Búsqueda"
 msgid "Standard"
 msgstr "Estándar"
 
+msgid "Source"
+msgstr "Fonte"
+
 msgid "Target"
 msgstr "Obxectivo"
 
@@ -3573,12 +3549,6 @@ msgstr "(baleiro)"
 
 msgid "Animations:"
 msgstr "Animacións:"
-
-msgid "Speed:"
-msgstr "Velocidade:"
-
-msgid "Loop"
-msgstr "Bucle"
 
 msgid "Zoom Reset"
 msgstr "Restablecer Zoom"
@@ -3918,14 +3888,8 @@ msgstr "Eliminar Elemento"
 msgid "Add Input Action"
 msgstr "Engadir Acción de Entrada"
 
-msgid "Add Input Action Event"
-msgstr "Engadir Evento de Entrada"
-
 msgid "Erase Input Action"
 msgstr "Eliminar Acción de Entrada"
-
-msgid "Rename Input Action Event"
-msgstr "Renomear Evento de Entrada"
 
 msgid "Project Settings (project.godot)"
 msgstr "Configuración do Proxecto (project.godot)"
@@ -4136,11 +4100,6 @@ msgid "Release keystore incorrectly configured in the export preset."
 msgstr ""
 "O Keystore Release non está configurado correctamente nos axustes de "
 "exportación."
-
-msgid "\"Use Custom Build\" must be enabled to use the plugins."
-msgstr ""
-"\"Use Custom Build\" debe estar activado para usar estas características "
-"adicionais (plugins)."
 
 msgid "Building Android Project (gradle)"
 msgstr "Construir Proxecto Android (gradle)"
